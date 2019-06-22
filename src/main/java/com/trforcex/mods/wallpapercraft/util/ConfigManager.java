@@ -2,7 +2,6 @@ package com.trforcex.mods.wallpapercraft.util;
 
 import com.trforcex.mods.wallpapercraft.ModClass;
 import com.trforcex.mods.wallpapercraft.ModReference;
-import com.trforcex.mods.wallpapercraft.proxy.CommonProxy;
 import net.minecraftforge.common.config.Configuration;
 
 public class ConfigManager
@@ -22,7 +21,7 @@ public class ConfigManager
 
 	public static void tryReadConfig()
 	{
-		Configuration config = CommonProxy.config;
+		Configuration config = ModClass.config;
 		try
 		{
 			config.load();

@@ -1,5 +1,7 @@
 package com.trforcex.mods.wallpapercraft.items;
 
+import com.trforcex.mods.wallpapercraft.ModReference;
+import com.trforcex.mods.wallpapercraft.init.ModCreativeTab;
 import net.minecraft.client.renderer.block.model.ModelManager;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Items;
@@ -18,13 +20,19 @@ public class PressItems
     {
         {
             setRegistryName("pressblank");
+            setUnlocalizedName("pressblank");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
 
-    public static void initItems()
+    public static Item itemPressBrick = new Item()
     {
-
-    }
+        {
+            setRegistryName("pressbrick");
+            setUnlocalizedName("pressbrick");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event)
@@ -32,11 +40,13 @@ public class PressItems
         final IForgeRegistry<Item> registry = event.getRegistry();
 
         registry.register(itemPressBlank);
+        registry.register(itemPressBrick);
     }
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event)
     {
         ModelLoader.setCustomModelResourceLocation(itemPressBlank, 0, new ModelResourceLocation(itemPressBlank.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressBrick, 0, new ModelResourceLocation(itemPressBlank.getRegistryName(), "inventory"));
     }
 }
