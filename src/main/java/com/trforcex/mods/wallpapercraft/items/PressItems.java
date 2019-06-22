@@ -16,7 +16,9 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber
 public class PressItems
 {
-    public static Item itemPressBlank = new Item()
+    // NOTE: region and endregion comments are for Intellij Idea folding only!
+    //region Items anonymous classes
+    public static Item itemPressBlank = new Item() // Blank
     {
         {
             setRegistryName("pressblank");
@@ -25,7 +27,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressBrick = new Item()
+    public static Item itemPressBrick = new Item() // Brick
     {
         {
             setRegistryName("pressbrick");
@@ -34,6 +36,187 @@ public class PressItems
         }
     };
 
+    public static Item itemPressCheckered = new Item() // Checkered
+    {
+        {
+            setRegistryName("presscheckered");
+            setUnlocalizedName("presscheckered");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressDotted = new Item() // Dotted
+    {
+        {
+            setRegistryName("pressdotted");
+            setUnlocalizedName("pressdotted");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressDiagonallyDotted = new Item() // Diagonally dotted
+    {
+        {
+            setRegistryName("pressdiagonallydotted");
+            setUnlocalizedName("pressdiagonallydotted");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressClay = new Item() // Clay
+    {
+        {
+            setRegistryName("pressclay");
+            setUnlocalizedName("pressclay");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressStoneLamp = new Item() // Stone lamp
+    {
+        {
+            setRegistryName("pressstonelamp");
+            setUnlocalizedName("pressstonelamp");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressAuraLamp = new Item() // Aura lamp
+    {
+        {
+            setRegistryName("pressauralamp");
+            setUnlocalizedName("pressauralamp");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressFancyTiles = new Item() // Fancy tiles
+    {
+        {
+            setRegistryName("pressfancytiles");
+            setUnlocalizedName("pressfancytiles");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressFloral = new Item() // Floral
+    {
+        {
+            setRegistryName("pressfloral");
+            setUnlocalizedName("pressfloral");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressDamask = new Item() // Damask
+    {
+        {
+            setRegistryName("pressdamask");
+            setUnlocalizedName("pressdamask");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressJewel = new Item() // Jewel
+    {
+        {
+            setRegistryName("pressjewel");
+            setUnlocalizedName("pressjewel");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressRippled = new Item() // Rippled
+    {
+        {
+            setRegistryName("pressrippled");
+            setUnlocalizedName("pressrippled");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressStamp = new Item() // Stamp
+    {
+        {
+            setRegistryName("pressstamp");
+            setUnlocalizedName("pressstamp");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressFrostedGlass = new Item() // Frosted glass
+    {
+        {
+            setRegistryName("pressfrostedglass");
+            setUnlocalizedName("pressfrostedglass");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressTintedGlass = new Item() // Tinted glass
+    {
+        {
+            setRegistryName("presstintedglass");
+            setUnlocalizedName("presstintedglass");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressTexturedGlass = new Item() // Textured glass
+    {
+        {
+            setRegistryName("presstexturedglass");
+            setUnlocalizedName("presstexturedglass");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressStriped = new Item() // Striped
+    {
+        {
+            setRegistryName("pressstriped");
+            setUnlocalizedName("pressstriped");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressStoneBricks = new Item() // Stone bricks
+    {
+        {
+            setRegistryName("pressstonebrick");
+            setUnlocalizedName("pressstonebrick");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressColoredBricks = new Item() // Colored bricks
+    {
+        {
+            setRegistryName("presscolouredbrick");
+            setUnlocalizedName("presscolouredbrick");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressWoodPlanks = new Item() // Wood planks
+    {
+        {
+            setRegistryName("presswoodplank");
+            setUnlocalizedName("presswoodplank");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+
+    public static Item itemPressWool = new Item() // Wool
+    {
+        {
+            setRegistryName("presswool");
+            setUnlocalizedName("presswool");
+            setCreativeTab(ModCreativeTab.WPC_TAB);
+        }
+    };
+    //endregion
+
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event)
     {
@@ -41,12 +224,52 @@ public class PressItems
 
         registry.register(itemPressBlank);
         registry.register(itemPressBrick);
+        registry.register(itemPressCheckered);
+        registry.register(itemPressDotted);
+        registry.register(itemPressDiagonallyDotted);
+        registry.register(itemPressClay);
+        registry.register(itemPressStoneLamp);
+        registry.register(itemPressAuraLamp);
+        registry.register(itemPressStoneBricks);
+        registry.register(itemPressColoredBricks);
+        registry.register(itemPressDamask);
+        registry.register(itemPressFloral);
+        registry.register(itemPressJewel);
+        registry.register(itemPressStamp);
+        registry.register(itemPressTexturedGlass);
+        registry.register(itemPressTintedGlass);
+        registry.register(itemPressFrostedGlass);
+        registry.register(itemPressFancyTiles);
+        registry.register(itemPressWoodPlanks);
+        registry.register(itemPressWool);
+        registry.register(itemPressRippled);
+        registry.register(itemPressStriped);
     }
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event)
     {
         ModelLoader.setCustomModelResourceLocation(itemPressBlank, 0, new ModelResourceLocation(itemPressBlank.getRegistryName(), "inventory"));
-        ModelLoader.setCustomModelResourceLocation(itemPressBrick, 0, new ModelResourceLocation(itemPressBlank.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressBrick, 0, new ModelResourceLocation(itemPressBrick.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressCheckered, 0, new ModelResourceLocation(itemPressCheckered.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressDotted, 0, new ModelResourceLocation(itemPressDotted.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressDiagonallyDotted, 0, new ModelResourceLocation(itemPressDiagonallyDotted.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressClay, 0, new ModelResourceLocation(itemPressClay.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressStoneLamp, 0, new ModelResourceLocation(itemPressStoneLamp.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressAuraLamp, 0, new ModelResourceLocation(itemPressAuraLamp.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressStoneBricks, 0, new ModelResourceLocation(itemPressStoneBricks.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressColoredBricks, 0, new ModelResourceLocation(itemPressColoredBricks.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressDamask, 0, new ModelResourceLocation(itemPressDamask.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressFloral, 0, new ModelResourceLocation(itemPressFloral.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressJewel, 0, new ModelResourceLocation(itemPressJewel.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressStamp, 0, new ModelResourceLocation(itemPressStamp.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressTexturedGlass, 0, new ModelResourceLocation(itemPressTexturedGlass.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressTintedGlass, 0, new ModelResourceLocation(itemPressTintedGlass.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressFrostedGlass, 0, new ModelResourceLocation(itemPressFrostedGlass.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressFancyTiles, 0, new ModelResourceLocation(itemPressFancyTiles.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressWoodPlanks, 0, new ModelResourceLocation(itemPressWoodPlanks.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressWool, 0, new ModelResourceLocation(itemPressWool.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressRippled, 0, new ModelResourceLocation(itemPressRippled.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(itemPressStriped, 0, new ModelResourceLocation(itemPressStriped.getRegistryName(), "inventory"));
     }
 }

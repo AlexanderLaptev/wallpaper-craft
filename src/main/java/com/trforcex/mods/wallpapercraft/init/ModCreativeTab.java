@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 
 public class ModCreativeTab
 {
-    public static final CreativeTabs WPC_TAB = new CreativeTabs("WallpaperCraft"){
+    public static final CreativeTabs WPC_TAB = new CreativeTabs("wallpaperstab"){
         @Override
         public ItemStack getTabIconItem() {
             return new ItemStack(Blocks.WOOL, 1, 0);
