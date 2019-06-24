@@ -5,20 +5,20 @@
     "transform": "forge:default-block"
   },
   "variants": {
-      "type=0": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-0" }}],
-      "type=1": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-1"}}],
-      "type=2": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-2"}}],
-      "type=3": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-3"}}],
-      "type=4": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-4"}}],
-      "type=5": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-5"}}],
-      "type=6": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-6"}}],
-      "type=7": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-7"}}],
-      "type=8": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-8"}}],
-      "type=9": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-9"}}],
-      "type=10": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-10"}}],
-      "type=11": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-11"}}],
-      "type=12": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-12"}}],
-      "type=13": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-13"}}],
-      "type=14": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-14"}}]
+      "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-0" }}],
+      "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-1"}}],
+      "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-2"}}],
+      "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-3"}}],
+      "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-4"}}],
+      "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-5"}}],
+      "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-6"}}],
+      "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-7"}}],
+      "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-8"}}],
+      "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-9"}}],
+      "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-10"}}],
+      "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-11"}}],
+      "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-12"}}],
+      "variant=13": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-13"}}],
+      "variant=14": [{ "textures": { "all":  "wallpapercraft:blocks/stonebrick/stonebrickbrown-14"}}]
   }
 }

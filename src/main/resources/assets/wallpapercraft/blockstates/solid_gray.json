@@ -1,0 +1,24 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+      "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-0" }}],
+      "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-1"}}],
+      "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-2"}}],
+      "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-3"}}],
+      "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-4"}}],
+      "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-5"}}],
+      "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-6"}}],
+      "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-7"}}],
+      "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-8"}}],
+      "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-9"}}],
+      "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-10"}}],
+      "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-11"}}],
+      "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-12"}}],
+      "variant=13": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-13"}}],
+      "variant=14": [{ "textures": { "all":  "wallpapercraft:blocks/solid/solidgray-14"}}]
+  }
+}

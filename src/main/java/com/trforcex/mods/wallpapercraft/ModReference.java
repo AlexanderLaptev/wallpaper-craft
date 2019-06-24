@@ -1,7 +1,5 @@
 package com.trforcex.mods.wallpapercraft;
 
-import net.minecraft.creativetab.CreativeTabs;
-
 public class ModReference
 {
 	// ===== MOD INFO =====

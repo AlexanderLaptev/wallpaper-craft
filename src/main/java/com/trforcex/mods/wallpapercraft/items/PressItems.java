@@ -1,10 +1,8 @@
 package com.trforcex.mods.wallpapercraft.items;
 
-import com.trforcex.mods.wallpapercraft.ModReference;
 import com.trforcex.mods.wallpapercraft.init.ModCreativeTab;
-import net.minecraft.client.renderer.block.model.ModelManager;
+import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -21,17 +19,17 @@ public class PressItems
     public static Item itemPressBlank = new Item() // Blank
     {
         {
-            setRegistryName("pressblank");
-            setUnlocalizedName("pressblank");
+            setRegistryName("press_blank");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
 
-    public static Item itemPressBrick = new Item() // Brick
+    public static Item itemPressBrick = new Item() // Bricks
     {
         {
-            setRegistryName("pressbrick");
-            setUnlocalizedName("pressbrick");
+            setRegistryName("press_bricks");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -39,8 +37,8 @@ public class PressItems
     public static Item itemPressCheckered = new Item() // Checkered
     {
         {
-            setRegistryName("presscheckered");
-            setUnlocalizedName("presscheckered");
+            setRegistryName("press_checkered");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -48,8 +46,8 @@ public class PressItems
     public static Item itemPressDotted = new Item() // Dotted
     {
         {
-            setRegistryName("pressdotted");
-            setUnlocalizedName("pressdotted");
+            setRegistryName("press_dotted");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -57,8 +55,8 @@ public class PressItems
     public static Item itemPressDiagonallyDotted = new Item() // Diagonally dotted
     {
         {
-            setRegistryName("pressdiagonallydotted");
-            setUnlocalizedName("pressdiagonallydotted");
+            setRegistryName("press_diagonally_dotted");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -66,8 +64,8 @@ public class PressItems
     public static Item itemPressClay = new Item() // Clay
     {
         {
-            setRegistryName("pressclay");
-            setUnlocalizedName("pressclay");
+            setRegistryName("press_clay");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -75,8 +73,8 @@ public class PressItems
     public static Item itemPressStoneLamp = new Item() // Stone lamp
     {
         {
-            setRegistryName("pressstonelamp");
-            setUnlocalizedName("pressstonelamp");
+            setRegistryName("press_stone_lamp");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -84,8 +82,8 @@ public class PressItems
     public static Item itemPressAuraLamp = new Item() // Aura lamp
     {
         {
-            setRegistryName("pressauralamp");
-            setUnlocalizedName("pressauralamp");
+            setRegistryName("press_aura_lamp");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -93,8 +91,8 @@ public class PressItems
     public static Item itemPressFancyTiles = new Item() // Fancy tiles
     {
         {
-            setRegistryName("pressfancytiles");
-            setUnlocalizedName("pressfancytiles");
+            setRegistryName("press_fancy_tiles");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -102,8 +100,8 @@ public class PressItems
     public static Item itemPressFloral = new Item() // Floral
     {
         {
-            setRegistryName("pressfloral");
-            setUnlocalizedName("pressfloral");
+            setRegistryName("press_floral");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -111,8 +109,8 @@ public class PressItems
     public static Item itemPressDamask = new Item() // Damask
     {
         {
-            setRegistryName("pressdamask");
-            setUnlocalizedName("pressdamask");
+            setRegistryName("press_damask");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -120,8 +118,8 @@ public class PressItems
     public static Item itemPressJewel = new Item() // Jewel
     {
         {
-            setRegistryName("pressjewel");
-            setUnlocalizedName("pressjewel");
+            setRegistryName("press_jewel");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -129,8 +127,8 @@ public class PressItems
     public static Item itemPressRippled = new Item() // Rippled
     {
         {
-            setRegistryName("pressrippled");
-            setUnlocalizedName("pressrippled");
+            setRegistryName("press_rippled");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -138,8 +136,8 @@ public class PressItems
     public static Item itemPressStamp = new Item() // Stamp
     {
         {
-            setRegistryName("pressstamp");
-            setUnlocalizedName("pressstamp");
+            setRegistryName("press_stamp");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -147,8 +145,8 @@ public class PressItems
     public static Item itemPressFrostedGlass = new Item() // Frosted glass
     {
         {
-            setRegistryName("pressfrostedglass");
-            setUnlocalizedName("pressfrostedglass");
+            setRegistryName("press_frosted_glass");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -156,8 +154,8 @@ public class PressItems
     public static Item itemPressTintedGlass = new Item() // Tinted glass
     {
         {
-            setRegistryName("presstintedglass");
-            setUnlocalizedName("presstintedglass");
+            setRegistryName("press_tinted_glass");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -165,8 +163,8 @@ public class PressItems
     public static Item itemPressTexturedGlass = new Item() // Textured glass
     {
         {
-            setRegistryName("presstexturedglass");
-            setUnlocalizedName("presstexturedglass");
+            setRegistryName("press_textured_glass");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -174,8 +172,8 @@ public class PressItems
     public static Item itemPressStriped = new Item() // Striped
     {
         {
-            setRegistryName("pressstriped");
-            setUnlocalizedName("pressstriped");
+            setRegistryName("press_striped");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -183,8 +181,8 @@ public class PressItems
     public static Item itemPressStoneBricks = new Item() // Stone bricks
     {
         {
-            setRegistryName("pressstonebrick");
-            setUnlocalizedName("pressstonebrick");
+            setRegistryName("press_stone_bricks");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -192,8 +190,8 @@ public class PressItems
     public static Item itemPressColoredBricks = new Item() // Colored bricks
     {
         {
-            setRegistryName("presscolouredbrick");
-            setUnlocalizedName("presscolouredbrick");
+            setRegistryName("press_colored_bricks");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -201,8 +199,8 @@ public class PressItems
     public static Item itemPressWoodPlanks = new Item() // Wood planks
     {
         {
-            setRegistryName("presswoodplank");
-            setUnlocalizedName("presswoodplank");
+            setRegistryName("press_wood_planks");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
@@ -210,8 +208,8 @@ public class PressItems
     public static Item itemPressWool = new Item() // Wool
     {
         {
-            setRegistryName("presswool");
-            setUnlocalizedName("presswool");
+            setRegistryName("press_wool");
+            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
             setCreativeTab(ModCreativeTab.WPC_TAB);
         }
     };
