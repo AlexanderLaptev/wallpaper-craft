@@ -1,0 +1,19 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+      "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-0" }}],
+      "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-1"}}],
+      "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-2"}}],
+      "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-3"}}],
+      "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-4"}}],
+      "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-5"}}],
+      "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-6"}}],
+      "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-7"}}],
+      "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-8"}}],
+      "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/stonelamp/stonelampcyan-9"}}]
+  }
+}

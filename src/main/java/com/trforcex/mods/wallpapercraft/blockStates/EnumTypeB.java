@@ -10,8 +10,14 @@ public enum EnumTypeB implements IStringSerializable
     F(5), G(6), H(7), I(8), J(9);
 
     private final int meta;
-
+    private static final EnumTypeB[] META_LOOKUP = new EnumTypeB[values().length];
     public static final int MAX_META = 9;
+
+    static
+    {
+        for(EnumTypeB variant : values())
+            META_LOOKUP[variant.getMeta()] = variant;
+    }
 
     EnumTypeB(int meta)
     {
@@ -20,11 +26,10 @@ public enum EnumTypeB implements IStringSerializable
 
     public static EnumTypeB withMeta(int metaIn)
     {
-        for(EnumTypeB variant : EnumTypeB.values())
-            if(variant.meta == metaIn)
-                return variant;
+        if(metaIn < 0 || metaIn > MAX_META) // If not found, return first variant
+            metaIn = 0;
 
-            throw new IllegalArgumentException("Meta " + metaIn + " does not exist for type A!");
+        return META_LOOKUP[metaIn];
     }
 
     @Override

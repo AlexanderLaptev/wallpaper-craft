@@ -4,6 +4,10 @@ import com.trforcex.mods.wallpapercraft.ModClass;
 import com.trforcex.mods.wallpapercraft.ModReference;
 import com.trforcex.mods.wallpapercraft.blockStates.IHasMetaItemBlock;
 import com.trforcex.mods.wallpapercraft.blocks.*;
+import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeC;
+import com.trforcex.mods.wallpapercraft.blocks.carpets.CheckeredWoolCarpetsBlocks;
+import com.trforcex.mods.wallpapercraft.blocks.carpets.WoolCarpetsBlocks;
+import com.trforcex.mods.wallpapercraft.util.BlockHelper;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -16,21 +20,52 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber
 public class ModBlocks
 {
-    static
+    public static MetaBlockTypeC blockJewel;
+    public static MetaBlockTypeC blockStamp;
+
+    static // Initialization
     {
         BLOCKS = new ArrayList<>(0);
 
+        // ===== SOLID =====
         SolidBlocks.instantiate();
         CheckeredWoolBlocks.instantiate();
         ClayBlocks.instantiate();
+        FancyTilesBlocks.instantiate();
+        FloralBlocks.instantiate();
+        DamaskBlocks.instantiate();
+        RippledBlocks.instantiate();
+        StripedBlocks.instantiate();
 
+        // ===== NON-SOLID =====
+        WoodPlanksBlocks.instantiate();
+        WoolBlocks.instantiate();
+
+        // ===== JEWEL AND STAMP =====
+        blockJewel = BlockHelper.createSolidBlockTypeC("jewel");
+        blockStamp = BlockHelper.createSolidBlockTypeC("stamp");
+
+        // ===== BRICKS =====
         BricksBlocks.instantiate();
+        StoneBricksBlocks.instantiate();
+        ColoredBricksBlocks.instantiate();
 
+        // ===== GLASS =====
+        FrostedGlassBlocks.instantiate();
+        TintedGlassBlocks.instantiate();
+        TexturedGlassBlocks.instantiate();
+
+        // ===== DOTTED =====
         DottedBlocks.instantiate();
         DiagonallyDottedBlocks.instantiate();
 
+        // ===== LAMPS =====
         StoneLampBlocks.instantiate();
         AuraLampBlocks.instantiate();
+
+        // ===== CARPETS =====
+        WoolCarpetsBlocks.instantiate();
+        CheckeredWoolCarpetsBlocks.instantiate();
     }
 
     public static final ArrayList<Block> BLOCKS;

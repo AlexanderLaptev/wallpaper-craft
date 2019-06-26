@@ -3,7 +3,6 @@ package com.trforcex.mods.wallpapercraft.blocks;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
 import com.trforcex.mods.wallpapercraft.util.BlockHelper;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class SolidBlocks
 {

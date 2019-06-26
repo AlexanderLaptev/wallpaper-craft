@@ -13,9 +13,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
+@SuppressWarnings("deprecation")
 public class MetaBlockTypeC extends BaseMetaBlock
 {
-    static final PropertyEnum<EnumTypeC> variantProperty = PropertyEnum.create("variant", EnumTypeC.class);
+    protected static final PropertyEnum<EnumTypeC> variantProperty = PropertyEnum.create("variant", EnumTypeC.class);
 
     public MetaBlockTypeC(Material materialIn, float hardness, float resistance, String registryName)
     {

@@ -1,0 +1,24 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+      "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-0" }}],
+      "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-1"}}],
+      "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-2"}}],
+      "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-3"}}],
+      "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-4"}}],
+      "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-5"}}],
+      "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-6"}}],
+      "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-7"}}],
+      "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-8"}}],
+      "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-9"}}],
+      "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-10"}}],
+      "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-11"}}],
+      "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-12"}}],
+      "variant=13": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-13"}}],
+      "variant=14": [{ "textures": { "all":  "wallpapercraft:blocks/auralamp/auralamppurple-14"}}]
+  }
+}

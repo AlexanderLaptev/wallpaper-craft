@@ -71,4 +71,9 @@ public class MetaItemBlock extends ItemBlock
     {
         return damage;
     }
+
+    public int getMaxMeta()
+    {
+        return ((IHasMetaItemBlock)block).getMaxMeta();
+    }
 }
