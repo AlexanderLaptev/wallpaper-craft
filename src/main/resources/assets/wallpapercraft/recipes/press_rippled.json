@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "presses",
+  "pattern":
+  [
+    " I ",
+    "SBS",
+    " I "
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:string"
+    },
+    "I":
+    {
+      "item": "minecraft:stick"
+    },
+    "B":
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  },
+  "result":
+  {
+    "item": "wallpapercraft:press_rippled",
+    "count": 1,
+    "data": 0
+  }
+}

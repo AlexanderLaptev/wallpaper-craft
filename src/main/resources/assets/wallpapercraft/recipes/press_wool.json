@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "presses",
+  "pattern":
+  [
+    "SBS"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:string"
+    },
+    "B":
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  },
+  "result":
+  {
+    "item": "wallpapercraft:press_wool",
+    "count": 1,
+    "data": 0
+  }
+}

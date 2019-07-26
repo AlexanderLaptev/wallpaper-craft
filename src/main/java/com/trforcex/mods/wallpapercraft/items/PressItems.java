@@ -25,7 +25,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressBrick = new Item() // Bricks
+    public static Item itemPressBrick = new BasePressItem() // Bricks
     {
         {
             setRegistryName("press_bricks");
@@ -34,7 +34,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressCheckered = new Item() // Checkered
+    public static Item itemPressCheckered = new BasePressItem() // Checkered
     {
         {
             setRegistryName("press_checkered");
@@ -43,7 +43,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressDotted = new Item() // Dotted
+    public static Item itemPressDotted = new BasePressItem() // Dotted
     {
         {
             setRegistryName("press_dotted");
@@ -52,7 +52,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressDiagonallyDotted = new Item() // Diagonally dotted
+    public static Item itemPressDiagonallyDotted = new BasePressItem() // Diagonally dotted
     {
         {
             setRegistryName("press_diagonally_dotted");
@@ -61,7 +61,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressClay = new Item() // Clay
+    public static Item itemPressClay = new BasePressItem() // Clay
     {
         {
             setRegistryName("press_clay");
@@ -70,7 +70,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressStoneLamp = new Item() // Stone lamp
+    public static Item itemPressStoneLamp = new BasePressItem() // Stone lamp
     {
         {
             setRegistryName("press_stone_lamp");
@@ -79,7 +79,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressAuraLamp = new Item() // Aura lamp
+    public static Item itemPressAuraLamp = new BasePressItem() // Aura lamp
     {
         {
             setRegistryName("press_aura_lamp");
@@ -88,7 +88,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressFancyTiles = new Item() // Fancy tiles
+    public static Item itemPressFancyTiles = new BasePressItem() // Fancy tiles
     {
         {
             setRegistryName("press_fancy_tiles");
@@ -97,7 +97,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressFloral = new Item() // Floral
+    public static Item itemPressFloral = new BasePressItem() // Floral
     {
         {
             setRegistryName("press_floral");
@@ -106,7 +106,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressDamask = new Item() // Damask
+    public static Item itemPressDamask = new BasePressItem() // Damask
     {
         {
             setRegistryName("press_damask");
@@ -115,7 +115,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressJewel = new Item() // Jewel
+    public static Item itemPressJewel = new BasePressItem() // Jewel
     {
         {
             setRegistryName("press_jewel");
@@ -124,7 +124,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressRippled = new Item() // Rippled
+    public static Item itemPressRippled = new BasePressItem() // Rippled
     {
         {
             setRegistryName("press_rippled");
@@ -133,7 +133,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressStamp = new Item() // Stamp
+    public static Item itemPressStamp = new BasePressItem() // Stamp
     {
         {
             setRegistryName("press_stamp");
@@ -142,7 +142,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressFrostedGlass = new Item() // Frosted glass
+    public static Item itemPressFrostedGlass = new BasePressItem() // Frosted glass
     {
         {
             setRegistryName("press_frosted_glass");
@@ -151,7 +151,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressTintedGlass = new Item() // Tinted glass
+    public static Item itemPressTintedGlass = new BasePressItem() // Tinted glass
     {
         {
             setRegistryName("press_tinted_glass");
@@ -160,7 +160,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressTexturedGlass = new Item() // Textured glass
+    public static Item itemPressTexturedGlass = new BasePressItem() // Textured glass
     {
         {
             setRegistryName("press_textured_glass");
@@ -169,7 +169,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressStriped = new Item() // Striped
+    public static Item itemPressStriped = new BasePressItem() // Striped
     {
         {
             setRegistryName("press_striped");
@@ -178,7 +178,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressStoneBricks = new Item() // Stone bricks
+    public static Item itemPressStoneBricks = new BasePressItem() // Stone bricks
     {
         {
             setRegistryName("press_stone_bricks");
@@ -187,7 +187,7 @@ public class PressItems
         }
     };
 
-    public static Item itemPressColoredBricks = new Item() // Colored bricks
+    public static Item itemPressColoredBricks = new BasePressItem() // Colored bricks
     {
         {
             setRegistryName("press_colored_bricks");
@@ -196,16 +196,19 @@ public class PressItems
         }
     };
 
-    public static Item itemPressWoodPlanks = new Item() // Wood planks
-    {
-        {
-            setRegistryName("press_wood_planks");
-            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
-            setCreativeTab(ModCreativeTab.WPC_TAB);
-        }
-    };
+    // No need in this press as now planks are created using dyes.
+    // TODO: remove press recipe
+    // TODO: remove press completely [?]
+//    public static Item itemPressWoodPlanks = new BasePressItem() // Wood planks
+//    {
+//        {
+//            setRegistryName("press_wood_planks");
+//            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
+//            setCreativeTab(ModCreativeTab.WPC_TAB);
+//        }
+//    };
 
-    public static Item itemPressWool = new Item() // Wool
+    public static Item itemPressWool = new BasePressItem() // Wool
     {
         {
             setRegistryName("press_wool");
@@ -238,7 +241,7 @@ public class PressItems
         registry.register(itemPressTintedGlass);
         registry.register(itemPressFrostedGlass);
         registry.register(itemPressFancyTiles);
-        registry.register(itemPressWoodPlanks);
+        //registry.register(itemPressWoodPlanks);
         registry.register(itemPressWool);
         registry.register(itemPressRippled);
         registry.register(itemPressStriped);
@@ -265,7 +268,7 @@ public class PressItems
         ModelLoader.setCustomModelResourceLocation(itemPressTintedGlass, 0, new ModelResourceLocation(itemPressTintedGlass.getRegistryName(), "inventory"));
         ModelLoader.setCustomModelResourceLocation(itemPressFrostedGlass, 0, new ModelResourceLocation(itemPressFrostedGlass.getRegistryName(), "inventory"));
         ModelLoader.setCustomModelResourceLocation(itemPressFancyTiles, 0, new ModelResourceLocation(itemPressFancyTiles.getRegistryName(), "inventory"));
-        ModelLoader.setCustomModelResourceLocation(itemPressWoodPlanks, 0, new ModelResourceLocation(itemPressWoodPlanks.getRegistryName(), "inventory"));
+        //ModelLoader.setCustomModelResourceLocation(itemPressWoodPlanks, 0, new ModelResourceLocation(itemPressWoodPlanks.getRegistryName(), "inventory"));
         ModelLoader.setCustomModelResourceLocation(itemPressWool, 0, new ModelResourceLocation(itemPressWool.getRegistryName(), "inventory"));
         ModelLoader.setCustomModelResourceLocation(itemPressRippled, 0, new ModelResourceLocation(itemPressRippled.getRegistryName(), "inventory"));
         ModelLoader.setCustomModelResourceLocation(itemPressStriped, 0, new ModelResourceLocation(itemPressStriped.getRegistryName(), "inventory"));

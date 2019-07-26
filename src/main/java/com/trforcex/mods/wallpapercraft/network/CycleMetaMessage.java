@@ -43,12 +43,12 @@ public class CycleMetaMessage implements IMessage
             EntityPlayer serverPlayer = ctx.getServerHandler().player;
             ItemStack heldStack = serverPlayer.getHeldItemMainhand();
 
-            if(!heldStack.isEmpty() && heldStack.getItem() instanceof MetaItemBlock)
+            if(!heldStack.isEmpty() && heldStack.getItem() instanceof MetaItemBlock) // Ensure that the held item is MetaItemBlock and is not empty (not doing this can lead to networking errors
             {
-                int stackMeta = heldStack.getMetadata();
+                int stackMeta = heldStack.getMetadata(); // Get current meta
                 heldStack.setItemDamage(MathHelper.clamp(stackMeta + (message.shouldIncreaseMeta ? 1 : -1), 0, ModHelper.getMetaItemBlockMaxMeta(heldStack.getItem())));
 
-                if(stackMeta == heldStack.getMetadata()) // If meta has not changed
+                if(stackMeta == heldStack.getMetadata()) // If meta has not changed because the new value is out of bounds
                 {
                     if(heldStack.getMetadata() == 0)
                         heldStack.setItemDamage(ModHelper.getMetaItemBlockMaxMeta(heldStack.getItem()));

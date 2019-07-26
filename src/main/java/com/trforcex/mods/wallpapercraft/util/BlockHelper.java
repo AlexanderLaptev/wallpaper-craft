@@ -4,8 +4,11 @@ import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeC;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -14,8 +17,10 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.oredict.OreDictionary;
 
 import javax.annotation.Nonnull;
+import java.util.Random;
 
 @SuppressWarnings("deprecation")
 public class BlockHelper
@@ -40,7 +45,7 @@ public class BlockHelper
     //region ===== LAMPS =====
     public static MetaBlockTypeA createLampTypeA(String registryName)
     {
-        return new MetaBlockTypeA(Material.ROCK, 2f, 6f, registryName)
+        return new MetaBlockTypeA(Material.ROCK, 1f, 1.5f, registryName)
         {
             {
                 setLightLevel(1f);
@@ -50,7 +55,7 @@ public class BlockHelper
 
     public static MetaBlockTypeB createLampTypeB(String registryName)
     {
-        return new MetaBlockTypeB(Material.ROCK, 2f, 6f, registryName)
+        return new MetaBlockTypeB(Material.ROCK, 1f, 1.5f, registryName)
         {
             {
                 setLightLevel(1f);
@@ -64,6 +69,10 @@ public class BlockHelper
     {
         return new MetaBlockTypeA(Material.GLASS, 0.3f, 1.5f, registryName)
         {
+            {
+                setSoundType(SoundType.GLASS);
+            }
+
             @Override
             public BlockRenderLayer getBlockLayer()
             {
@@ -98,7 +107,25 @@ public class BlockHelper
                     return false;
                 }
 
-                return block == this ? false : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+                return block != this && super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+            }
+
+            @Override
+            protected boolean canSilkHarvest()
+            {
+                return true;
+            }
+
+            @Override
+            public int quantityDropped(Random random)
+            {
+                return 0;
+            }
+
+            @Override
+            public boolean canPlaceTorchOnTop(IBlockState state, IBlockAccess world, BlockPos pos)
+            {
+                return false;
             }
         };
     }
@@ -107,6 +134,10 @@ public class BlockHelper
     {
         return new MetaBlockTypeB(Material.GLASS, 0.3f, 1.5f, registryName)
         {
+            {
+                setSoundType(SoundType.GLASS);
+            }
+
             @Override
             public BlockRenderLayer getBlockLayer()
             {
@@ -141,7 +172,25 @@ public class BlockHelper
                     return false;
                 }
 
-                return block == this ? false : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+                return block != this && super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+            }
+
+            @Override
+            protected boolean canSilkHarvest()
+            {
+                return true;
+            }
+
+            @Override
+            public int quantityDropped(Random random)
+            {
+                return 0;
+            }
+
+            @Override
+            public boolean canPlaceTorchOnTop(IBlockState state, IBlockAccess world, BlockPos pos)
+            {
+                return false;
             }
         };
     }
@@ -150,24 +199,56 @@ public class BlockHelper
     //region ===== WOOL =====
     public static MetaBlockTypeA createWoolBlockTypeA(String registryName)
     {
-        return new MetaBlockTypeA(Material.CLOTH, 0.8f, 4f, registryName);
+        return new MetaBlockTypeA(Material.CLOTH, 0.8f, 4f, registryName)
+        {
+            {
+                setSoundType(SoundType.CLOTH);
+                Blocks.FIRE.setFireInfo(this, 30, 60);
+                OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                OreDictionary.registerOre("block_wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+            }
+        };
     }
 
     public static MetaBlockTypeB createWoolBlockTypeB(String registryName)
     {
-        return new MetaBlockTypeB(Material.CLOTH, 0.8f, 4f, registryName);
+        return new MetaBlockTypeB(Material.CLOTH, 0.8f, 4f, registryName)
+        {
+            {
+                setSoundType(SoundType.CLOTH);
+                Blocks.FIRE.setFireInfo(this, 30, 60);
+                OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                OreDictionary.registerOre("block_wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+            }
+        };
     }
     //endregion
 
     //region ===== PLANKS =====
     public static MetaBlockTypeA createPlanksBlockTypeA(String registryName)
     {
-        return new MetaBlockTypeA(Material.WOOD, 2f, 15f, registryName);
+        return new MetaBlockTypeA(Material.WOOD, 2f, 15f, registryName)
+        {
+            {
+                setSoundType(SoundType.WOOD);
+                Blocks.FIRE.setFireInfo(this, 5, 20);
+                OreDictionary.registerOre("planksWood", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                OreDictionary.registerOre("plankWood", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+            }
+        };
     }
 
     public static MetaBlockTypeB createPlanksBlockTypeB(String registryName)
     {
-        return new MetaBlockTypeB(Material.WOOD, 2f, 15f, registryName);
+        return new MetaBlockTypeB(Material.WOOD, 2f, 15f, registryName)
+        {
+            {
+                setSoundType(SoundType.WOOD);
+                Blocks.FIRE.setFireInfo(this, 5, 20);
+                OreDictionary.registerOre("planks_wood", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                OreDictionary.registerOre("plank_wood", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+            }
+        };
     }
     //endregion
 
@@ -244,13 +325,7 @@ public class BlockHelper
         @SideOnly(Side.CLIENT)
         public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
         {
-            return side == EnumFacing.UP ? true : (blockAccess.getBlockState(pos.offset(side)).getBlock() == this ? true : super.shouldSideBeRendered(blockState, blockAccess, pos, side));
-        }
-
-        @Override
-        public int damageDropped(IBlockState state)
-        {
-            return state.getValue(variantProperty).getMeta();
+            return side == EnumFacing.UP || (blockAccess.getBlockState(pos.offset(side)).getBlock() == this || super.shouldSideBeRendered(blockState, blockAccess, pos, side));
         }
     };
     }
@@ -327,13 +402,7 @@ public class BlockHelper
             @SideOnly(Side.CLIENT)
             public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
             {
-                return side == EnumFacing.UP ? true : (blockAccess.getBlockState(pos.offset(side)).getBlock() == this ? true : super.shouldSideBeRendered(blockState, blockAccess, pos, side));
-            }
-
-            @Override
-            public int damageDropped(IBlockState state)
-            {
-                return state.getValue(variantProperty).getMeta();
+                return side == EnumFacing.UP || (blockAccess.getBlockState(pos.offset(side)).getBlock() == this || super.shouldSideBeRendered(blockState, blockAccess, pos, side));
             }
         };
     }

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "presses",
+  "pattern":
+  [
+    "SBS"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:wooden_slab",
+      "data": 32767
+    },
+    "B":
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  },
+  "result":
+  {
+    "item": "wallpapercraft:press_wood_planks",
+    "count": 1,
+    "data": 0
+  }
+}

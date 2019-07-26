@@ -64,4 +64,10 @@ public class MetaBlockTypeC extends BaseMetaBlock
     {
         return new ItemStack(this, 1, state.getValue(variantProperty).getMeta());
     }
+
+    @Override
+    public int damageDropped(IBlockState state)
+    {
+        return state.getValue(variantProperty).getMeta();
+    }
 }

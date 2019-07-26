@@ -17,13 +17,13 @@ public class WoodPlanksBlocks
 
     public static void instantiate()
     {
-        blockWoodPlanksRed =  BlockHelper.createSolidBlockTypeA("wood_planks_red");
-        blockWoodPlanksBlue = BlockHelper.createSolidBlockTypeA("wood_planks_blue");
-        blockWoodPlanksYellow = BlockHelper.createSolidBlockTypeA("wood_planks_yellow");
-        blockWoodPlanksGreen = BlockHelper.createSolidBlockTypeA("wood_planks_green");
-        blockWoodPlanksGray= BlockHelper.createSolidBlockTypeA("wood_planks_gray");
-        blockWoodPlanksCyan= BlockHelper.createSolidBlockTypeB("wood_planks_cyan");
-        blockWoodPlanksBrown= BlockHelper.createSolidBlockTypeA("wood_planks_brown");
-        blockWoodPlanksPurple = BlockHelper.createSolidBlockTypeA("wood_planks_purple");
+        blockWoodPlanksRed =  BlockHelper.createPlanksBlockTypeA("wood_planks_red");
+        blockWoodPlanksBlue = BlockHelper.createPlanksBlockTypeA("wood_planks_blue");
+        blockWoodPlanksYellow = BlockHelper.createPlanksBlockTypeA("wood_planks_yellow");
+        blockWoodPlanksGreen = BlockHelper.createPlanksBlockTypeA("wood_planks_green");
+        blockWoodPlanksGray= BlockHelper.createPlanksBlockTypeA("wood_planks_gray");
+        blockWoodPlanksCyan= BlockHelper.createPlanksBlockTypeB("wood_planks_cyan");
+        blockWoodPlanksBrown= BlockHelper.createPlanksBlockTypeA("wood_planks_brown");
+        blockWoodPlanksPurple = BlockHelper.createPlanksBlockTypeA("wood_planks_purple");
     }
 }

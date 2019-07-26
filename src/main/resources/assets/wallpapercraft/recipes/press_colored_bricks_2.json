@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "presses",
+  "pattern":
+  [
+    " B ",
+    "CPC",
+    " B "
+  ],
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:brick"
+    },
+    "C":
+    {
+      "item": "minecraft:clay"
+    },
+    "P":
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  },
+  "result":
+  {
+    "item": "wallpapercraft:press_colored_bricks",
+    "count": 1,
+    "data": 0
+  }
+}

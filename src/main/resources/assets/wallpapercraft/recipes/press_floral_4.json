@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "presses",
+  "pattern":
+  [
+    "FBY"
+  ],
+  "key":
+  {
+    "F":
+    {
+      "item": "minecraft:red_flower",
+      "data": 32767
+    },
+    "Y":
+    {
+      "item": "minecraft:yellow_flower",
+      "data": 32767
+    },
+    "B":
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  },
+  "result":
+  {
+    "item": "wallpapercraft:press_floral",
+    "count": 1,
+    "data": 0
+  }
+}

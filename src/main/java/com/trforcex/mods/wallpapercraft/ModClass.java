@@ -1,18 +1,25 @@
 package com.trforcex.mods.wallpapercraft;
 
 import com.trforcex.mods.wallpapercraft.proxy.IProxy;
+import com.trforcex.mods.wallpapercraft.recipes.PatternedRecipes;
+import com.trforcex.mods.wallpapercraft.recipes.SolidBlocksRecipes;
 import com.trforcex.mods.wallpapercraft.util.ConfigManager;
+import com.trforcex.mods.wallpapercraft.util.ModHelper;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 
 @Mod(modid = ModReference.MODID, name = ModReference.NAME, version = ModReference.VERSION, useMetadata = true)
+@Mod.EventBusSubscriber
 public class ModClass
 {
 	public static Logger logger;
@@ -30,13 +37,12 @@ public class ModClass
 		logger = event.getModLog();
 
 		File configDir = event.getModConfigurationDirectory();
-		config = new Configuration(new File(configDir.getPath(), "wallpaper-craft.cfg"));
+		config = new Configuration(new File(configDir.getPath(), "wallpapercraft.cfg"));
 		ConfigManager.tryReadConfig();
 
 		proxy.preInit(event);
 
-		if(ModReference.debugMode)
-			logger.debug("ModClass - preInit complete");
+		ModHelper.logDebug("ModClass - preInit complete");
 	}
 
 	@Mod.EventHandler
@@ -44,8 +50,7 @@ public class ModClass
 	{
 		proxy.init(event);
 
-		if(ModReference.debugMode)
-			logger.debug("ModClass - init complete");
+		ModHelper.logDebug("ModClass - init complete");
 	}
 
 	@Mod.EventHandler
@@ -55,7 +60,18 @@ public class ModClass
 			config.save();
 		proxy.postInit(event);
 
-		if(ModReference.debugMode)
-			logger.debug("ModClass - postInit complete");
+		ModHelper.logDebug("ModClass - postInit complete");
+	}
+
+	@SubscribeEvent
+	public static void registerRecipes(RegistryEvent.Register<IRecipe> event)
+	{
+		initRecipes();
+	}
+
+	private static void initRecipes()
+	{
+		SolidBlocksRecipes.init();
+		PatternedRecipes.init();
 	}
 }

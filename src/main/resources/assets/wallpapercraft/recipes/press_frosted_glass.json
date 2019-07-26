@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "presses",
+  "pattern":
+  [
+    " N ",
+    "SBS",
+    " N "
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:sugar"
+    },
+    "N":
+    {
+      "item": "minecraft:sand",
+      "data": 32767
+    },
+    "B":
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  },
+  "result":
+  {
+    "item": "wallpapercraft:press_frosted_glass",
+    "count": 1,
+    "data": 0
+  }
+}

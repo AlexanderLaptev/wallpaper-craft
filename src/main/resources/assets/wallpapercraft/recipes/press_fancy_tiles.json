@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "presses",
+  "pattern":
+  [
+    " S ",
+    "SPS",
+    " S "
+  ],
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:stone_slab",
+      "data": 5
+    },
+    "P":
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  },
+  "result":
+  {
+    "item": "wallpapercraft:press_fancy_tiles",
+    "count": 1,
+    "data": 0
+  }
+}

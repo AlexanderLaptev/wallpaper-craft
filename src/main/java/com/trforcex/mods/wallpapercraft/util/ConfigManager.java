@@ -1,7 +1,6 @@
 package com.trforcex.mods.wallpapercraft.util;
 
 import com.trforcex.mods.wallpapercraft.ModClass;
-import com.trforcex.mods.wallpapercraft.ModReference;
 import net.minecraftforge.common.config.Configuration;
 
 public class ConfigManager
@@ -11,12 +10,11 @@ public class ConfigManager
 
 	// ===== CONFIG DATA =====
 	// Compatibility
-	public static boolean enableJeiCompat;
 	public static boolean enableChiselCompat;
+	public static boolean enableDebug;
 
 	// Recipes
 	public static int maxPressDurability;
-	public static int solidBlocksCraftingAmount;
 	// ===== END OF CONFIG DATA =====
 
 	public static void tryReadConfig()
@@ -27,8 +25,7 @@ public class ConfigManager
 			config.load();
 			initOrReadConfig(config);
 
-			if(ModReference.debugMode)
-				ModClass.logger.debug("Reading config complete!");
+			ModHelper.logDebug("Reading config complete!");
 		}
 		catch(Exception e)
 		{
@@ -43,13 +40,11 @@ public class ConfigManager
 
 	private static void initOrReadConfig(Configuration config)
 	{
-		enableJeiCompat = config.getBoolean("enableJeiCompatibility", CATEGORY_COMPATIBILITY, true, "Enable this if you want JEI compatibility");
 		enableChiselCompat = config.getBoolean("enableChiselCompatibility", CATEGORY_COMPATIBILITY, true, "Enable this if you want Chisel compatibility");
+		enableDebug= config.getBoolean("enableDebug", "debug", false, "Enable this for debugging purposes.");
 
-		maxPressDurability = config.getInt("maxPatternPressUses", CATEGORY_RECIPES, 10, 0, Integer.MAX_VALUE, "Defines how many times you can use pattern press before it breaks. Set to 0 to disable durability.");
-		solidBlocksCraftingAmount = config.getInt("solidBlockCraftingAmount", CATEGORY_RECIPES, 9, 1, 64, "Defines how many solid blocks you get after crafting");
+		maxPressDurability = config.getInt("maxPatternPressUses", CATEGORY_RECIPES, 7, 0, Integer.MAX_VALUE, "Defines how many times you can use pattern press before it breaks. Set to 0 to disable durability.");
 
-		if(ModReference.debugMode)
-			ModClass.logger.debug("initOrReadConfig done!");
+		ModHelper.logDebug("initOrReadConfig done!");
 	}
 }

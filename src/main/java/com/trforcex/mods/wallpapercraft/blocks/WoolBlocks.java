@@ -17,13 +17,13 @@ public class WoolBlocks
 
     public static void instantiate()
     {
-        blockWoolRed =  BlockHelper.createSolidBlockTypeA("wool_red");
-        blockWoolBlue = BlockHelper.createSolidBlockTypeA("wool_blue");
-        blockWoolYellow = BlockHelper.createSolidBlockTypeA("wool_yellow");
-        blockWoolGreen = BlockHelper.createSolidBlockTypeA("wool_green");
-        blockWoolGray= BlockHelper.createSolidBlockTypeA("wool_gray");
-        blockWoolCyan= BlockHelper.createSolidBlockTypeB("wool_cyan");
-        blockWoolBrown= BlockHelper.createSolidBlockTypeA("wool_brown");
-        blockWoolPurple = BlockHelper.createSolidBlockTypeA("wool_purple");
+        blockWoolRed =  BlockHelper.createWoolBlockTypeA("wool_red");
+        blockWoolBlue = BlockHelper.createWoolBlockTypeA("wool_blue");
+        blockWoolYellow = BlockHelper.createWoolBlockTypeA("wool_yellow");
+        blockWoolGreen = BlockHelper.createWoolBlockTypeA("wool_green");
+        blockWoolGray= BlockHelper.createWoolBlockTypeA("wool_gray");
+        blockWoolCyan= BlockHelper.createWoolBlockTypeB("wool_cyan");
+        blockWoolBrown= BlockHelper.createWoolBlockTypeA("wool_brown");
+        blockWoolPurple = BlockHelper.createWoolBlockTypeA("wool_purple");
     }
 }

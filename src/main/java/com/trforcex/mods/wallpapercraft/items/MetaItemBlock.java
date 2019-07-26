@@ -1,7 +1,5 @@
 package com.trforcex.mods.wallpapercraft.items;
 
-import com.trforcex.mods.wallpapercraft.ModClass;
-import com.trforcex.mods.wallpapercraft.ModReference;
 import com.trforcex.mods.wallpapercraft.blockStates.IHasMetaItemBlock;
 import com.trforcex.mods.wallpapercraft.init.ModCreativeTab;
 import com.trforcex.mods.wallpapercraft.util.ModHelper;
@@ -32,14 +30,13 @@ public class MetaItemBlock extends ItemBlock
 
     public void initModel()
     {
-        for(int i = 0; i <= ((IHasMetaItemBlock)block).getMaxMeta(); i++)
+        for(int i = 0; i <= ((IHasMetaItemBlock)block).getMaxMeta(); i++) // For each meta value
         {
             ModelResourceLocation model = new ModelResourceLocation(block.getRegistryName(), "variant=" + i);
             ModelLoader.setCustomModelResourceLocation(this, i, model);
         }
 
-        if(ModReference.debugMode)
-            ModClass.logger.debug("MetaItemBlock [initModel] - initialized model for " + getUnlocalizedName());
+        ModHelper.logDebug("MetaItemBlock [initModel] - initialized model for " + getUnlocalizedName());
     }
 
     @Override
@@ -57,13 +54,9 @@ public class MetaItemBlock extends ItemBlock
 
             if(isInCreativeTab(tab))
                 items.add(newStack);
-
-            if(ModReference.debugMode)
-                ModClass.logger.debug("SubItem for: " + newStack.getDisplayName());
         }
 
-        if(ModReference.debugMode)
-            ModClass.logger.debug("MetaItemBlock [getSubItems] - complete");
+        ModHelper.logDebug("MetaItemBlock [getSubItems] - complete");
     }
 
     @Override

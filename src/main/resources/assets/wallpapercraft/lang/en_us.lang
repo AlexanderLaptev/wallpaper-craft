@@ -2,7 +2,7 @@
 itemGroup.wallpapercraft_tab=WallpaperCraft
 
 #Keys
-key.meta_cycle_key=WallpaperCraft meta scrolling key
+key.meta_cycle_key=WallpaperCraft color scrolling
 
 ################################################################
 ###########											 ###########
@@ -12,22 +12,21 @@ key.meta_cycle_key=WallpaperCraft meta scrolling key
 
 item.wallpapercraft.press_blank.name=Blank Pattern Press
 item.wallpapercraft.press_bricks.name=Bricks Pattern Press
-item.wallpapercraft.press_wool_.name=Wool Pattern Press
+item.wallpapercraft.press_wool.name=Wool Pattern Press
 item.wallpapercraft.press_checkered.name=Checkered Pattern Press
 item.wallpapercraft.press_clay.name=Clay Pattern Press
-item.wallpapercraft.press_diagonally_dotted_.name=Diagonally Dotted Pattern Press
+item.wallpapercraft.press_diagonally_dotted.name=Diagonally Dotted Pattern Press
 item.wallpapercraft.press_dotted.name=Dotted Pattern Press
 item.wallpapercraft.press_floral.name=Floral Pattern Press
 item.wallpapercraft.press_striped.name=Striped Pattern Press
 item.wallpapercraft.press_frosted_glass.name=Frosted Glass Pattern Press
 item.wallpapercraft.press_textured_glass.name=Textured Glass Pattern Press
 item.wallpapercraft.press_tinted_glass.name=Tinted Glass Pattern Press
-item.wallpapercraft.press_wood_planks.name=Wooden Planks Pattern Press
 item.wallpapercraft.press_stone_bricks.name=Stone Bricks Pattern Press
 item.wallpapercraft.press_rippled.name=Rippled Pattern Press
 item.wallpapercraft.press_stamp.name=Stamp Pattern Press
 item.wallpapercraft.press_stone_lamp.name=Stone Lamp Pattern Press
-item.wallpapercraft.press_damask_.name=Damask Pattern Press
+item.wallpapercraft.press_damask.name=Damask Pattern Press
 item.wallpapercraft.press_jewel.name=Jewel Pattern Press
 item.wallpapercraft.press_aura_lamp.name=Aura Lamp Pattern Press
 item.wallpapercraft.press_fancy_tiles.name=Fancy Tiles Pattern Press
@@ -2501,150 +2500,150 @@ tile.wallpapercraft.wool_carpet_gray_14.name=Wool Carpet Cool Dark Blue Gray
 ######################################################################
 
 
-#Wood Plank Red Colours
-tile.wallpapercraft.wood_planks_red_0.name=Wood Plank Light Warm Pink
-tile.wallpapercraft.wood_planks_red_1.name=Wood Plank Light Red
-tile.wallpapercraft.wood_planks_red_2.name=Wood Plank Bright Red
-tile.wallpapercraft.wood_planks_red_3.name=Wood Plank Red
-tile.wallpapercraft.wood_planks_red_4.name=Wood Plank Blood Red
-tile.wallpapercraft.wood_planks_red_5.name=Wood Plank Light Cool Pink
-tile.wallpapercraft.wood_planks_red_6.name=Wood Plank Pink
-tile.wallpapercraft.wood_planks_red_7.name=Wood Plank Hot Pink
-tile.wallpapercraft.wood_planks_red_8.name=Wood Plank Dark Pink
-tile.wallpapercraft.wood_planks_red_9.name=Wood Plank Fuchsia
-tile.wallpapercraft.wood_planks_red_10.name=Wood Plank Baby Pink
-tile.wallpapercraft.wood_planks_red_11.name=Wood Plank Light Salmon Red
-tile.wallpapercraft.wood_planks_red_12.name=Wood Plank Salmon Red
-tile.wallpapercraft.wood_planks_red_13.name=Wood Plank Brown Red
-tile.wallpapercraft.wood_planks_red_14.name=Wood Plank Dark Brown Red
+#Wood Planks Red Colours
+tile.wallpapercraft.wood_planks_red_0.name=Wood Planks Light Warm Pink
+tile.wallpapercraft.wood_planks_red_1.name=Wood Planks Light Red
+tile.wallpapercraft.wood_planks_red_2.name=Wood Planks Bright Red
+tile.wallpapercraft.wood_planks_red_3.name=Wood Planks Red
+tile.wallpapercraft.wood_planks_red_4.name=Wood Planks Blood Red
+tile.wallpapercraft.wood_planks_red_5.name=Wood Planks Light Cool Pink
+tile.wallpapercraft.wood_planks_red_6.name=Wood Planks Pink
+tile.wallpapercraft.wood_planks_red_7.name=Wood Planks Hot Pink
+tile.wallpapercraft.wood_planks_red_8.name=Wood Planks Dark Pink
+tile.wallpapercraft.wood_planks_red_9.name=Wood Planks Fuchsia
+tile.wallpapercraft.wood_planks_red_10.name=Wood Planks Baby Pink
+tile.wallpapercraft.wood_planks_red_11.name=Wood Planks Light Salmon Red
+tile.wallpapercraft.wood_planks_red_12.name=Wood Planks Salmon Red
+tile.wallpapercraft.wood_planks_red_13.name=Wood Planks Brown Red
+tile.wallpapercraft.wood_planks_red_14.name=Wood Planks Dark Brown Red
 
 
 
-#Wood Plank Purple Colours
-tile.wallpapercraft.wood_planks_purple_0.name=Wood Plank Light Magenta
-tile.wallpapercraft.wood_planks_purple_1.name=Wood Plank Magenta
-tile.wallpapercraft.wood_planks_purple_2.name=Wood Plank Dark Magenta
-tile.wallpapercraft.wood_planks_purple_3.name=Wood Plank Violet
-tile.wallpapercraft.wood_planks_purple_4.name=Wood Plank Dark Violet
-tile.wallpapercraft.wood_planks_purple_5.name=Wood Plank Light Violet
-tile.wallpapercraft.wood_planks_purple_6.name=Wood Plank Light Purple
-tile.wallpapercraft.wood_planks_purple_7.name=Wood Plank Purple
-tile.wallpapercraft.wood_planks_purple_8.name=Wood Plank Dark Purple
-tile.wallpapercraft.wood_planks_purple_9.name=Wood Plank Royal Blue
-tile.wallpapercraft.wood_planks_purple_10.name=Wood Plank Light Lavender
-tile.wallpapercraft.wood_planks_purple_11.name=Wood Plank Lavender
-tile.wallpapercraft.wood_planks_purple_12.name=Wood Plank Azure Blue
-tile.wallpapercraft.wood_planks_purple_13.name=Wood Plank Dark Blue
-tile.wallpapercraft.wood_planks_purple_14.name=Wood Plank Midnight Blue
+#Wood Planks Purple Colours
+tile.wallpapercraft.wood_planks_purple_0.name=Wood Planks Light Magenta
+tile.wallpapercraft.wood_planks_purple_1.name=Wood Planks Magenta
+tile.wallpapercraft.wood_planks_purple_2.name=Wood Planks Dark Magenta
+tile.wallpapercraft.wood_planks_purple_3.name=Wood Planks Violet
+tile.wallpapercraft.wood_planks_purple_4.name=Wood Planks Dark Violet
+tile.wallpapercraft.wood_planks_purple_5.name=Wood Planks Light Violet
+tile.wallpapercraft.wood_planks_purple_6.name=Wood Planks Light Purple
+tile.wallpapercraft.wood_planks_purple_7.name=Wood Planks Purple
+tile.wallpapercraft.wood_planks_purple_8.name=Wood Planks Dark Purple
+tile.wallpapercraft.wood_planks_purple_9.name=Wood Planks Royal Blue
+tile.wallpapercraft.wood_planks_purple_10.name=Wood Planks Light Lavender
+tile.wallpapercraft.wood_planks_purple_11.name=Wood Planks Lavender
+tile.wallpapercraft.wood_planks_purple_12.name=Wood Planks Azure Blue
+tile.wallpapercraft.wood_planks_purple_13.name=Wood Planks Dark Blue
+tile.wallpapercraft.wood_planks_purple_14.name=Wood Planks Midnight Blue
 
 
 
-#Wood Plank Blue Colours
-tile.wallpapercraft.wood_planks_blue_0.name=Wood Plank Light Blue
-tile.wallpapercraft.wood_planks_blue_1.name=Wood Plank Light Sky Blue
-tile.wallpapercraft.wood_planks_blue_2.name=Wood Plank Sky Blue
-tile.wallpapercraft.wood_planks_blue_3.name=Wood Plank Dark Sky Blue
-tile.wallpapercraft.wood_planks_blue_4.name=Wood Plank Navy Blue
-tile.wallpapercraft.wood_planks_blue_5.name=Wood Plank Light Baby Blue
-tile.wallpapercraft.wood_planks_blue_6.name=Wood Plank Baby Blue
-tile.wallpapercraft.wood_planks_blue_7.name=Wood Plank Bright Blue
-tile.wallpapercraft.wood_planks_blue_8.name=Wood Plank Medium Blue
-tile.wallpapercraft.wood_planks_blue_9.name=Wood Plank Deep Blue
-tile.wallpapercraft.wood_planks_blue_10.name=Wood Plank Light Aqua Blue
-tile.wallpapercraft.wood_planks_blue_11.name=Wood Plank Aqua Blue
-tile.wallpapercraft.wood_planks_blue_12.name=Wood Plank Dark Aqua Blue
-tile.wallpapercraft.wood_planks_blue_13.name=Wood Plank Ocean Blue
-tile.wallpapercraft.wood_planks_blue_14.name=Wood Plank Midnight Blue
+#Wood Planks Blue Colours
+tile.wallpapercraft.wood_planks_blue_0.name=Wood Planks Light Blue
+tile.wallpapercraft.wood_planks_blue_1.name=Wood Planks Light Sky Blue
+tile.wallpapercraft.wood_planks_blue_2.name=Wood Planks Sky Blue
+tile.wallpapercraft.wood_planks_blue_3.name=Wood Planks Dark Sky Blue
+tile.wallpapercraft.wood_planks_blue_4.name=Wood Planks Navy Blue
+tile.wallpapercraft.wood_planks_blue_5.name=Wood Planks Light Baby Blue
+tile.wallpapercraft.wood_planks_blue_6.name=Wood Planks Baby Blue
+tile.wallpapercraft.wood_planks_blue_7.name=Wood Planks Bright Blue
+tile.wallpapercraft.wood_planks_blue_8.name=Wood Planks Medium Blue
+tile.wallpapercraft.wood_planks_blue_9.name=Wood Planks Deep Blue
+tile.wallpapercraft.wood_planks_blue_10.name=Wood Planks Light Aqua Blue
+tile.wallpapercraft.wood_planks_blue_11.name=Wood Planks Aqua Blue
+tile.wallpapercraft.wood_planks_blue_12.name=Wood Planks Dark Aqua Blue
+tile.wallpapercraft.wood_planks_blue_13.name=Wood Planks Ocean Blue
+tile.wallpapercraft.wood_planks_blue_14.name=Wood Planks Midnight Blue
 
 
 
-#Wood Plank Brown Colours
-tile.wallpapercraft.wood_planks_brown_0.name=Wood Plank Soft Orange
-tile.wallpapercraft.wood_planks_brown_1.name=Wood Plank Sienna brown
-tile.wallpapercraft.wood_planks_brown_2.name=Wood Plank Burnt Sienna Brown
-tile.wallpapercraft.wood_planks_brown_3.name=Wood Plank Earth Brown
-tile.wallpapercraft.wood_planks_brown_4.name=Wood Plank Soil Brown
-tile.wallpapercraft.wood_planks_brown_5.name=Wood Plank Light Beige
-tile.wallpapercraft.wood_planks_brown_6.name=Wood Plank Beige
-tile.wallpapercraft.wood_planks_brown_7.name=Wood Plank Terracotta Red
-tile.wallpapercraft.wood_planks_brown_8.name=Wood Plank Brown
-tile.wallpapercraft.wood_planks_brown_9.name=Wood Plank Saddle Brown
-tile.wallpapercraft.wood_planks_brown_10.name=Wood Plank Light Gray Brown
-tile.wallpapercraft.wood_planks_brown_11.name=Wood Plank Gray Brown
-tile.wallpapercraft.wood_planks_brown_12.name=Wood Plank Middle Gray Brown
-tile.wallpapercraft.wood_planks_brown_13.name=Wood Plank Gray Brown
-tile.wallpapercraft.wood_planks_brown_14.name=Wood Plank Dark Gray Brown
+#Wood Planks Brown Colours
+tile.wallpapercraft.wood_planks_brown_0.name=Wood Planks Soft Orange
+tile.wallpapercraft.wood_planks_brown_1.name=Wood Planks Sienna brown
+tile.wallpapercraft.wood_planks_brown_2.name=Wood Planks Burnt Sienna Brown
+tile.wallpapercraft.wood_planks_brown_3.name=Wood Planks Earth Brown
+tile.wallpapercraft.wood_planks_brown_4.name=Wood Planks Soil Brown
+tile.wallpapercraft.wood_planks_brown_5.name=Wood Planks Light Beige
+tile.wallpapercraft.wood_planks_brown_6.name=Wood Planks Beige
+tile.wallpapercraft.wood_planks_brown_7.name=Wood Planks Terracotta Red
+tile.wallpapercraft.wood_planks_brown_8.name=Wood Planks Brown
+tile.wallpapercraft.wood_planks_brown_9.name=Wood Planks Saddle Brown
+tile.wallpapercraft.wood_planks_brown_10.name=Wood Planks Light Gray Brown
+tile.wallpapercraft.wood_planks_brown_11.name=Wood Planks Gray Brown
+tile.wallpapercraft.wood_planks_brown_12.name=Wood Planks Middle Gray Brown
+tile.wallpapercraft.wood_planks_brown_13.name=Wood Planks Gray Brown
+tile.wallpapercraft.wood_planks_brown_14.name=Wood Planks Dark Gray Brown
 
 
 
-#Wood Plank Cyan Colours
-tile.wallpapercraft.wood_planks_cyan_0.name=Wood Plank Light Green Blue
-tile.wallpapercraft.wood_planks_cyan_1.name=Wood Plank Light Turquoise Blue
-tile.wallpapercraft.wood_planks_cyan_2.name=Wood Plank Turquoise Blue
-tile.wallpapercraft.wood_planks_cyan_3.name=Wood Plank Teal Blue
-tile.wallpapercraft.wood_planks_cyan_4.name=Wood Plank Dark Teal Blue
-tile.wallpapercraft.wood_planks_cyan_5.name=Wood Plank Light Seafoam Blue Green
-tile.wallpapercraft.wood_planks_cyan_6.name=Wood Plank Seafoam Blue Green
-tile.wallpapercraft.wood_planks_cyan_7.name=Wood Plank Blue Green
-tile.wallpapercraft.wood_planks_cyan_8.name=Wood Plank Dark Blue Green
-tile.wallpapercraft.wood_planks_cyan_9.name=Wood Plank Dark Pine Blue Green
+#Wood Planks Cyan Colours
+tile.wallpapercraft.wood_planks_cyan_0.name=Wood Planks Light Green Blue
+tile.wallpapercraft.wood_planks_cyan_1.name=Wood Planks Light Turquoise Blue
+tile.wallpapercraft.wood_planks_cyan_2.name=Wood Planks Turquoise Blue
+tile.wallpapercraft.wood_planks_cyan_3.name=Wood Planks Teal Blue
+tile.wallpapercraft.wood_planks_cyan_4.name=Wood Planks Dark Teal Blue
+tile.wallpapercraft.wood_planks_cyan_5.name=Wood Planks Light Seafoam Blue Green
+tile.wallpapercraft.wood_planks_cyan_6.name=Wood Planks Seafoam Blue Green
+tile.wallpapercraft.wood_planks_cyan_7.name=Wood Planks Blue Green
+tile.wallpapercraft.wood_planks_cyan_8.name=Wood Planks Dark Blue Green
+tile.wallpapercraft.wood_planks_cyan_9.name=Wood Planks Dark Pine Blue Green
 
 
 
-#Wood Plank Green Colours
-tile.wallpapercraft.wood_planks_green_0.name=Wood Plank Light Green
-tile.wallpapercraft.wood_planks_green_1.name=Wood Plank Light Spring Green
-tile.wallpapercraft.wood_planks_green_2.name=Wood Plank Spring Green
-tile.wallpapercraft.wood_planks_green_3.name=Wood Plank Green
-tile.wallpapercraft.wood_planks_green_4.name=Wood Plank Dark Green
-tile.wallpapercraft.wood_planks_green_5.name=Wood Plank Light Summer Green
-tile.wallpapercraft.wood_planks_green_6.name=Wood Plank Summer Green
-tile.wallpapercraft.wood_planks_green_7.name=Wood Plank Lush Green
-tile.wallpapercraft.wood_planks_green_8.name=Wood Plank Deep Lush Green
-tile.wallpapercraft.wood_planks_green_9.name=Wood Plank Dark Lush Green
-tile.wallpapercraft.wood_planks_green_10.name=Wood Plank Light Spring Green
-tile.wallpapercraft.wood_planks_green_11.name=Wood Plank Spring Green
-tile.wallpapercraft.wood_planks_green_12.name=Wood Plank Light Olive Green
-tile.wallpapercraft.wood_planks_green_13.name=Wood Plank Olive Green
-tile.wallpapercraft.wood_planks_green_14.name=Wood Plank Moss Green
+#Wood Planks Green Colours
+tile.wallpapercraft.wood_planks_green_0.name=Wood Planks Light Green
+tile.wallpapercraft.wood_planks_green_1.name=Wood Planks Light Spring Green
+tile.wallpapercraft.wood_planks_green_2.name=Wood Planks Spring Green
+tile.wallpapercraft.wood_planks_green_3.name=Wood Planks Green
+tile.wallpapercraft.wood_planks_green_4.name=Wood Planks Dark Green
+tile.wallpapercraft.wood_planks_green_5.name=Wood Planks Light Summer Green
+tile.wallpapercraft.wood_planks_green_6.name=Wood Planks Summer Green
+tile.wallpapercraft.wood_planks_green_7.name=Wood Planks Lush Green
+tile.wallpapercraft.wood_planks_green_8.name=Wood Planks Deep Lush Green
+tile.wallpapercraft.wood_planks_green_9.name=Wood Planks Dark Lush Green
+tile.wallpapercraft.wood_planks_green_10.name=Wood Planks Light Spring Green
+tile.wallpapercraft.wood_planks_green_11.name=Wood Planks Spring Green
+tile.wallpapercraft.wood_planks_green_12.name=Wood Planks Light Olive Green
+tile.wallpapercraft.wood_planks_green_13.name=Wood Planks Olive Green
+tile.wallpapercraft.wood_planks_green_14.name=Wood Planks Moss Green
 
 
 
-#Wood Plank Yellow Colours
-tile.wallpapercraft.wood_planks_yellow_0.name=Wood Plank Light Lemon Yellow
-tile.wallpapercraft.wood_planks_yellow_1.name=Wood Plank Lemon Yellow
-tile.wallpapercraft.wood_planks_yellow_2.name=Wood Plank Sunny Yellow
-tile.wallpapercraft.wood_planks_yellow_3.name=Wood Plank Soft Yellow
-tile.wallpapercraft.wood_planks_yellow_4.name=Wood Plank Orange Yellow
-tile.wallpapercraft.wood_planks_yellow_5.name=Wood Plank Light Sand Yellow
-tile.wallpapercraft.wood_planks_yellow_6.name=Wood Plank Light Yellow
-tile.wallpapercraft.wood_planks_yellow_7.name=Wood Plank Yellow
-tile.wallpapercraft.wood_planks_yellow_8.name=Wood Plank Gold Yellow
-tile.wallpapercraft.wood_planks_yellow_9.name=Wood Plank Dark Orange
-tile.wallpapercraft.wood_planks_yellow_10.name=Wood Plank Light Orange
-tile.wallpapercraft.wood_planks_yellow_11.name=Wood Plank Sunny Orange
-tile.wallpapercraft.wood_planks_yellow_12.name=Wood Plank Orange
-tile.wallpapercraft.wood_planks_yellow_13.name=Wood Plank Deep Orange
-tile.wallpapercraft.wood_planks_yellow_14.name=Wood Plank Orange Red
+#Wood Planks Yellow Colours
+tile.wallpapercraft.wood_planks_yellow_0.name=Wood Planks Light Lemon Yellow
+tile.wallpapercraft.wood_planks_yellow_1.name=Wood Planks Lemon Yellow
+tile.wallpapercraft.wood_planks_yellow_2.name=Wood Planks Sunny Yellow
+tile.wallpapercraft.wood_planks_yellow_3.name=Wood Planks Soft Yellow
+tile.wallpapercraft.wood_planks_yellow_4.name=Wood Planks Orange Yellow
+tile.wallpapercraft.wood_planks_yellow_5.name=Wood Planks Light Sand Yellow
+tile.wallpapercraft.wood_planks_yellow_6.name=Wood Planks Light Yellow
+tile.wallpapercraft.wood_planks_yellow_7.name=Wood Planks Yellow
+tile.wallpapercraft.wood_planks_yellow_8.name=Wood Planks Gold Yellow
+tile.wallpapercraft.wood_planks_yellow_9.name=Wood Planks Dark Orange
+tile.wallpapercraft.wood_planks_yellow_10.name=Wood Planks Light Orange
+tile.wallpapercraft.wood_planks_yellow_11.name=Wood Planks Sunny Orange
+tile.wallpapercraft.wood_planks_yellow_12.name=Wood Planks Orange
+tile.wallpapercraft.wood_planks_yellow_13.name=Wood Planks Deep Orange
+tile.wallpapercraft.wood_planks_yellow_14.name=Wood Planks Orange Red
 
 
 
-#Wood Plank Gray Colours
-tile.wallpapercraft.wood_planks_gray_0.name=Wood Plank White Gray
-tile.wallpapercraft.wood_planks_gray_1.name=Wood Plank Light Gray
-tile.wallpapercraft.wood_planks_gray_2.name=Wood Plank Gray
-tile.wallpapercraft.wood_planks_gray_3.name=Wood Plank Dark Gray
-tile.wallpapercraft.wood_planks_gray_4.name=Wood Plank Gray Black
-tile.wallpapercraft.wood_planks_gray_5.name=Wood Plank Light Warm Gray
-tile.wallpapercraft.wood_planks_gray_6.name=Wood Plank Warm Gray
-tile.wallpapercraft.wood_planks_gray_7.name=Wood Plank Middle Warm Gray
-tile.wallpapercraft.wood_planks_gray_8.name=Wood Plank Dark Warm Gray
-tile.wallpapercraft.wood_planks_gray_9.name=Wood Plank Warm Black Gray
-tile.wallpapercraft.wood_planks_gray_10.name=Wood Plank Light Cool gray
-tile.wallpapercraft.wood_planks_gray_11.name=Wood Plank Cool Gray
-tile.wallpapercraft.wood_planks_gray_12.name=Wood Plank Dark Cool Gray
-tile.wallpapercraft.wood_planks_gray_13.name=Wood Plank Cool Blue Gray
-tile.wallpapercraft.wood_planks_gray_14.name=Wood Plank Cool Dark Blue Gray
+#Wood Planks Gray Colours
+tile.wallpapercraft.wood_planks_gray_0.name=Wood Planks White Gray
+tile.wallpapercraft.wood_planks_gray_1.name=Wood Planks Light Gray
+tile.wallpapercraft.wood_planks_gray_2.name=Wood Planks Gray
+tile.wallpapercraft.wood_planks_gray_3.name=Wood Planks Dark Gray
+tile.wallpapercraft.wood_planks_gray_4.name=Wood Planks Gray Black
+tile.wallpapercraft.wood_planks_gray_5.name=Wood Planks Light Warm Gray
+tile.wallpapercraft.wood_planks_gray_6.name=Wood Planks Warm Gray
+tile.wallpapercraft.wood_planks_gray_7.name=Wood Planks Middle Warm Gray
+tile.wallpapercraft.wood_planks_gray_8.name=Wood Planks Dark Warm Gray
+tile.wallpapercraft.wood_planks_gray_9.name=Wood Planks Warm Black Gray
+tile.wallpapercraft.wood_planks_gray_10.name=Wood Planks Light Cool gray
+tile.wallpapercraft.wood_planks_gray_11.name=Wood Planks Cool Gray
+tile.wallpapercraft.wood_planks_gray_12.name=Wood Planks Dark Cool Gray
+tile.wallpapercraft.wood_planks_gray_13.name=Wood Planks Cool Blue Gray
+tile.wallpapercraft.wood_planks_gray_14.name=Wood Planks Cool Dark Blue Gray
 
 
 
@@ -2662,149 +2661,149 @@ tile.wallpapercraft.wood_planks_gray_14.name=Wood Plank Cool Dark Blue Gray
 ######################################################################
 
 
-#Stone Brick Red Colours
-tile.wallpapercraft.stone_bricks_red_0.name=Stone Brick Light Warm Pink
-tile.wallpapercraft.stone_bricks_red_1.name=Stone Brick Light Red
-tile.wallpapercraft.stone_bricks_red_2.name=Stone Brick Bright Red
-tile.wallpapercraft.stone_bricks_red_3.name=Stone Brick Red
-tile.wallpapercraft.stone_bricks_red_4.name=Stone Brick Blood Red
-tile.wallpapercraft.stone_bricks_red_5.name=Stone Brick Light Cool Pink
-tile.wallpapercraft.stone_bricks_red_6.name=Stone Brick Pink
-tile.wallpapercraft.stone_bricks_red_7.name=Stone Brick Hot Pink
-tile.wallpapercraft.stone_bricks_red_8.name=Stone Brick Dark Pink
-tile.wallpapercraft.stone_bricks_red_9.name=Stone Brick Fuchsia
-tile.wallpapercraft.stone_bricks_red_10.name=Stone Brick Baby Pink
-tile.wallpapercraft.stone_bricks_red_11.name=Stone Brick Light Salmon Red
-tile.wallpapercraft.stone_bricks_red_12.name=Stone Brick Salmon Red
-tile.wallpapercraft.stone_bricks_red_13.name=Stone Brick Brown Red
-tile.wallpapercraft.stone_bricks_red_14.name=Stone Brick Dark Brown Red
+#Stone Bricks Red Colours
+tile.wallpapercraft.stone_bricks_red_0.name=Stone Bricks Light Warm Pink
+tile.wallpapercraft.stone_bricks_red_1.name=Stone Bricks Light Red
+tile.wallpapercraft.stone_bricks_red_2.name=Stone Bricks Bright Red
+tile.wallpapercraft.stone_bricks_red_3.name=Stone Bricks Red
+tile.wallpapercraft.stone_bricks_red_4.name=Stone Bricks Blood Red
+tile.wallpapercraft.stone_bricks_red_5.name=Stone Bricks Light Cool Pink
+tile.wallpapercraft.stone_bricks_red_6.name=Stone Bricks Pink
+tile.wallpapercraft.stone_bricks_red_7.name=Stone Bricks Hot Pink
+tile.wallpapercraft.stone_bricks_red_8.name=Stone Bricks Dark Pink
+tile.wallpapercraft.stone_bricks_red_9.name=Stone Bricks Fuchsia
+tile.wallpapercraft.stone_bricks_red_10.name=Stone Bricks Baby Pink
+tile.wallpapercraft.stone_bricks_red_11.name=Stone Bricks Light Salmon Red
+tile.wallpapercraft.stone_bricks_red_12.name=Stone Bricks Salmon Red
+tile.wallpapercraft.stone_bricks_red_13.name=Stone Bricks Brown Red
+tile.wallpapercraft.stone_bricks_red_14.name=Stone Bricks Dark Brown Red
 
 
-#Stone Brick Purple Colours
-tile.wallpapercraft.stone_bricks_purple_0.name=Stone Brick Light Magenta
-tile.wallpapercraft.stone_bricks_purple_1.name=Stone Brick Magenta
-tile.wallpapercraft.stone_bricks_purple_2.name=Stone Brick Dark Magenta
-tile.wallpapercraft.stone_bricks_purple_3.name=Stone Brick Violet
-tile.wallpapercraft.stone_bricks_purple_4.name=Stone Brick Dark Violet
-tile.wallpapercraft.stone_bricks_purple_5.name=Stone Brick Light Violet
-tile.wallpapercraft.stone_bricks_purple_6.name=Stone Brick Light Purple
-tile.wallpapercraft.stone_bricks_purple_7.name=Stone Brick Purple
-tile.wallpapercraft.stone_bricks_purple_8.name=Stone Brick Dark Purple
-tile.wallpapercraft.stone_bricks_purple_9.name=Stone Brick Royal Blue
-tile.wallpapercraft.stone_bricks_purple_10.name=Stone Brick Light Lavender
-tile.wallpapercraft.stone_bricks_purple_11.name=Stone Brick Lavender
-tile.wallpapercraft.stone_bricks_purple_12.name=Stone Brick Azure Blue
-tile.wallpapercraft.stone_bricks_purple_13.name=Stone Brick Dark Blue
-tile.wallpapercraft.stone_bricks_purple_14.name=Stone Brick Midnight Blue
-
-
-
-#Stone Brick Blue Colours
-tile.wallpapercraft.stone_bricks_blue_0.name=Stone Brick Light Blue
-tile.wallpapercraft.stone_bricks_blue_1.name=Stone Brick Light Sky Blue
-tile.wallpapercraft.stone_bricks_blue_2.name=Stone Brick Sky Blue
-tile.wallpapercraft.stone_bricks_blue_3.name=Stone Brick Dark Sky Blue
-tile.wallpapercraft.stone_bricks_blue_4.name=Stone Brick Navy Blue
-tile.wallpapercraft.stone_bricks_blue_5.name=Stone Brick Light Baby Blue
-tile.wallpapercraft.stone_bricks_blue_6.name=Stone Brick Baby Blue
-tile.wallpapercraft.stone_bricks_blue_7.name=Stone Brick Bright Blue
-tile.wallpapercraft.stone_bricks_blue_8.name=Stone Brick Medium Blue
-tile.wallpapercraft.stone_bricks_blue_9.name=Stone Brick Deep Blue
-tile.wallpapercraft.stone_bricks_blue_10.name=Stone Brick Light Aqua Blue
-tile.wallpapercraft.stone_bricks_blue_11.name=Stone Brick Aqua Blue
-tile.wallpapercraft.stone_bricks_blue_12.name=Stone Brick Dark Aqua Blue
-tile.wallpapercraft.stone_bricks_blue_13.name=Stone Brick Ocean Blue
-tile.wallpapercraft.stone_bricks_blue_14.name=Stone Brick Midnight Blue
+#Stone Bricks Purple Colours
+tile.wallpapercraft.stone_bricks_purple_0.name=Stone Bricks Light Magenta
+tile.wallpapercraft.stone_bricks_purple_1.name=Stone Bricks Magenta
+tile.wallpapercraft.stone_bricks_purple_2.name=Stone Bricks Dark Magenta
+tile.wallpapercraft.stone_bricks_purple_3.name=Stone Bricks Violet
+tile.wallpapercraft.stone_bricks_purple_4.name=Stone Bricks Dark Violet
+tile.wallpapercraft.stone_bricks_purple_5.name=Stone Bricks Light Violet
+tile.wallpapercraft.stone_bricks_purple_6.name=Stone Bricks Light Purple
+tile.wallpapercraft.stone_bricks_purple_7.name=Stone Bricks Purple
+tile.wallpapercraft.stone_bricks_purple_8.name=Stone Bricks Dark Purple
+tile.wallpapercraft.stone_bricks_purple_9.name=Stone Bricks Royal Blue
+tile.wallpapercraft.stone_bricks_purple_10.name=Stone Bricks Light Lavender
+tile.wallpapercraft.stone_bricks_purple_11.name=Stone Bricks Lavender
+tile.wallpapercraft.stone_bricks_purple_12.name=Stone Bricks Azure Blue
+tile.wallpapercraft.stone_bricks_purple_13.name=Stone Bricks Dark Blue
+tile.wallpapercraft.stone_bricks_purple_14.name=Stone Bricks Midnight Blue
 
 
 
-#Stone Brick Brown Colours
-tile.wallpapercraft.stone_bricks_brown_0.name=Stone Brick Soft Orange
-tile.wallpapercraft.stone_bricks_brown_1.name=Stone Brick Sienna brown
-tile.wallpapercraft.stone_bricks_brown_2.name=Stone Brick Burnt Sienna Brown
-tile.wallpapercraft.stone_bricks_brown_3.name=Stone Brick Earth Brown
-tile.wallpapercraft.stone_bricks_brown_4.name=Stone Brick Soil Brown
-tile.wallpapercraft.stone_bricks_brown_5.name=Stone Brick Light Beige
-tile.wallpapercraft.stone_bricks_brown_6.name=Stone Brick Beige
-tile.wallpapercraft.stone_bricks_brown_7.name=Stone Brick Terracotta Red
-tile.wallpapercraft.stone_bricks_brown_8.name=Stone Brick Brown
-tile.wallpapercraft.stone_bricks_brown_9.name=Stone Brick Saddle Brown
-tile.wallpapercraft.stone_bricks_brown_10.name=Stone Brick Light Gray Brown
-tile.wallpapercraft.stone_bricks_brown_11.name=Stone Brick Gray Brown
-tile.wallpapercraft.stone_bricks_brown_12.name=Stone Brick Middle Gray Brown
-tile.wallpapercraft.stone_bricks_brown_13.name=Stone Brick Gray Brown
-tile.wallpapercraft.stone_bricks_brown_14.name=Stone Brick Dark Gray Brown
+#Stone Bricks Blue Colours
+tile.wallpapercraft.stone_bricks_blue_0.name=Stone Bricks Light Blue
+tile.wallpapercraft.stone_bricks_blue_1.name=Stone Bricks Light Sky Blue
+tile.wallpapercraft.stone_bricks_blue_2.name=Stone Bricks Sky Blue
+tile.wallpapercraft.stone_bricks_blue_3.name=Stone Bricks Dark Sky Blue
+tile.wallpapercraft.stone_bricks_blue_4.name=Stone Bricks Navy Blue
+tile.wallpapercraft.stone_bricks_blue_5.name=Stone Bricks Light Baby Blue
+tile.wallpapercraft.stone_bricks_blue_6.name=Stone Bricks Baby Blue
+tile.wallpapercraft.stone_bricks_blue_7.name=Stone Bricks Bright Blue
+tile.wallpapercraft.stone_bricks_blue_8.name=Stone Bricks Medium Blue
+tile.wallpapercraft.stone_bricks_blue_9.name=Stone Bricks Deep Blue
+tile.wallpapercraft.stone_bricks_blue_10.name=Stone Bricks Light Aqua Blue
+tile.wallpapercraft.stone_bricks_blue_11.name=Stone Bricks Aqua Blue
+tile.wallpapercraft.stone_bricks_blue_12.name=Stone Bricks Dark Aqua Blue
+tile.wallpapercraft.stone_bricks_blue_13.name=Stone Bricks Ocean Blue
+tile.wallpapercraft.stone_bricks_blue_14.name=Stone Bricks Midnight Blue
 
 
 
-#Stone Brick Cyan Colours
-tile.wallpapercraft.stone_bricks_cyan_0.name=Stone Brick Light Green Blue
-tile.wallpapercraft.stone_bricks_cyan_1.name=Stone Brick Light Turquoise Blue
-tile.wallpapercraft.stone_bricks_cyan_2.name=Stone Brick Turquoise Blue
-tile.wallpapercraft.stone_bricks_cyan_3.name=Stone Brick Teal Blue
-tile.wallpapercraft.stone_bricks_cyan_4.name=Stone Brick Dark Teal Blue
-tile.wallpapercraft.stone_bricks_cyan_5.name=Stone Brick Light Seafoam Blue Green
-tile.wallpapercraft.stone_bricks_cyan_6.name=Stone Brick Seafoam Blue Green
-tile.wallpapercraft.stone_bricks_cyan_7.name=Stone Brick Blue Green
-tile.wallpapercraft.stone_bricks_cyan_8.name=Stone Brick Dark Blue Green
-tile.wallpapercraft.stone_bricks_cyan_9.name=Stone Brick Dark Pine Blue Green
+#Stone Bricks Brown Colours
+tile.wallpapercraft.stone_bricks_brown_0.name=Stone Bricks Soft Orange
+tile.wallpapercraft.stone_bricks_brown_1.name=Stone Bricks Sienna brown
+tile.wallpapercraft.stone_bricks_brown_2.name=Stone Bricks Burnt Sienna Brown
+tile.wallpapercraft.stone_bricks_brown_3.name=Stone Bricks Earth Brown
+tile.wallpapercraft.stone_bricks_brown_4.name=Stone Bricks Soil Brown
+tile.wallpapercraft.stone_bricks_brown_5.name=Stone Bricks Light Beige
+tile.wallpapercraft.stone_bricks_brown_6.name=Stone Bricks Beige
+tile.wallpapercraft.stone_bricks_brown_7.name=Stone Bricks Terracotta Red
+tile.wallpapercraft.stone_bricks_brown_8.name=Stone Bricks Brown
+tile.wallpapercraft.stone_bricks_brown_9.name=Stone Bricks Saddle Brown
+tile.wallpapercraft.stone_bricks_brown_10.name=Stone Bricks Light Gray Brown
+tile.wallpapercraft.stone_bricks_brown_11.name=Stone Bricks Gray Brown
+tile.wallpapercraft.stone_bricks_brown_12.name=Stone Bricks Middle Gray Brown
+tile.wallpapercraft.stone_bricks_brown_13.name=Stone Bricks Gray Brown
+tile.wallpapercraft.stone_bricks_brown_14.name=Stone Bricks Dark Gray Brown
 
 
 
-#Stone Brick Green Colours
-tile.wallpapercraft.stone_bricks_green_0.name=Stone Brick Light Green
-tile.wallpapercraft.stone_bricks_green_1.name=Stone Brick Light Spring Green
-tile.wallpapercraft.stone_bricks_green_2.name=Stone Brick Spring Green
-tile.wallpapercraft.stone_bricks_green_3.name=Stone Brick Green
-tile.wallpapercraft.stone_bricks_green_4.name=Stone Brick Dark Green
-tile.wallpapercraft.stone_bricks_green_5.name=Stone Brick Light Summer Green
-tile.wallpapercraft.stone_bricks_green_6.name=Stone Brick Summer Green
-tile.wallpapercraft.stone_bricks_green_7.name=Stone Brick Lush Green
-tile.wallpapercraft.stone_bricks_green_8.name=Stone Brick Deep Lush Green
-tile.wallpapercraft.stone_bricks_green_9.name=Stone Brick Dark Lush Green
-tile.wallpapercraft.stone_bricks_green_10.name=Stone Brick Light Spring Green
-tile.wallpapercraft.stone_bricks_green_11.name=Stone Brick Spring Green
-tile.wallpapercraft.stone_bricks_green_12.name=Stone Brick Light Olive Green
-tile.wallpapercraft.stone_bricks_green_13.name=Stone Brick Olive Green
-tile.wallpapercraft.stone_bricks_green_14.name=Stone Brick Moss Green
+#Stone Bricks Cyan Colours
+tile.wallpapercraft.stone_bricks_cyan_0.name=Stone Bricks Light Green Blue
+tile.wallpapercraft.stone_bricks_cyan_1.name=Stone Bricks Light Turquoise Blue
+tile.wallpapercraft.stone_bricks_cyan_2.name=Stone Bricks Turquoise Blue
+tile.wallpapercraft.stone_bricks_cyan_3.name=Stone Bricks Teal Blue
+tile.wallpapercraft.stone_bricks_cyan_4.name=Stone Bricks Dark Teal Blue
+tile.wallpapercraft.stone_bricks_cyan_5.name=Stone Bricks Light Seafoam Blue Green
+tile.wallpapercraft.stone_bricks_cyan_6.name=Stone Bricks Seafoam Blue Green
+tile.wallpapercraft.stone_bricks_cyan_7.name=Stone Bricks Blue Green
+tile.wallpapercraft.stone_bricks_cyan_8.name=Stone Bricks Dark Blue Green
+tile.wallpapercraft.stone_bricks_cyan_9.name=Stone Bricks Dark Pine Blue Green
 
 
 
-#Stone Brick Yellow Colours
-tile.wallpapercraft.stone_bricks_yellow_0.name=Stone Brick Light Lemon Yellow
-tile.wallpapercraft.stone_bricks_yellow_1.name=Stone Brick Lemon Yellow
-tile.wallpapercraft.stone_bricks_yellow_2.name=Stone Brick Sunny Yellow
-tile.wallpapercraft.stone_bricks_yellow_3.name=Stone Brick Soft Yellow
-tile.wallpapercraft.stone_bricks_yellow_4.name=Stone Brick Orange Yellow
-tile.wallpapercraft.stone_bricks_yellow_5.name=Stone Brick Light Sand Yellow
-tile.wallpapercraft.stone_bricks_yellow_6.name=Stone Brick Light Yellow
-tile.wallpapercraft.stone_bricks_yellow_7.name=Stone Brick Yellow
-tile.wallpapercraft.stone_bricks_yellow_8.name=Stone Brick Gold Yellow
-tile.wallpapercraft.stone_bricks_yellow_9.name=Stone Brick Dark Orange
-tile.wallpapercraft.stone_bricks_yellow_10.name=Stone Brick Light Orange
-tile.wallpapercraft.stone_bricks_yellow_11.name=Stone Brick Sunny Orange
-tile.wallpapercraft.stone_bricks_yellow_12.name=Stone Brick Orange
-tile.wallpapercraft.stone_bricks_yellow_13.name=Stone Brick Deep Orange
-tile.wallpapercraft.stone_bricks_yellow_14.name=Stone Brick Orange Red
+#Stone Bricks Green Colours
+tile.wallpapercraft.stone_bricks_green_0.name=Stone Bricks Light Green
+tile.wallpapercraft.stone_bricks_green_1.name=Stone Bricks Light Spring Green
+tile.wallpapercraft.stone_bricks_green_2.name=Stone Bricks Spring Green
+tile.wallpapercraft.stone_bricks_green_3.name=Stone Bricks Green
+tile.wallpapercraft.stone_bricks_green_4.name=Stone Bricks Dark Green
+tile.wallpapercraft.stone_bricks_green_5.name=Stone Bricks Light Summer Green
+tile.wallpapercraft.stone_bricks_green_6.name=Stone Bricks Summer Green
+tile.wallpapercraft.stone_bricks_green_7.name=Stone Bricks Lush Green
+tile.wallpapercraft.stone_bricks_green_8.name=Stone Bricks Deep Lush Green
+tile.wallpapercraft.stone_bricks_green_9.name=Stone Bricks Dark Lush Green
+tile.wallpapercraft.stone_bricks_green_10.name=Stone Bricks Light Spring Green
+tile.wallpapercraft.stone_bricks_green_11.name=Stone Bricks Spring Green
+tile.wallpapercraft.stone_bricks_green_12.name=Stone Bricks Light Olive Green
+tile.wallpapercraft.stone_bricks_green_13.name=Stone Bricks Olive Green
+tile.wallpapercraft.stone_bricks_green_14.name=Stone Bricks Moss Green
 
 
 
-#Stone Brick Gray Colours
-tile.wallpapercraft.stone_bricks_gray_0.name=Stone Brick White Gray
-tile.wallpapercraft.stone_bricks_gray_1.name=Stone Brick Light Gray
-tile.wallpapercraft.stone_bricks_gray_2.name=Stone Brick Gray
-tile.wallpapercraft.stone_bricks_gray_3.name=Stone Brick Dark Gray
-tile.wallpapercraft.stone_bricks_gray_4.name=Stone Brick Gray Black
-tile.wallpapercraft.stone_bricks_gray_5.name=Stone Brick Light Warm Gray
-tile.wallpapercraft.stone_bricks_gray_6.name=Stone Brick Warm Gray
-tile.wallpapercraft.stone_bricks_gray_7.name=Stone Brick Middle Warm Gray
-tile.wallpapercraft.stone_bricks_gray_8.name=Stone Brick Dark Warm Gray
-tile.wallpapercraft.stone_bricks_gray_9.name=Stone Brick Warm Black Gray
-tile.wallpapercraft.stone_bricks_gray_10.name=Stone Brick Light Cool gray
-tile.wallpapercraft.stone_bricks_gray_11.name=Stone Brick Cool Gray
-tile.wallpapercraft.stone_bricks_gray_12.name=Stone Brick Dark Cool Gray
-tile.wallpapercraft.stone_bricks_gray_13.name=Stone Brick Cool Blue Gray
-tile.wallpapercraft.stone_bricks_gray_14.name=Stone Brick Cool Dark Blue Gray
+#Stone Bricks Yellow Colours
+tile.wallpapercraft.stone_bricks_yellow_0.name=Stone Bricks Light Lemon Yellow
+tile.wallpapercraft.stone_bricks_yellow_1.name=Stone Bricks Lemon Yellow
+tile.wallpapercraft.stone_bricks_yellow_2.name=Stone Bricks Sunny Yellow
+tile.wallpapercraft.stone_bricks_yellow_3.name=Stone Bricks Soft Yellow
+tile.wallpapercraft.stone_bricks_yellow_4.name=Stone Bricks Orange Yellow
+tile.wallpapercraft.stone_bricks_yellow_5.name=Stone Bricks Light Sand Yellow
+tile.wallpapercraft.stone_bricks_yellow_6.name=Stone Bricks Light Yellow
+tile.wallpapercraft.stone_bricks_yellow_7.name=Stone Bricks Yellow
+tile.wallpapercraft.stone_bricks_yellow_8.name=Stone Bricks Gold Yellow
+tile.wallpapercraft.stone_bricks_yellow_9.name=Stone Bricks Dark Orange
+tile.wallpapercraft.stone_bricks_yellow_10.name=Stone Bricks Light Orange
+tile.wallpapercraft.stone_bricks_yellow_11.name=Stone Bricks Sunny Orange
+tile.wallpapercraft.stone_bricks_yellow_12.name=Stone Bricks Orange
+tile.wallpapercraft.stone_bricks_yellow_13.name=Stone Bricks Deep Orange
+tile.wallpapercraft.stone_bricks_yellow_14.name=Stone Bricks Orange Red
+
+
+
+#Stone Bricks Gray Colours
+tile.wallpapercraft.stone_bricks_gray_0.name=Stone Bricks White Gray
+tile.wallpapercraft.stone_bricks_gray_1.name=Stone Bricks Light Gray
+tile.wallpapercraft.stone_bricks_gray_2.name=Stone Bricks Gray
+tile.wallpapercraft.stone_bricks_gray_3.name=Stone Bricks Dark Gray
+tile.wallpapercraft.stone_bricks_gray_4.name=Stone Bricks Gray Black
+tile.wallpapercraft.stone_bricks_gray_5.name=Stone Bricks Light Warm Gray
+tile.wallpapercraft.stone_bricks_gray_6.name=Stone Bricks Warm Gray
+tile.wallpapercraft.stone_bricks_gray_7.name=Stone Bricks Middle Warm Gray
+tile.wallpapercraft.stone_bricks_gray_8.name=Stone Bricks Dark Warm Gray
+tile.wallpapercraft.stone_bricks_gray_9.name=Stone Bricks Warm Black Gray
+tile.wallpapercraft.stone_bricks_gray_10.name=Stone Bricks Light Cool gray
+tile.wallpapercraft.stone_bricks_gray_11.name=Stone Bricks Cool Gray
+tile.wallpapercraft.stone_bricks_gray_12.name=Stone Bricks Dark Cool Gray
+tile.wallpapercraft.stone_bricks_gray_13.name=Stone Bricks Cool Blue Gray
+tile.wallpapercraft.stone_bricks_gray_14.name=Stone Bricks Cool Dark Blue Gray
 
 
 
@@ -2822,149 +2821,149 @@ tile.wallpapercraft.stone_bricks_gray_14.name=Stone Brick Cool Dark Blue Gray
 ######################################################################
 
 
-#Coloured Brick Red Colours
-tile.wallpapercraft.colored_bricks_red_0.name=Colored Brick Light Warm Pink
-tile.wallpapercraft.colored_bricks_red_1.name=Colored Brick Light Red
-tile.wallpapercraft.colored_bricks_red_2.name=Colored Brick Bright Red
-tile.wallpapercraft.colored_bricks_red_3.name=Colored Brick Red
-tile.wallpapercraft.colored_bricks_red_4.name=Colored Brick Blood Red
-tile.wallpapercraft.colored_bricks_red_5.name=Colored Brick Light Cool Pink
-tile.wallpapercraft.colored_bricks_red_6.name=Colored Brick Pink
-tile.wallpapercraft.colored_bricks_red_7.name=Colored Brick Hot Pink
-tile.wallpapercraft.colored_bricks_red_8.name=Colored Brick Dark Pink
-tile.wallpapercraft.colored_bricks_red_9.name=Colored Brick Fuchsia
-tile.wallpapercraft.colored_bricks_red_10.name=Colored Brick Baby Pink
-tile.wallpapercraft.colored_bricks_red_11.name=Colored Brick Light Salmon Red
-tile.wallpapercraft.colored_bricks_red_12.name=Colored Brick Salmon Red
-tile.wallpapercraft.colored_bricks_red_13.name=Colored Brick Brown Red
-tile.wallpapercraft.colored_bricks_red_14.name=Colored Brick Dark Brown Red
+#Colored Bricks Red Colours
+tile.wallpapercraft.colored_bricks_red_0.name=Colored Bricks Light Warm Pink
+tile.wallpapercraft.colored_bricks_red_1.name=Colored Bricks Light Red
+tile.wallpapercraft.colored_bricks_red_2.name=Colored Bricks Bright Red
+tile.wallpapercraft.colored_bricks_red_3.name=Colored Bricks Red
+tile.wallpapercraft.colored_bricks_red_4.name=Colored Bricks Blood Red
+tile.wallpapercraft.colored_bricks_red_5.name=Colored Bricks Light Cool Pink
+tile.wallpapercraft.colored_bricks_red_6.name=Colored Bricks Pink
+tile.wallpapercraft.colored_bricks_red_7.name=Colored Bricks Hot Pink
+tile.wallpapercraft.colored_bricks_red_8.name=Colored Bricks Dark Pink
+tile.wallpapercraft.colored_bricks_red_9.name=Colored Bricks Fuchsia
+tile.wallpapercraft.colored_bricks_red_10.name=Colored Bricks Baby Pink
+tile.wallpapercraft.colored_bricks_red_11.name=Colored Bricks Light Salmon Red
+tile.wallpapercraft.colored_bricks_red_12.name=Colored Bricks Salmon Red
+tile.wallpapercraft.colored_bricks_red_13.name=Colored Bricks Brown Red
+tile.wallpapercraft.colored_bricks_red_14.name=Colored Bricks Dark Brown Red
 
 
-#Coloured Brick Purple Colours
-tile.wallpapercraft.colored_bricks_purple_0.name=Colored Brick Light Magenta
-tile.wallpapercraft.colored_bricks_purple_1.name=Colored Brick Magenta
-tile.wallpapercraft.colored_bricks_purple_2.name=Colored Brick Dark Magenta
-tile.wallpapercraft.colored_bricks_purple_3.name=Colored Brick Violet
-tile.wallpapercraft.colored_bricks_purple_4.name=Colored Brick Dark Violet
-tile.wallpapercraft.colored_bricks_purple_5.name=Colored Brick Light Violet
-tile.wallpapercraft.colored_bricks_purple_6.name=Colored Brick Light Purple
-tile.wallpapercraft.colored_bricks_purple_7.name=Colored Brick Purple
-tile.wallpapercraft.colored_bricks_purple_8.name=Colored Brick Dark Purple
-tile.wallpapercraft.colored_bricks_purple_9.name=Colored Brick Royal Blue
-tile.wallpapercraft.colored_bricks_purple_10.name=Colored Brick Light Lavender
-tile.wallpapercraft.colored_bricks_purple_11.name=Colored Brick Lavender
-tile.wallpapercraft.colored_bricks_purple_12.name=Colored Brick Azure Blue
-tile.wallpapercraft.colored_bricks_purple_13.name=Colored Brick Dark Blue
-tile.wallpapercraft.colored_bricks_purple_14.name=Colored Brick Midnight Blue
-
-
-
-#Coloured Brick Blue Colours
-tile.wallpapercraft.colored_bricks_blue_0.name=Colored Brick Light Blue
-tile.wallpapercraft.colored_bricks_blue_1.name=Colored Brick Light Sky Blue
-tile.wallpapercraft.colored_bricks_blue_2.name=Colored Brick Sky Blue
-tile.wallpapercraft.colored_bricks_blue_3.name=Colored Brick Dark Sky Blue
-tile.wallpapercraft.colored_bricks_blue_4.name=Colored Brick Navy Blue
-tile.wallpapercraft.colored_bricks_blue_5.name=Colored Brick Light Baby Blue
-tile.wallpapercraft.colored_bricks_blue_6.name=Colored Brick Baby Blue
-tile.wallpapercraft.colored_bricks_blue_7.name=Colored Brick Bright Blue
-tile.wallpapercraft.colored_bricks_blue_8.name=Colored Brick Medium Blue
-tile.wallpapercraft.colored_bricks_blue_9.name=Colored Brick Deep Blue
-tile.wallpapercraft.colored_bricks_blue_10.name=Colored Brick Light Aqua Blue
-tile.wallpapercraft.colored_bricks_blue_11.name=Colored Brick Aqua Blue
-tile.wallpapercraft.colored_bricks_blue_12.name=Colored Brick Dark Aqua Blue
-tile.wallpapercraft.colored_bricks_blue_13.name=Colored Brick Ocean Blue
-tile.wallpapercraft.colored_bricks_blue_14.name=Colored Brick Midnight Blue
+#Colored Bricks Purple Colours
+tile.wallpapercraft.colored_bricks_purple_0.name=Colored Bricks Light Magenta
+tile.wallpapercraft.colored_bricks_purple_1.name=Colored Bricks Magenta
+tile.wallpapercraft.colored_bricks_purple_2.name=Colored Bricks Dark Magenta
+tile.wallpapercraft.colored_bricks_purple_3.name=Colored Bricks Violet
+tile.wallpapercraft.colored_bricks_purple_4.name=Colored Bricks Dark Violet
+tile.wallpapercraft.colored_bricks_purple_5.name=Colored Bricks Light Violet
+tile.wallpapercraft.colored_bricks_purple_6.name=Colored Bricks Light Purple
+tile.wallpapercraft.colored_bricks_purple_7.name=Colored Bricks Purple
+tile.wallpapercraft.colored_bricks_purple_8.name=Colored Bricks Dark Purple
+tile.wallpapercraft.colored_bricks_purple_9.name=Colored Bricks Royal Blue
+tile.wallpapercraft.colored_bricks_purple_10.name=Colored Bricks Light Lavender
+tile.wallpapercraft.colored_bricks_purple_11.name=Colored Bricks Lavender
+tile.wallpapercraft.colored_bricks_purple_12.name=Colored Bricks Azure Blue
+tile.wallpapercraft.colored_bricks_purple_13.name=Colored Bricks Dark Blue
+tile.wallpapercraft.colored_bricks_purple_14.name=Colored Bricks Midnight Blue
 
 
 
-#Coloured Brick Brown Colours
-tile.wallpapercraft.colored_bricks_brown_0.name=Colored Brick Soft Orange
-tile.wallpapercraft.colored_bricks_brown_1.name=Colored Brick Sienna brown
-tile.wallpapercraft.colored_bricks_brown_2.name=Colored Brick Burnt Sienna Brown
-tile.wallpapercraft.colored_bricks_brown_3.name=Colored Brick Earth Brown
-tile.wallpapercraft.colored_bricks_brown_4.name=Colored Brick Soil Brown
-tile.wallpapercraft.colored_bricks_brown_5.name=Colored Brick Light Beige
-tile.wallpapercraft.colored_bricks_brown_6.name=Colored Brick Beige
-tile.wallpapercraft.colored_bricks_brown_7.name=Colored Brick Terracotta Red
-tile.wallpapercraft.colored_bricks_brown_8.name=Colored Brick Brown
-tile.wallpapercraft.colored_bricks_brown_9.name=Colored Brick Saddle Brown
-tile.wallpapercraft.colored_bricks_brown_10.name=Colored Brick Light Gray Brown
-tile.wallpapercraft.colored_bricks_brown_11.name=Colored Brick Gray Brown
-tile.wallpapercraft.colored_bricks_brown_12.name=Colored Brick Middle Gray Brown
-tile.wallpapercraft.colored_bricks_brown_13.name=Colored Brick Gray Brown
-tile.wallpapercraft.colored_bricks_brown_14.name=Colored Brick Dark Gray Brown
+#Colored Bricks Blue Colours
+tile.wallpapercraft.colored_bricks_blue_0.name=Colored Bricks Light Blue
+tile.wallpapercraft.colored_bricks_blue_1.name=Colored Bricks Light Sky Blue
+tile.wallpapercraft.colored_bricks_blue_2.name=Colored Bricks Sky Blue
+tile.wallpapercraft.colored_bricks_blue_3.name=Colored Bricks Dark Sky Blue
+tile.wallpapercraft.colored_bricks_blue_4.name=Colored Bricks Navy Blue
+tile.wallpapercraft.colored_bricks_blue_5.name=Colored Bricks Light Baby Blue
+tile.wallpapercraft.colored_bricks_blue_6.name=Colored Bricks Baby Blue
+tile.wallpapercraft.colored_bricks_blue_7.name=Colored Bricks Bright Blue
+tile.wallpapercraft.colored_bricks_blue_8.name=Colored Bricks Medium Blue
+tile.wallpapercraft.colored_bricks_blue_9.name=Colored Bricks Deep Blue
+tile.wallpapercraft.colored_bricks_blue_10.name=Colored Bricks Light Aqua Blue
+tile.wallpapercraft.colored_bricks_blue_11.name=Colored Bricks Aqua Blue
+tile.wallpapercraft.colored_bricks_blue_12.name=Colored Bricks Dark Aqua Blue
+tile.wallpapercraft.colored_bricks_blue_13.name=Colored Bricks Ocean Blue
+tile.wallpapercraft.colored_bricks_blue_14.name=Colored Bricks Midnight Blue
 
 
 
-#Coloured Brick Cyan Colours
-tile.wallpapercraft.colored_bricks_cyan_0.name=Colored Brick Light Green Blue
-tile.wallpapercraft.colored_bricks_cyan_1.name=Colored Brick Light Turquoise Blue
-tile.wallpapercraft.colored_bricks_cyan_2.name=Colored Brick Turquoise Blue
-tile.wallpapercraft.colored_bricks_cyan_3.name=Colored Brick Teal Blue
-tile.wallpapercraft.colored_bricks_cyan_4.name=Colored Brick Dark Teal Blue
-tile.wallpapercraft.colored_bricks_cyan_5.name=Colored Brick Light Seafoam Blue Green
-tile.wallpapercraft.colored_bricks_cyan_6.name=Colored Brick Seafoam Blue Green
-tile.wallpapercraft.colored_bricks_cyan_7.name=Colored Brick Blue Green
-tile.wallpapercraft.colored_bricks_cyan_8.name=Colored Brick Dark Blue Green
-tile.wallpapercraft.colored_bricks_cyan_9.name=Colored Brick Dark Pine Blue Green
+#Colored Bricks Brown Colours
+tile.wallpapercraft.colored_bricks_brown_0.name=Colored Bricks Soft Orange
+tile.wallpapercraft.colored_bricks_brown_1.name=Colored Bricks Sienna brown
+tile.wallpapercraft.colored_bricks_brown_2.name=Colored Bricks Burnt Sienna Brown
+tile.wallpapercraft.colored_bricks_brown_3.name=Colored Bricks Earth Brown
+tile.wallpapercraft.colored_bricks_brown_4.name=Colored Bricks Soil Brown
+tile.wallpapercraft.colored_bricks_brown_5.name=Colored Bricks Light Beige
+tile.wallpapercraft.colored_bricks_brown_6.name=Colored Bricks Beige
+tile.wallpapercraft.colored_bricks_brown_7.name=Colored Bricks Terracotta Red
+tile.wallpapercraft.colored_bricks_brown_8.name=Colored Bricks Brown
+tile.wallpapercraft.colored_bricks_brown_9.name=Colored Bricks Saddle Brown
+tile.wallpapercraft.colored_bricks_brown_10.name=Colored Bricks Light Gray Brown
+tile.wallpapercraft.colored_bricks_brown_11.name=Colored Bricks Gray Brown
+tile.wallpapercraft.colored_bricks_brown_12.name=Colored Bricks Middle Gray Brown
+tile.wallpapercraft.colored_bricks_brown_13.name=Colored Bricks Gray Brown
+tile.wallpapercraft.colored_bricks_brown_14.name=Colored Bricks Dark Gray Brown
 
 
 
-#Coloured Brick Green Colours
-tile.wallpapercraft.colored_bricks_green_0.name=Colored Brick Light Green
-tile.wallpapercraft.colored_bricks_green_1.name=Colored Brick Light Spring Green
-tile.wallpapercraft.colored_bricks_green_2.name=Colored Brick Spring Green
-tile.wallpapercraft.colored_bricks_green_3.name=Colored Brick Green
-tile.wallpapercraft.colored_bricks_green_4.name=Colored Brick Dark Green
-tile.wallpapercraft.colored_bricks_green_5.name=Colored Brick Light Summer Green
-tile.wallpapercraft.colored_bricks_green_6.name=Colored Brick Summer Green
-tile.wallpapercraft.colored_bricks_green_7.name=Colored Brick Lush Green
-tile.wallpapercraft.colored_bricks_green_8.name=Colored Brick Deep Lush Green
-tile.wallpapercraft.colored_bricks_green_9.name=Colored Brick Dark Lush Green
-tile.wallpapercraft.colored_bricks_green_10.name=Colored Brick Light Spring Green
-tile.wallpapercraft.colored_bricks_green_11.name=Colored Brick Spring Green
-tile.wallpapercraft.colored_bricks_green_12.name=Colored Brick Light Olive Green
-tile.wallpapercraft.colored_bricks_green_13.name=Colored Brick Olive Green
-tile.wallpapercraft.colored_bricks_green_14.name=Colored Brick Moss Green
+#Colored Bricks Cyan Colours
+tile.wallpapercraft.colored_bricks_cyan_0.name=Colored Bricks Light Green Blue
+tile.wallpapercraft.colored_bricks_cyan_1.name=Colored Bricks Light Turquoise Blue
+tile.wallpapercraft.colored_bricks_cyan_2.name=Colored Bricks Turquoise Blue
+tile.wallpapercraft.colored_bricks_cyan_3.name=Colored Bricks Teal Blue
+tile.wallpapercraft.colored_bricks_cyan_4.name=Colored Bricks Dark Teal Blue
+tile.wallpapercraft.colored_bricks_cyan_5.name=Colored Bricks Light Seafoam Blue Green
+tile.wallpapercraft.colored_bricks_cyan_6.name=Colored Bricks Seafoam Blue Green
+tile.wallpapercraft.colored_bricks_cyan_7.name=Colored Bricks Blue Green
+tile.wallpapercraft.colored_bricks_cyan_8.name=Colored Bricks Dark Blue Green
+tile.wallpapercraft.colored_bricks_cyan_9.name=Colored Bricks Dark Pine Blue Green
 
 
 
-#Coloured Brick Yellow Colours
-tile.wallpapercraft.colored_bricks_yellow_0.name=Colored Brick Light Lemon Yellow
-tile.wallpapercraft.colored_bricks_yellow_1.name=Colored Brick Lemon Yellow
-tile.wallpapercraft.colored_bricks_yellow_2.name=Colored Brick Sunny Yellow
-tile.wallpapercraft.colored_bricks_yellow_3.name=Colored Brick Soft Yellow
-tile.wallpapercraft.colored_bricks_yellow_4.name=Colored Brick Orange Yellow
-tile.wallpapercraft.colored_bricks_yellow_5.name=Colored Brick Light Sand Yellow
-tile.wallpapercraft.colored_bricks_yellow_6.name=Colored Brick Light Yellow
-tile.wallpapercraft.colored_bricks_yellow_7.name=Colored Brick Yellow
-tile.wallpapercraft.colored_bricks_yellow_8.name=Colored Brick Gold Yellow
-tile.wallpapercraft.colored_bricks_yellow_9.name=Colored Brick Dark Orange
-tile.wallpapercraft.colored_bricks_yellow_10.name=Colored Brick Light Orange
-tile.wallpapercraft.colored_bricks_yellow_11.name=Colored Brick Sunny Orange
-tile.wallpapercraft.colored_bricks_yellow_12.name=Colored Brick Orange
-tile.wallpapercraft.colored_bricks_yellow_13.name=Colored Brick Deep Orange
-tile.wallpapercraft.colored_bricks_yellow_14.name=Colored Brick Orange Red
+#Colored Bricks Green Colours
+tile.wallpapercraft.colored_bricks_green_0.name=Colored Bricks Light Green
+tile.wallpapercraft.colored_bricks_green_1.name=Colored Bricks Light Spring Green
+tile.wallpapercraft.colored_bricks_green_2.name=Colored Bricks Spring Green
+tile.wallpapercraft.colored_bricks_green_3.name=Colored Bricks Green
+tile.wallpapercraft.colored_bricks_green_4.name=Colored Bricks Dark Green
+tile.wallpapercraft.colored_bricks_green_5.name=Colored Bricks Light Summer Green
+tile.wallpapercraft.colored_bricks_green_6.name=Colored Bricks Summer Green
+tile.wallpapercraft.colored_bricks_green_7.name=Colored Bricks Lush Green
+tile.wallpapercraft.colored_bricks_green_8.name=Colored Bricks Deep Lush Green
+tile.wallpapercraft.colored_bricks_green_9.name=Colored Bricks Dark Lush Green
+tile.wallpapercraft.colored_bricks_green_10.name=Colored Bricks Light Spring Green
+tile.wallpapercraft.colored_bricks_green_11.name=Colored Bricks Spring Green
+tile.wallpapercraft.colored_bricks_green_12.name=Colored Bricks Light Olive Green
+tile.wallpapercraft.colored_bricks_green_13.name=Colored Bricks Olive Green
+tile.wallpapercraft.colored_bricks_green_14.name=Colored Bricks Moss Green
 
 
 
-#Coloured Brick Gray Colours
-tile.wallpapercraft.colored_bricks_gray_0.name=Colored Brick White Gray
-tile.wallpapercraft.colored_bricks_gray_1.name=Colored Brick Light Gray
-tile.wallpapercraft.colored_bricks_gray_2.name=Colored Brick Gray
-tile.wallpapercraft.colored_bricks_gray_3.name=Colored Brick Dark Gray
-tile.wallpapercraft.colored_bricks_gray_4.name=Colored Brick Gray Black
-tile.wallpapercraft.colored_bricks_gray_5.name=Colored Brick Light Warm Gray
-tile.wallpapercraft.colored_bricks_gray_6.name=Colored Brick Warm Gray
-tile.wallpapercraft.colored_bricks_gray_7.name=Colored Brick Middle Warm Gray
-tile.wallpapercraft.colored_bricks_gray_8.name=Colored Brick Dark Warm Gray
-tile.wallpapercraft.colored_bricks_gray_9.name=Colored Brick Warm Black Gray
-tile.wallpapercraft.colored_bricks_gray_10.name=Colored Brick Light Cool gray
-tile.wallpapercraft.colored_bricks_gray_11.name=Colored Brick Cool Gray
-tile.wallpapercraft.colored_bricks_gray_12.name=Colored Brick Dark Cool Gray
-tile.wallpapercraft.colored_bricks_gray_13.name=Colored Brick Cool Blue Gray
-tile.wallpapercraft.colored_bricks_gray_14.name=Colored Brick Cool Dark Blue Gray
+#Colored Bricks Yellow Colours
+tile.wallpapercraft.colored_bricks_yellow_0.name=Colored Bricks Light Lemon Yellow
+tile.wallpapercraft.colored_bricks_yellow_1.name=Colored Bricks Lemon Yellow
+tile.wallpapercraft.colored_bricks_yellow_2.name=Colored Bricks Sunny Yellow
+tile.wallpapercraft.colored_bricks_yellow_3.name=Colored Bricks Soft Yellow
+tile.wallpapercraft.colored_bricks_yellow_4.name=Colored Bricks Orange Yellow
+tile.wallpapercraft.colored_bricks_yellow_5.name=Colored Bricks Light Sand Yellow
+tile.wallpapercraft.colored_bricks_yellow_6.name=Colored Bricks Light Yellow
+tile.wallpapercraft.colored_bricks_yellow_7.name=Colored Bricks Yellow
+tile.wallpapercraft.colored_bricks_yellow_8.name=Colored Bricks Gold Yellow
+tile.wallpapercraft.colored_bricks_yellow_9.name=Colored Bricks Dark Orange
+tile.wallpapercraft.colored_bricks_yellow_10.name=Colored Bricks Light Orange
+tile.wallpapercraft.colored_bricks_yellow_11.name=Colored Bricks Sunny Orange
+tile.wallpapercraft.colored_bricks_yellow_12.name=Colored Bricks Orange
+tile.wallpapercraft.colored_bricks_yellow_13.name=Colored Bricks Deep Orange
+tile.wallpapercraft.colored_bricks_yellow_14.name=Colored Bricks Orange Red
+
+
+
+#Colored Bricks Gray Colours
+tile.wallpapercraft.colored_bricks_gray_0.name=Colored Bricks White Gray
+tile.wallpapercraft.colored_bricks_gray_1.name=Colored Bricks Light Gray
+tile.wallpapercraft.colored_bricks_gray_2.name=Colored Bricks Gray
+tile.wallpapercraft.colored_bricks_gray_3.name=Colored Bricks Dark Gray
+tile.wallpapercraft.colored_bricks_gray_4.name=Colored Bricks Gray Black
+tile.wallpapercraft.colored_bricks_gray_5.name=Colored Bricks Light Warm Gray
+tile.wallpapercraft.colored_bricks_gray_6.name=Colored Bricks Warm Gray
+tile.wallpapercraft.colored_bricks_gray_7.name=Colored Bricks Middle Warm Gray
+tile.wallpapercraft.colored_bricks_gray_8.name=Colored Bricks Dark Warm Gray
+tile.wallpapercraft.colored_bricks_gray_9.name=Colored Bricks Warm Black Gray
+tile.wallpapercraft.colored_bricks_gray_10.name=Colored Bricks Light Cool gray
+tile.wallpapercraft.colored_bricks_gray_11.name=Colored Bricks Cool Gray
+tile.wallpapercraft.colored_bricks_gray_12.name=Colored Bricks Dark Cool Gray
+tile.wallpapercraft.colored_bricks_gray_13.name=Colored Bricks Cool Blue Gray
+tile.wallpapercraft.colored_bricks_gray_14.name=Colored Bricks Cool Dark Blue Gray
 
 
 

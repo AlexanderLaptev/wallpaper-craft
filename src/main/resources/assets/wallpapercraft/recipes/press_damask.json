@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "presses",
+  "pattern":
+  [
+    "VBV"
+  ],
+  "key":
+  {
+    "V":
+    {
+      "item": "minecraft:vine"
+    },
+    "B":
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  },
+  "result":
+  {
+    "item": "wallpapercraft:press_damask",
+    "count": 1,
+    "data": 0
+  }
+}

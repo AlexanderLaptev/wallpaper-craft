@@ -1,13 +1,12 @@
 package com.trforcex.mods.wallpapercraft.init;
 
-import com.trforcex.mods.wallpapercraft.ModClass;
-import com.trforcex.mods.wallpapercraft.ModReference;
 import com.trforcex.mods.wallpapercraft.blockStates.IHasMetaItemBlock;
 import com.trforcex.mods.wallpapercraft.blocks.*;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeC;
 import com.trforcex.mods.wallpapercraft.blocks.carpets.CheckeredWoolCarpetsBlocks;
 import com.trforcex.mods.wallpapercraft.blocks.carpets.WoolCarpetsBlocks;
 import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -27,8 +26,10 @@ public class ModBlocks
     {
         BLOCKS = new ArrayList<>(0);
 
-        // ===== SOLID =====
-        SolidBlocks.instantiate();
+        SolidBlocks.instantiate(); // SOLID BLOCKS
+
+
+        // ===== SOLID_PATTERNS =====
         CheckeredWoolBlocks.instantiate();
         ClayBlocks.instantiate();
         FancyTilesBlocks.instantiate();
@@ -76,8 +77,9 @@ public class ModBlocks
         for(Block block : BLOCKS)
             event.getRegistry().register(block);
 
-        if(ModReference.debugMode)
-            ModClass.logger.debug("ModBlocks - completed registering blocks!");
+        ModHelper.logDebug("ModBlocks - completed registering blocks!");
+
+
     }
 
     @SubscribeEvent
@@ -91,8 +93,7 @@ public class ModBlocks
             }
         }
 
-        if(ModReference.debugMode)
-            ModClass.logger.debug("ModBlocks - completed registering MetaItemBlocks!");
+        ModHelper.logDebug("ModBlocks - completed registering MetaItemBlocks!");
     }
 
     @SubscribeEvent
@@ -106,7 +107,6 @@ public class ModBlocks
             }
         }
 
-        if(ModReference.debugMode)
-            ModClass.logger.debug("ModBlocks - completed registering MetaItemBlock models!");
+        ModHelper.logDebug("ModBlocks - completed registering MetaItemBlock models!");
     }
 }

@@ -17,13 +17,13 @@ public class CheckeredWoolBlocks
 
     public static void instantiate()
     {
-        blockCheckeredRed =  BlockHelper.createSolidBlockTypeA("checkered_wool_red");
-        blockCheckeredBlue = BlockHelper.createSolidBlockTypeA("checkered_wool_blue");
-        blockCheckeredYellow = BlockHelper.createSolidBlockTypeA("checkered_wool_yellow");
-        blockCheckeredGreen = BlockHelper.createSolidBlockTypeA("checkered_wool_green");
-        blockCheckeredGray= BlockHelper.createSolidBlockTypeA("checkered_wool_gray");
-        blockCheckeredCyan= BlockHelper.createSolidBlockTypeB("checkered_wool_cyan");
-        blockCheckeredBrown= BlockHelper.createSolidBlockTypeA("checkered_wool_brown");
-        blockCheckeredPurple = BlockHelper.createSolidBlockTypeA("checkered_wool_purple");
+        blockCheckeredRed =  BlockHelper.createWoolBlockTypeA("checkered_wool_red");
+        blockCheckeredBlue = BlockHelper.createWoolBlockTypeA("checkered_wool_blue");
+        blockCheckeredYellow = BlockHelper.createWoolBlockTypeA("checkered_wool_yellow");
+        blockCheckeredGreen = BlockHelper.createWoolBlockTypeA("checkered_wool_green");
+        blockCheckeredGray= BlockHelper.createWoolBlockTypeA("checkered_wool_gray");
+        blockCheckeredCyan= BlockHelper.createWoolBlockTypeB("checkered_wool_cyan");
+        blockCheckeredBrown= BlockHelper.createWoolBlockTypeA("checkered_wool_brown");
+        blockCheckeredPurple = BlockHelper.createWoolBlockTypeA("checkered_wool_purple");
     }
 }
