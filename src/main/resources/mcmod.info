@@ -10,6 +10,6 @@
   "authorList": ["TheRealForceX", "oliviaoliviasson"],
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["after:chisel@MC1.10.2-0.0.14.32"]
 }
 ]

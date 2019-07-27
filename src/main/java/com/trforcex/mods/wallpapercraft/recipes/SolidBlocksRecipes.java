@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class SolidBlocksRecipes
 {
+    public static int count = 0;
 
     private static final ResourceLocation solidGroup = new ResourceLocation("solid");
 
@@ -38,6 +39,7 @@ public class SolidBlocksRecipes
             ItemStack output = new ItemStack(solidItemBlock, 8, 0);
 
             GameRegistry.addShapedRecipe(recipeResourceLocation, solidGroup, output, "TTT", "T T", "TTT", 'T', new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, meta));
+            count++;
         }
 
         ModHelper.logDebug("Initialized recipes for solid blocks.");
@@ -65,6 +67,7 @@ public class SolidBlocksRecipes
 
                 ItemStack outputStack = new ItemStack(solidItemBlock, 8);
                 GameRegistry.addShapedRecipe(recipeResourceLocation, solidGroup, outputStack, "PPP", "PBP", "PPP", 'P', patternBlock, 'B', blankPress);
+                count++;
             }
 
             i++;

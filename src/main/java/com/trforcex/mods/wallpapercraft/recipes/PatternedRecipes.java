@@ -17,6 +17,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 // TODO: extract Item.getItemFromBlock
 public class PatternedRecipes
 {
+    public static int count = 0;
 
     private static final ResourceLocation woolGroup = new ResourceLocation(ModReference.MODID, "wool");
     private static final ResourceLocation checkeredWoolGroup = new ResourceLocation(ModReference.MODID, "checkered_wool");
@@ -70,6 +71,7 @@ public class PatternedRecipes
 
                 //Register recipe
                 GameRegistry.addShapedRecipe(outputResourceLocation, new ResourceLocation(ModReference.MODID, pattern), outputStack, "SSS", "SPS", "SSS", 'S', solidBlock, 'P', pressItem);
+                count++;
 
                 ModHelper.logDebug("Successfully registered " + outputStack.getUnlocalizedName() + " [" + pattern + "_" + color + "]");
             }
@@ -116,6 +118,7 @@ public class PatternedRecipes
             // Register recipes
             GameRegistry.addShapedRecipe(woolResourceLocation, woolGroup, outWoolStack, "WWW", "WPW", "WWW", 'W', vanillaWoolStack, 'P', woolPress);
             GameRegistry.addShapedRecipe(checkeredResourceLocation, checkeredWoolGroup, outCheckeredStack, "WWW", "WPW", "WWW", 'W', vanillaWoolStack, 'P', checkeredPress);
+            count +=2 ;
         }
 
         ModHelper.logDebug("Completed registration for: WOOL_AND_CHECKERED");
@@ -154,6 +157,7 @@ public class PatternedRecipes
             // Register recipes
             GameRegistry.addShapedRecipe(carpetRL, woolCarpetsGroup, outCarpet, "WW", 'W', woolBlock);
             GameRegistry.addShapedRecipe(checkeredCarpetRL, checkeredCarpets, outCheckeredCarpet, "WW", 'W', checkeredWoolBlock);
+            count += 2;
         }
 
         ModHelper.logDebug("Completed registration for: CARPETS");
@@ -191,6 +195,7 @@ public class PatternedRecipes
             GameRegistry.addShapedRecipe(texturedRL, texturedGroup, outTexturedStack, "GGG", "GPG", "GGG", 'G', vanillaGlassStack, 'P', texturedPress);
             GameRegistry.addShapedRecipe(tintedRL, tintedGroup, outTintedStack, "GGG", "GPG", "GGG", 'G', vanillaGlassStack, 'P', tintedPress);
             GameRegistry.addShapedRecipe(frostedRL, frostedGroup, outFrostedStack, "GGG", "GPG", "GGG", 'G', vanillaGlassStack, 'P', frostedPress);
+            count += 3;
         }
 
         ModHelper.logDebug("Completed registration for: GLASS");
@@ -218,6 +223,7 @@ public class PatternedRecipes
 
             // Register recipe
             GameRegistry.addShapedRecipe(recipeResLoc, woodPlanksGroup, outStack, "PPP", "PDP", "PPP", 'P', vanillaPlanksStack, 'D', dyeStack);
+            count++;
         }
 
         ModHelper.logDebug("Completed registration for: PLANKS");
@@ -248,6 +254,7 @@ public class PatternedRecipes
 
             GameRegistry.addShapedRecipe(stoneLampResLoc, stoneLampsGroup, outStoneLamp, "P", "G", "D", 'P', stoneLampPress, 'G', glowstoneBlock, 'D', dyeStack);
             GameRegistry.addShapedRecipe(auraLampResLoc, auraLampsGroup, outAuraLamp, "P", "G", "D", 'P', auraLampPress, 'G', glowstoneBlock, 'D', dyeStack);
+            count += 2;
 
             ModHelper.logDebug("Registering recipe for: LAMPS-" + color);
         }

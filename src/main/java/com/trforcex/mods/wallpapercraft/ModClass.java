@@ -1,5 +1,6 @@
 package com.trforcex.mods.wallpapercraft;
 
+import com.trforcex.mods.wallpapercraft.compatibility.ChiselCompatibility;
 import com.trforcex.mods.wallpapercraft.proxy.IProxy;
 import com.trforcex.mods.wallpapercraft.recipes.PatternedRecipes;
 import com.trforcex.mods.wallpapercraft.recipes.SolidBlocksRecipes;
@@ -8,6 +9,7 @@ import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -15,6 +17,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.Logger;
+import team.chisel.api.ChiselAPIProps;
 
 import java.io.File;
 
@@ -48,6 +51,10 @@ public class ModClass
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		ModHelper.logDebug("Initializing Chisel support");
+		if(ConfigManager.enableChiselCompat && Loader.isModLoaded(ChiselAPIProps.MOD_ID))
+			ChiselCompatibility.init();
+
 		proxy.init(event);
 
 		ModHelper.logDebug("ModClass - init complete");
@@ -73,5 +80,7 @@ public class ModClass
 	{
 		SolidBlocksRecipes.init();
 		PatternedRecipes.init();
+
+		ModHelper.logDebug("The mod has " + (SolidBlocksRecipes.count + PatternedRecipes.count));
 	}
 }

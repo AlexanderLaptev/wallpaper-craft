@@ -2,14 +2,20 @@ package com.trforcex.mods.wallpapercraft.items;
 
 import com.trforcex.mods.wallpapercraft.blockStates.IHasMetaItemBlock;
 import com.trforcex.mods.wallpapercraft.init.ModCreativeTab;
+import com.trforcex.mods.wallpapercraft.init.ModKeybinds;
 import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
+import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 public class MetaItemBlock extends ItemBlock
 {
@@ -43,6 +49,12 @@ public class MetaItemBlock extends ItemBlock
     public String getUnlocalizedName(ItemStack stack)
     {
         return super.getUnlocalizedName(stack) + "_" + stack.getMetadata();
+    }
+
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
+    {
+        tooltip.add("§aHold the §f[" + ModKeybinds.metaScrollKey.getDisplayName() + "]§a key and scroll the mouse\nwheel to change the shade of the color.");
     }
 
     @Override
