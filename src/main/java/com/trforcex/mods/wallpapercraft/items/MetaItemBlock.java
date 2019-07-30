@@ -3,6 +3,7 @@ package com.trforcex.mods.wallpapercraft.items;
 import com.trforcex.mods.wallpapercraft.blockStates.IHasMetaItemBlock;
 import com.trforcex.mods.wallpapercraft.init.ModCreativeTab;
 import com.trforcex.mods.wallpapercraft.init.ModKeybinds;
+import com.trforcex.mods.wallpapercraft.util.ConfigManager;
 import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -11,6 +12,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
 
@@ -54,7 +56,11 @@ public class MetaItemBlock extends ItemBlock
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
     {
-        tooltip.add("§aHold the §f[" + ModKeybinds.metaScrollKey.getDisplayName() + "]§a key and scroll the mouse\nwheel to change the shade of the color.");
+        if(ConfigManager.getEnableScrollingHint())
+        {
+            tooltip.add(TextFormatting.GREEN + "Hold the " + TextFormatting.WHITE + "[" + ModKeybinds.metaScrollKey.getDisplayName() + "] " + TextFormatting.GREEN + "key and scroll the mouse");
+            tooltip.add(TextFormatting.GREEN + "wheel to change the shade of the color");
+        }
     }
 
     @Override

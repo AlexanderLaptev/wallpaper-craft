@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-maple-beehive-tile" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-padauk-beehive-tile"}}],
+    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-palm-beehive-tile"}}],
+    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-papaya-beehive-tile"}}],
+    "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-pine-beehive-tile"}}],
+    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-plum-beehive-tile"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-poplar-beehive-tile"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-sequoia-beehive-tile"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-teak-beehive-tile"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-walnut-beehive-tile"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-wenge-beehive-tile"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-willow-beehive-tile"}}],
+    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/beehive_tile/04-zebrawood-beehive-tile"}}]
+  }
+}

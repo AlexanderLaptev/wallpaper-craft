@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-maple-stone-brick" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-padauk-stone-brick"}}],
+    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-palm-stone-brick"}}],
+    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-papaya-stone-brick"}}],
+    "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-pine-stone-brick"}}],
+    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-plum-stone-brick"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-poplar-stone-brick"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-sequoia-stone-brick"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-teak-stone-brick"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-walnut-stone-brick"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-wenge-stone-brick"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-willow-stone-brick"}}],
+    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-zebrawood-stone-brick"}}]
+  }
+}

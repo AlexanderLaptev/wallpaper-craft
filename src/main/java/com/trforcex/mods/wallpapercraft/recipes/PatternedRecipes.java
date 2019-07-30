@@ -14,7 +14,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-// TODO: extract Item.getItemFromBlock
 public class PatternedRecipes
 {
     public static int count = 0;

@@ -40,6 +40,217 @@ item.wallpapercraft.press_colored_bricks.name=Colored Bricks Pattern Press
 
 
 
+#######################################################################
+###########											    ###############
+###########      STARTING NAMING OF FORESTRY BLOCKS         ###########
+###########											    ###############
+#######################################################################
+
+#Grass cloth 1
+tile.wallpapercraft.grass_cloth_1_0.name=Acacia Grass Cloth
+tile.wallpapercraft.grass_cloth_1_1.name=Balsa Grass Cloth
+tile.wallpapercraft.grass_cloth_1_2.name=Baobab Grass Cloth
+tile.wallpapercraft.grass_cloth_1_3.name=Cherry Grass Cloth
+tile.wallpapercraft.grass_cloth_1_4.name=Chestnut Grass Cloth
+tile.wallpapercraft.grass_cloth_1_5.name=Citrus Grass Cloth
+tile.wallpapercraft.grass_cloth_1_6.name=Cocobolo Grass Cloth
+tile.wallpapercraft.grass_cloth_1_7.name=Ebony Grass Cloth
+tile.wallpapercraft.grass_cloth_1_8.name=Giganteum Grass Cloth
+tile.wallpapercraft.grass_cloth_1_9.name=Greenheart Grass Cloth
+tile.wallpapercraft.grass_cloth_1_10.name=Ipe Grass Cloth
+tile.wallpapercraft.grass_cloth_1_11.name=Kapok Grass Cloth
+tile.wallpapercraft.grass_cloth_1_12.name=Larch Grass Cloth
+tile.wallpapercraft.grass_cloth_1_13.name=Lime Grass Cloth
+tile.wallpapercraft.grass_cloth_1_14.name=Mahoe Grass Cloth
+tile.wallpapercraft.grass_cloth_1_15.name=Mahogany Grass Cloth
+
+#Grass cloth 2
+tile.wallpapercraft.grass_cloth_2_0.name=Maple Grass Cloth
+tile.wallpapercraft.grass_cloth_2_1.name=Padauk Grass Cloth
+tile.wallpapercraft.grass_cloth_2_2.name=Palm Grass Cloth
+tile.wallpapercraft.grass_cloth_2_3.name=Papaya Grass Cloth
+tile.wallpapercraft.grass_cloth_2_4.name=Pine Grass Cloth
+tile.wallpapercraft.grass_cloth_2_5.name=Plum Grass Cloth
+tile.wallpapercraft.grass_cloth_2_6.name=Poplar Grass Cloth
+tile.wallpapercraft.grass_cloth_2_7.name=Sequoia Grass Cloth
+tile.wallpapercraft.grass_cloth_2_8.name=Teak Grass Cloth
+tile.wallpapercraft.grass_cloth_2_9.name=Walnut Grass Cloth
+tile.wallpapercraft.grass_cloth_2_10.name=Wenge Grass Cloth
+tile.wallpapercraft.grass_cloth_2_11.name=Willow Grass Cloth
+tile.wallpapercraft.grass_cloth_2_12.name=Zebrawood Grass Cloth
+
+#Honeycomb 1
+tile.wallpapercraft.honey_comb_1_0.name=Acacia Honeycomb
+tile.wallpapercraft.honey_comb_1_1.name=Balsa Honeycomb
+tile.wallpapercraft.honey_comb_1_2.name=Baobab Honeycomb
+tile.wallpapercraft.honey_comb_1_3.name=Cherry Honeycomb
+tile.wallpapercraft.honey_comb_1_4.name=Chestnut Honeycomb
+tile.wallpapercraft.honey_comb_1_5.name=Citrus Honeycomb
+tile.wallpapercraft.honey_comb_1_6.name=Cocobolo Honeycomb
+tile.wallpapercraft.honey_comb_1_7.name=Ebony Honeycomb
+tile.wallpapercraft.honey_comb_1_8.name=Giganteum Honeycomb
+tile.wallpapercraft.honey_comb_1_9.name=Greenheart Honeycomb
+tile.wallpapercraft.honey_comb_1_10.name=Ipe Honeycomb
+tile.wallpapercraft.honey_comb_1_11.name=Kapok Honeycomb
+tile.wallpapercraft.honey_comb_1_12.name=Larch Honeycomb
+tile.wallpapercraft.honey_comb_1_13.name=Lime Honeycomb
+tile.wallpapercraft.honey_comb_1_14.name=Mahoe Honeycomb
+tile.wallpapercraft.honey_comb_1_15.name=Mahogany Honeycomb
+
+#Honeycomb 2
+tile.wallpapercraft.honey_comb_2_0.name=Maple Honeycomb
+tile.wallpapercraft.honey_comb_2_1.name=Padauk Honeycomb
+tile.wallpapercraft.honey_comb_2_2.name=Palm Honeycomb
+tile.wallpapercraft.honey_comb_2_3.name=Papaya Honeycomb
+tile.wallpapercraft.honey_comb_2_4.name=Pine Honeycomb
+tile.wallpapercraft.honey_comb_2_5.name=Plum Honeycomb
+tile.wallpapercraft.honey_comb_2_6.name=Poplar Honeycomb
+tile.wallpapercraft.honey_comb_2_7.name=Sequoia Honeycomb
+tile.wallpapercraft.honey_comb_2_8.name=Teak Honeycomb
+tile.wallpapercraft.honey_comb_2_9.name=Walnut Honeycomb
+tile.wallpapercraft.honey_comb_2_10.name=Wenge Honeycomb
+tile.wallpapercraft.honey_comb_2_11.name=Willow Honeycomb
+tile.wallpapercraft.honey_comb_2_12.name=Zebrawood Honeycomb
+
+#Leafy 1
+tile.wallpapercraft.leafy_1_0.name=Acacia Leafy
+tile.wallpapercraft.leafy_1_1.name=Balsa Leafy
+tile.wallpapercraft.leafy_1_2.name=Baobab Leafy
+tile.wallpapercraft.leafy_1_3.name=Cherry Leafy
+tile.wallpapercraft.leafy_1_4.name=Chestnut Leafy
+tile.wallpapercraft.leafy_1_5.name=Citrus Leafy
+tile.wallpapercraft.leafy_1_6.name=Cocobolo Leafy
+tile.wallpapercraft.leafy_1_7.name=Ebony Leafy
+tile.wallpapercraft.leafy_1_8.name=Giganteum Leafy
+tile.wallpapercraft.leafy_1_9.name=Greenheart Leafy
+tile.wallpapercraft.leafy_1_10.name=Ipe Leafy
+tile.wallpapercraft.leafy_1_11.name=Kapok Leafy
+tile.wallpapercraft.leafy_1_12.name=Larch Leafy
+tile.wallpapercraft.leafy_1_13.name=Lime Leafy
+tile.wallpapercraft.leafy_1_14.name=Mahoe Leafy
+tile.wallpapercraft.leafy_1_15.name=Mahogany Leafy
+
+#Leafy 2
+tile.wallpapercraft.leafy_2_0.name=Maple Leafy
+tile.wallpapercraft.leafy_2_1.name=Padauk Leafy
+tile.wallpapercraft.leafy_2_2.name=Palm Leafy
+tile.wallpapercraft.leafy_2_3.name=Papaya Leafy
+tile.wallpapercraft.leafy_2_4.name=Pine Leafy
+tile.wallpapercraft.leafy_2_5.name=Plum Leafy
+tile.wallpapercraft.leafy_2_6.name=Poplar Leafy
+tile.wallpapercraft.leafy_2_7.name=Sequoia Leafy
+tile.wallpapercraft.leafy_2_8.name=Teak Leafy
+tile.wallpapercraft.leafy_2_9.name=Walnut Leafy
+tile.wallpapercraft.leafy_2_10.name=Wenge Leafy
+tile.wallpapercraft.leafy_2_11.name=Willow Leafy
+tile.wallpapercraft.leafy_2_12.name=Zebrawood Leafy
+
+#Beehive tile 1
+tile.wallpapercraft.beehive_tile_1_0.name=Acacia Beehive Tile
+tile.wallpapercraft.beehive_tile_1_1.name=Balsa Beehive Tile
+tile.wallpapercraft.beehive_tile_1_2.name=Baobab Beehive Tile
+tile.wallpapercraft.beehive_tile_1_3.name=Cherry Beehive Tile
+tile.wallpapercraft.beehive_tile_1_4.name=Chestnut Beehive Tile
+tile.wallpapercraft.beehive_tile_1_5.name=Citrus Beehive Tile
+tile.wallpapercraft.beehive_tile_1_6.name=Cocobolo Beehive Tile
+tile.wallpapercraft.beehive_tile_1_7.name=Ebony Beehive Tile
+tile.wallpapercraft.beehive_tile_1_8.name=Giganteum Beehive Tile
+tile.wallpapercraft.beehive_tile_1_9.name=Greenheart Beehive Tile
+tile.wallpapercraft.beehive_tile_1_10.name=Ipe Beehive Tile
+tile.wallpapercraft.beehive_tile_1_11.name=Kapok Beehive Tile
+tile.wallpapercraft.beehive_tile_1_12.name=Larch Beehive Tile
+tile.wallpapercraft.beehive_tile_1_13.name=Lime Beehive Tile
+tile.wallpapercraft.beehive_tile_1_14.name=Mahoe Beehive Tile
+tile.wallpapercraft.beehive_tile_1_15.name=Mahogany Beehive Tile
+
+#Beehive tile 2
+tile.wallpapercraft.beehive_tile_2_0.name=Maple Beehive Tile
+tile.wallpapercraft.beehive_tile_2_1.name=Padauk Beehive Tile
+tile.wallpapercraft.beehive_tile_2_2.name=Palm Beehive Tile
+tile.wallpapercraft.beehive_tile_2_3.name=Papaya Beehive Tile
+tile.wallpapercraft.beehive_tile_2_4.name=Pine Beehive Tile
+tile.wallpapercraft.beehive_tile_2_5.name=Plum Beehive Tile
+tile.wallpapercraft.beehive_tile_2_6.name=Poplar Beehive Tile
+tile.wallpapercraft.beehive_tile_2_7.name=Sequoia Beehive Tile
+tile.wallpapercraft.beehive_tile_2_8.name=Teak Beehive Tile
+tile.wallpapercraft.beehive_tile_2_9.name=Walnut Beehive Tile
+tile.wallpapercraft.beehive_tile_2_10.name=Wenge Beehive Tile
+tile.wallpapercraft.beehive_tile_2_11.name=Willow Beehive Tile
+tile.wallpapercraft.beehive_tile_2_12.name=Zebrawood Beehive Tile
+
+#Stone bricks 1
+tile.wallpapercraft.forestry_stone_bricks_1_0.name=Acacia Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_1.name=Balsa Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_2.name=Baobab Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_3.name=Cherry Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_4.name=Chestnut Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_5.name=Citrus Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_6.name=Cocobolo Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_7.name=Ebony Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_8.name=Giganteum Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_9.name=Greenheart Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_10.name=Ipe Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_11.name=Kapok Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_12.name=Larch Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_13.name=Lime Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_14.name=Mahoe Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_1_15.name=Mahogany Stone Bricks
+
+#Stone bricks 2
+tile.wallpapercraft.forestry_stone_bricks_2_0.name=Maple Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_1.name=Padauk Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_2.name=Palm Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_3.name=Papaya Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_4.name=Pine Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_5.name=Plum Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_6.name=Poplar Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_7.name=Sequoia Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_8.name=Teak Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_9.name=Walnut Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_10.name=Wenge Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_11.name=Willow Stone Bricks
+tile.wallpapercraft.forestry_stone_bricks_2_12.name=Zebrawood Stone Bricks
+
+#Glass bricks 1
+tile.wallpapercraft.glass_bricks_1_0.name=Acacia Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_1.name=Balsa Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_2.name=Baobab Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_3.name=Cherry Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_4.name=Chestnut Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_5.name=Citrus Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_6.name=Cocobolo Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_7.name=Ebony Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_8.name=Giganteum Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_9.name=Greenheart Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_10.name=Ipe Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_11.name=Kapok Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_12.name=Larch Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_13.name=Lime Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_14.name=Mahoe Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_1_15.name=Mahogany Glass Stone Bricks
+
+#Glass bricks 2
+tile.wallpapercraft.glass_bricks_2_0.name=Maple Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_1.name=Padauk Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_2.name=Palm Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_3.name=Papaya Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_4.name=Pine Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_5.name=Plum Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_6.name=Poplar Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_7.name=Sequoia Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_8.name=Teak Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_9.name=Walnut Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_10.name=Wenge Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_11.name=Willow Glass Stone Bricks
+tile.wallpapercraft.glass_bricks_2_12.name=Zebrawood Glass Stone Bricks
+
+
+
+
+
+
+
+
 ################################################################
 ###########											 ###########
 ###########      STARTING NAMING OF STAMP BLOCKS      ###########

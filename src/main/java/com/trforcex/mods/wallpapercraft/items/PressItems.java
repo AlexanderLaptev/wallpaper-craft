@@ -196,18 +196,6 @@ public class PressItems
         }
     };
 
-    // No need in this press as now planks are created using dyes.
-    // TODO: remove press recipe
-    // TODO: remove press completely [?]
-//    public static Item itemPressWoodPlanks = new BasePressItem() // Wood planks
-//    {
-//        {
-//            setRegistryName("press_wood_planks");
-//            setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
-//            setCreativeTab(ModCreativeTab.WPC_TAB);
-//        }
-//    };
-
     public static Item itemPressWool = new BasePressItem() // Wool
     {
         {

@@ -6,13 +6,24 @@ import net.minecraft.item.ItemStack;
 
 public class BasePressItem extends Item
 {
+    private boolean hasDurability = false;
+    private int maxDurability;
+
     public BasePressItem()
     {
-        setMaxDamage(ConfigManager.maxPressDurability);
-        setMaxStackSize(1);
+        setMaxDamage(ConfigManager.getMaxPressDurability());
+
+        maxDurability = ConfigManager.getMaxPressDurability();
+        hasDurability = maxDurability != 0;
+
+        if(hasDurability)
+            setMaxStackSize(1);
+        else
+            setMaxStackSize(64);
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public boolean hasContainerItem()
     {
         return true;
@@ -21,11 +32,12 @@ public class BasePressItem extends Item
     @Override
     public ItemStack getContainerItem(ItemStack itemStack)
     {
-        System.out.println("Getting container item for " + itemStack.getUnlocalizedName());
-
-        if(itemStack.getItemDamage() < ConfigManager.maxPressDurability)
-            return new ItemStack(itemStack.getItem(), itemStack.getCount(), itemStack.getItemDamage() + 1); // Increase damage
+        if(hasDurability)
+            if(itemStack.getItemDamage() < maxDurability)
+                return new ItemStack(itemStack.getItem(), itemStack.getCount(), itemStack.getItemDamage() + 1); // Increase damage
+            else
+                return ItemStack.EMPTY; // Return nothing because press breaks.
         else
-            return ItemStack.EMPTY; // Return nothing because press breaks.
+            return new ItemStack(this, itemStack.getCount(), itemStack.getMetadata());
     }
 }

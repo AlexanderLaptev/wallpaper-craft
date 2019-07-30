@@ -1,0 +1,25 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-acacia-leafy" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-balsa-leafy"}}],
+    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-baobab-leafy"}}],
+    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-cherry-leafy"}}],
+    "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-chestnut-leafy"}}],
+    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-citrus-leafy"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-cocobolo-leafy"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-ebony-leafy"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-giganteum-leafy"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-greenheart-leafy"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-ipe-leafy"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-kapok-leafy"}}],
+    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-larch-leafy"}}],
+    "variant=13": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-lime-leafy"}}],
+    "variant=14": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-mahoe-leafy"}}],
+    "variant=15": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-mahogany-leafy"}}]
+  }
+}

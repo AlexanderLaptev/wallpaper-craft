@@ -1,0 +1,25 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-acacia-honeycomb" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-balsa-honeycomb"}}],
+    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-baobab-honeycomb"}}],
+    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-cherry-honeycomb"}}],
+    "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-chestnut-honeycomb"}}],
+    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-citrus-honeycomb"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-cocobolo-honeycomb"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-ebony-honeycomb"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-giganteum-honeycomb"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-greenheart-honeycomb"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-ipe-honeycomb"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-kapok-honeycomb"}}],
+    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-larch-honeycomb"}}],
+    "variant=13": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-lime-honeycomb"}}],
+    "variant=14": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-mahoe-honeycomb"}}],
+    "variant=15": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-mahogany-honeycomb"}}]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-maple-leafy" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-padauk-leafy"}}],
+    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-palm-leafy"}}],
+    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-papaya-leafy"}}],
+    "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-pine-leafy"}}],
+    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-plum-leafy"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-poplar-leafy"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-sequoia-leafy"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-teak-leafy"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-walnut-leafy"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-wenge-leafy"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-willow-leafy"}}],
+    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/leafy/03-zebrawood-leafy"}}]
+  }
+}

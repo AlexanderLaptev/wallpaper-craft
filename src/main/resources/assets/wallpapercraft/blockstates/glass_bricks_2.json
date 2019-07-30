@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-maple-stone-brick-glass" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-padauk-stone-brick-glass"}}],
+    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-palm-stone-brick-glass"}}],
+    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-papaya-stone-brick-glass"}}],
+    "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-pine-stone-brick-glass"}}],
+    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-plum-stone-brick-glass"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-poplar-stone-brick-glass"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-sequoia-stone-brick-glass"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-teak-stone-brick-glass"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-walnut-stone-brick-glass"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-wenge-stone-brick-glass"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-willow-stone-brick-glass"}}],
+    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks_glass/06-zebrawood-stone-brick-glass"}}]
+  }
+}

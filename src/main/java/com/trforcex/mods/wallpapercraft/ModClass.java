@@ -52,7 +52,7 @@ public class ModClass
 	public void init(FMLInitializationEvent event)
 	{
 		ModHelper.logDebug("Initializing Chisel support");
-		if(ConfigManager.enableChiselCompat && Loader.isModLoaded(ChiselAPIProps.MOD_ID))
+		if(ConfigManager.getEnableChiselCompat() && Loader.isModLoaded(ChiselAPIProps.MOD_ID))
 			ChiselCompatibility.init();
 
 		proxy.init(event);

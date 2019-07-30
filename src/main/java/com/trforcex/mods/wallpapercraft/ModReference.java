@@ -1,11 +1,13 @@
 package com.trforcex.mods.wallpapercraft;
 
+import com.trforcex.mods.wallpapercraft.util.ConfigManager;
+
 public class ModReference
 {
 	// ===== MOD INFO =====
 	public static final String MODID = "wallpapercraft";
 	public static final String NAME = "WallpaperCraft";
-	public static final String VERSION = "0.0.1-indev";
+	public static final String VERSION = "1.0.1-beta";
 
 	//public static final String UNLOCALIZED_NAME_PREFIX = MODID + ".";
 	// ===== END OF MOD INFO =====
@@ -16,12 +18,7 @@ public class ModReference
 	// ===== END OF PROXIES =====
 
 	// ===== DEBUG =====
-	public static final boolean debugMode = true;
-
-//	static
-//	{
-//		debugMode = ConfigManager.enableDebug;
-//	}
+	public static final boolean debugMode = ConfigManager.getEnableDebug();;
 	// ===== END OF DEBUG =====
 
 	// Terracotta metas (RYGCBPBG): 14 4 13 9 11 12 7 10

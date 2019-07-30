@@ -1,5 +1,6 @@
 package com.trforcex.mods.wallpapercraft.util;
 
+import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockForestry;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeC;
@@ -205,7 +206,7 @@ public class BlockHelper
                 setSoundType(SoundType.CLOTH);
                 Blocks.FIRE.setFireInfo(this, 30, 60);
                 OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
-                OreDictionary.registerOre("block_wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                OreDictionary.registerOre("blockWool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
             }
         };
     }
@@ -218,7 +219,7 @@ public class BlockHelper
                 setSoundType(SoundType.CLOTH);
                 Blocks.FIRE.setFireInfo(this, 30, 60);
                 OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
-                OreDictionary.registerOre("block_wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                OreDictionary.registerOre("blockWool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
             }
         };
     }
@@ -257,6 +258,10 @@ public class BlockHelper
     {
     return new MetaBlockTypeA(Material.CARPET, 0.1f, 0.5f, registryName)
     {
+        {
+            setSoundType(SoundType.CLOTH);
+        }
+
         private final AxisAlignedBB CARPET_AABB = new AxisAlignedBB(0d, 0d, 0d, 1d, 0.0625d, 1d);
 
         @Override
@@ -334,6 +339,10 @@ public class BlockHelper
     {
         return new MetaBlockTypeB(Material.CARPET, 0.1f, 0.5f, registryName)
         {
+            {
+                setSoundType(SoundType.CLOTH);
+            }
+
             private final AxisAlignedBB CARPET_AABB = new AxisAlignedBB(0d, 0d, 0d, 1d, 0.0625d, 1d);
 
             @Override
@@ -407,4 +416,166 @@ public class BlockHelper
         };
     }
     //endregion
+
+    //region ===== FORESTRY =====
+    public static MetaBlockTypeC createForestryWoolBlock(String registryName)
+    {
+        return new MetaBlockTypeC(Material.CLOTH, 0.8f, 4f, registryName)
+        {
+            {
+                setSoundType(SoundType.CLOTH);
+                Blocks.FIRE.setFireInfo(this, 30, 60);
+                OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                OreDictionary.registerOre("blockWool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+            }
+        };
+    }
+
+    public static MetaBlockForestry createForestryWoolBlock2(String registryName) // 2 because these blocks are used for the other half of meta values
+    {
+        return new MetaBlockForestry(Material.CLOTH, 0.8f, 4f, registryName)
+        {
+            {
+                setSoundType(SoundType.CLOTH);
+                Blocks.FIRE.setFireInfo(this, 30, 60);
+                OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                OreDictionary.registerOre("blockWool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+            }
+        };
+    }
+
+    public static MetaBlockForestry createForestrySolidBlock2(String registryName)
+    {
+        return new MetaBlockForestry(Material.ROCK, 2f, 6f, registryName);
+    }
+
+    public static MetaBlockTypeC createForestryGlassBlock(String registryName)
+    {
+        return new MetaBlockTypeC(Material.GLASS, 0.3f, 1.5f, registryName)
+        {
+            {
+                setSoundType(SoundType.GLASS);
+            }
+
+            @Override
+            public BlockRenderLayer getBlockLayer()
+            {
+                return BlockRenderLayer.TRANSLUCENT; // All (mod) glass blocks are translucent
+            }
+
+            @Override
+            public boolean isFullCube(IBlockState state)
+            {
+                return false;
+            }
+
+            @Override
+            public boolean isOpaqueCube(IBlockState state)
+            {
+                return false;
+            }
+
+            @Override
+            public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+            {
+                IBlockState iblockstate = blockAccess.getBlockState(pos.offset(side));
+                Block block = iblockstate.getBlock();
+
+                if (blockState != iblockstate)
+                {
+                    return true;
+                }
+
+                if (block == this)
+                {
+                    return false;
+                }
+
+                return block != this && super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+            }
+
+            @Override
+            protected boolean canSilkHarvest()
+            {
+                return true;
+            }
+
+            @Override
+            public int quantityDropped(Random random)
+            {
+                return 0;
+            }
+
+            @Override
+            public boolean canPlaceTorchOnTop(IBlockState state, IBlockAccess world, BlockPos pos)
+            {
+                return false;
+            }
+        };
+    }
+
+    public static MetaBlockForestry createForestryGlassBlock2(String registryName)
+    {
+        return new MetaBlockForestry(Material.GLASS, 0.3f, 1.5f, registryName)
+        {
+            {
+                setSoundType(SoundType.GLASS);
+            }
+
+            @Override
+            public BlockRenderLayer getBlockLayer()
+            {
+                return BlockRenderLayer.TRANSLUCENT; // All (mod) glass blocks are translucent
+            }
+
+            @Override
+            public boolean isFullCube(IBlockState state)
+            {
+                return false;
+            }
+
+            @Override
+            public boolean isOpaqueCube(IBlockState state)
+            {
+                return false;
+            }
+
+            @Override
+            public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+            {
+                IBlockState iblockstate = blockAccess.getBlockState(pos.offset(side));
+                Block block = iblockstate.getBlock();
+
+                if (blockState != iblockstate)
+                {
+                    return true;
+                }
+
+                if (block == this)
+                {
+                    return false;
+                }
+
+                return block != this && super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+            }
+
+            @Override
+            protected boolean canSilkHarvest()
+            {
+                return true;
+            }
+
+            @Override
+            public int quantityDropped(Random random)
+            {
+                return 0;
+            }
+
+            @Override
+            public boolean canPlaceTorchOnTop(IBlockState state, IBlockAccess world, BlockPos pos)
+            {
+                return false;
+            }
+        };
+    }
 }

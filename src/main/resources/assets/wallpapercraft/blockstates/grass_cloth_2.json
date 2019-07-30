@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "minecraft:cube_all",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-maple-grass-cloth" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-padauk-grass-cloth"}}],
+    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-palm-grass-cloth"}}],
+    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-papaya-grass-cloth"}}],
+    "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-pine-grass-cloth"}}],
+    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-plum-grass-cloth"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-poplar-grass-cloth"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-sequoia-grass-cloth"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-teak-grass-cloth"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-walnut-grass-cloth"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-wenge-grass-cloth"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-willow-grass-cloth"}}],
+    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-zebrawood-grass-cloth"}}]
+  }
+}
