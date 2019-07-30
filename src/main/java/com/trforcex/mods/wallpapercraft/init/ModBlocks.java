@@ -6,13 +6,11 @@ import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeC;
 import com.trforcex.mods.wallpapercraft.blocks.carpets.CheckeredWoolCarpetsBlocks;
 import com.trforcex.mods.wallpapercraft.blocks.carpets.WoolCarpetsBlocks;
 import com.trforcex.mods.wallpapercraft.util.BlockHelper;
-import com.trforcex.mods.wallpapercraft.util.ConfigManager;
 import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -70,8 +68,7 @@ public class ModBlocks
         CheckeredWoolCarpetsBlocks.instantiate();
 
         // ===== FORESTRY =====
-        if(ConfigManager.getEnableForestryIntegration() && Loader.isModLoaded("forestry"))
-            ForestryBlocks.instantiate();
+        ForestryBlocks.instantiate();
     }
 
     public static final ArrayList<Block> BLOCKS;
