@@ -5,21 +5,21 @@
     "transform": "forge:default-block"
   },
   "variants": {
-    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-acacia-grass-cloth" }}],
-    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-balsa-grass-cloth"}}],
-    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-baobab-grass-cloth"}}],
-    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-cherry-grass-cloth"}}],
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-larch-grass-cloth" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-teak-grass-cloth"}}],
+    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-acacia-grass-cloth"}}],
+    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-lime-grass-cloth"}}],
     "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-chestnut-grass-cloth"}}],
-    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-citrus-grass-cloth"}}],
-    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-cocobolo-grass-cloth"}}],
-    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-ebony-grass-cloth"}}],
-    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-giganteum-grass-cloth"}}],
-    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-greenheart-grass-cloth"}}],
-    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-ipe-grass-cloth"}}],
-    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-kapok-grass-cloth"}}],
-    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-larch-grass-cloth"}}],
-    "variant=13": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-lime-grass-cloth"}}],
-    "variant=14": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-mahoe-grass-cloth"}}],
-    "variant=15": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-mahogany-grass-cloth"}}]
+    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-wenge-grass-cloth"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-baobab-grass-cloth"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-sequoia-grass-cloth"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-kapok-grass-cloth"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-ebony-grass-cloth"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-mahogany-grass-cloth"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-balsa-grass-cloth"}}],
+    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-willow-grass-cloth"}}],
+    "variant=13": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-walnut-grass-cloth"}}],
+    "variant=14": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-greenheart-grass-cloth"}}],
+    "variant=15": [{ "textures": { "all":  "wallpapercraft:blocks/grass_cloth/01-cherry-grass-cloth"}}]
   }
 }

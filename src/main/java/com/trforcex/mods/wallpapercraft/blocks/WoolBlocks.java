@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.blocks;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class WoolBlocks
 {
@@ -17,13 +17,13 @@ public class WoolBlocks
 
     public static void instantiate()
     {
-        blockWoolRed =  BlockHelper.createWoolBlockTypeA("wool_red");
-        blockWoolBlue = BlockHelper.createWoolBlockTypeA("wool_blue");
-        blockWoolYellow = BlockHelper.createWoolBlockTypeA("wool_yellow");
-        blockWoolGreen = BlockHelper.createWoolBlockTypeA("wool_green");
-        blockWoolGray= BlockHelper.createWoolBlockTypeA("wool_gray");
-        blockWoolCyan= BlockHelper.createWoolBlockTypeB("wool_cyan");
-        blockWoolBrown= BlockHelper.createWoolBlockTypeA("wool_brown");
-        blockWoolPurple = BlockHelper.createWoolBlockTypeA("wool_purple");
+        blockWoolRed =  BlockFactory.createWoolBlockTypeA("wool_red");
+        blockWoolBlue = BlockFactory.createWoolBlockTypeA("wool_blue");
+        blockWoolYellow = BlockFactory.createWoolBlockTypeA("wool_yellow");
+        blockWoolGreen = BlockFactory.createWoolBlockTypeA("wool_green");
+        blockWoolGray= BlockFactory.createWoolBlockTypeA("wool_gray");
+        blockWoolCyan= BlockFactory.createWoolBlockTypeB("wool_cyan");
+        blockWoolBrown= BlockFactory.createWoolBlockTypeA("wool_brown");
+        blockWoolPurple = BlockFactory.createWoolBlockTypeA("wool_purple");
     }
 }

@@ -1,31 +1,19 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "presses",
-  "pattern":
-  [
-    " I ",
-    "SBS",
-    " I "
-  ],
-  "key":
-  {
-    "S":
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
     {
-      "item": "minecraft:string"
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
     },
-    "I":
-    {
-      "item": "minecraft:stick"
-    },
-    "B":
     {
       "item": "wallpapercraft:press_blank"
+    },
+    {
+      "item": "minecraft:string"
     }
-  },
-  "result":
-  {
+  ],
+  "result": {
     "item": "wallpapercraft:press_rippled",
-    "count": 1,
-    "data": 0
+    "count": 1
   }
 }

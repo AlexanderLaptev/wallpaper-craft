@@ -1,25 +1,30 @@
 package com.trforcex.mods.wallpapercraft.items;
 
-import com.trforcex.mods.wallpapercraft.util.ConfigManager;
+import com.trforcex.mods.wallpapercraft.ModConfig;
+import com.trforcex.mods.wallpapercraft.init.ModCreativeTab;
+import com.trforcex.mods.wallpapercraft.init.ModItems;
+import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class BasePressItem extends Item
 {
-    private boolean hasDurability = false;
-    private int maxDurability;
+    private final boolean HAS_DURABILITY = ModConfig.crafting.maxPatternPressUses != 0;
 
-    public BasePressItem()
+    public BasePressItem(String registryName)
     {
-        setMaxDamage(ConfigManager.getMaxPressDurability());
+        setRegistryName(registryName);
+        setUnlocalizedName(ModHelper.makeUnlocalizedName(this));
+        setCreativeTab(ModCreativeTab.WPC_TAB);
 
-        maxDurability = ConfigManager.getMaxPressDurability();
-        hasDurability = maxDurability != 0;
+        setMaxDamage(ModConfig.crafting.maxPatternPressUses);
 
-        if(hasDurability)
+        if(HAS_DURABILITY)
             setMaxStackSize(1);
         else
             setMaxStackSize(64);
+
+        ModItems.ITEMS.add(this);
     }
 
     @Override
@@ -29,11 +34,12 @@ public class BasePressItem extends Item
         return true;
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public ItemStack getContainerItem(ItemStack itemStack)
     {
-        if(hasDurability)
-            if(itemStack.getItemDamage() < maxDurability)
+        if(HAS_DURABILITY)
+            if(itemStack.getItemDamage() < getMaxDamage())
                 return new ItemStack(itemStack.getItem(), itemStack.getCount(), itemStack.getItemDamage() + 1); // Increase damage
             else
                 return ItemStack.EMPTY; // Return nothing because press breaks.

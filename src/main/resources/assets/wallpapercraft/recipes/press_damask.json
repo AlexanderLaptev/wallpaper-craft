@@ -1,25 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "presses",
-  "pattern":
-  [
-    "VBV"
-  ],
-  "key":
-  {
-    "V":
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
     {
-      "item": "minecraft:vine"
+      "item": "minecraft:double_plant",
+      "data": 32767
     },
-    "B":
     {
       "item": "wallpapercraft:press_blank"
     }
-  },
-  "result":
-  {
+  ],
+  "result": {
     "item": "wallpapercraft:press_damask",
-    "count": 1,
-    "data": 0
+    "count": 1
   }
 }

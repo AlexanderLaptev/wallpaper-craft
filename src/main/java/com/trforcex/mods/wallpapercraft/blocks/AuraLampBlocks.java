@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.blocks;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class AuraLampBlocks
 {
@@ -17,13 +17,13 @@ public class AuraLampBlocks
 
     public static void instantiate()
     {
-        blockAuraLampRed =  BlockHelper.createLampTypeA("aura_lamp_red");
-        blockAuraLampBlue = BlockHelper.createLampTypeA("aura_lamp_blue");
-        blockAuraLampYellow = BlockHelper.createLampTypeA("aura_lamp_yellow");
-        blockAuraLampGreen = BlockHelper.createLampTypeA("aura_lamp_green");
-        blockAuraLampGray= BlockHelper.createLampTypeA("aura_lamp_gray");
-        blockAuraLampCyan= BlockHelper.createLampTypeB("aura_lamp_cyan");
-        blockAuraLampBrown= BlockHelper.createLampTypeA("aura_lamp_brown");
-        blockAuraLampPurple = BlockHelper.createLampTypeA("aura_lamp_purple");
+        blockAuraLampRed =  BlockFactory.createLampTypeA("aura_lamp_red");
+        blockAuraLampBlue = BlockFactory.createLampTypeA("aura_lamp_blue");
+        blockAuraLampYellow = BlockFactory.createLampTypeA("aura_lamp_yellow");
+        blockAuraLampGreen = BlockFactory.createLampTypeA("aura_lamp_green");
+        blockAuraLampGray= BlockFactory.createLampTypeA("aura_lamp_gray");
+        blockAuraLampCyan= BlockFactory.createLampTypeB("aura_lamp_cyan");
+        blockAuraLampBrown= BlockFactory.createLampTypeA("aura_lamp_brown");
+        blockAuraLampPurple = BlockFactory.createLampTypeA("aura_lamp_purple");
     }
 }

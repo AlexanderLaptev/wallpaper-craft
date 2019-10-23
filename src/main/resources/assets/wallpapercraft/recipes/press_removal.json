@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  ],
+  "result": {
+    "item": "wallpapercraft:press_removal",
+    "count": 1
+  }
+}

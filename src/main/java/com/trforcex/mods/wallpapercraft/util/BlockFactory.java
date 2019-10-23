@@ -4,6 +4,7 @@ import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockForestry;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeC;
+import com.trforcex.mods.wallpapercraft.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -24,7 +25,7 @@ import javax.annotation.Nonnull;
 import java.util.Random;
 
 @SuppressWarnings("deprecation")
-public class BlockHelper
+public class BlockFactory
 {
     //region ===== SOLID =====
     public static MetaBlockTypeA createSolidBlockTypeA(String registryName)
@@ -205,8 +206,6 @@ public class BlockHelper
             {
                 setSoundType(SoundType.CLOTH);
                 Blocks.FIRE.setFireInfo(this, 30, 60);
-                OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
-                OreDictionary.registerOre("blockWool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
             }
         };
     }
@@ -218,8 +217,6 @@ public class BlockHelper
             {
                 setSoundType(SoundType.CLOTH);
                 Blocks.FIRE.setFireInfo(this, 30, 60);
-                OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
-                OreDictionary.registerOre("blockWool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
             }
         };
     }
@@ -233,8 +230,6 @@ public class BlockHelper
             {
                 setSoundType(SoundType.WOOD);
                 Blocks.FIRE.setFireInfo(this, 5, 20);
-                OreDictionary.registerOre("planksWood", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
-                OreDictionary.registerOre("plankWood", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
             }
         };
     }
@@ -246,8 +241,6 @@ public class BlockHelper
             {
                 setSoundType(SoundType.WOOD);
                 Blocks.FIRE.setFireInfo(this, 5, 20);
-                OreDictionary.registerOre("planks_wood", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
-                OreDictionary.registerOre("plank_wood", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
             }
         };
     }
@@ -425,8 +418,7 @@ public class BlockHelper
             {
                 setSoundType(SoundType.CLOTH);
                 Blocks.FIRE.setFireInfo(this, 30, 60);
-                OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
-                OreDictionary.registerOre("blockWool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                ModBlocks.OREDICT_INIT.put(new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE), "wool");
             }
         };
     }
@@ -438,8 +430,7 @@ public class BlockHelper
             {
                 setSoundType(SoundType.CLOTH);
                 Blocks.FIRE.setFireInfo(this, 30, 60);
-                OreDictionary.registerOre("wool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
-                OreDictionary.registerOre("blockWool", new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE));
+                ModBlocks.OREDICT_INIT.put(new ItemStack(this, 1, OreDictionary.WILDCARD_VALUE), "wool");
             }
         };
     }
@@ -578,4 +569,25 @@ public class BlockHelper
             }
         };
     }
+
+    public static MetaBlockTypeC createBeehiveLantern(String registryName)
+    {
+        return new MetaBlockTypeC(Material.ROCK, 2f, 6f, registryName)
+        {
+            {
+                setLightLevel(0.53f);
+            }
+        };
+    }
+
+    public static MetaBlockForestry createBeehiveLantern2(String registryName)
+    {
+        return new MetaBlockForestry(Material.ROCK, 2f, 6f, registryName)
+        {
+            {
+                setLightLevel(0.53f);
+            }
+        };
+    }
+    //endregion
 }

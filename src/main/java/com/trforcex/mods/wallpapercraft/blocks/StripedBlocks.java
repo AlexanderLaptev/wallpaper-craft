@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.blocks;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class StripedBlocks
 {
@@ -17,13 +17,13 @@ public class StripedBlocks
 
     public static void instantiate()
     {
-        blockStripedRed =  BlockHelper.createSolidBlockTypeA("striped_red");
-        blockStripedBlue = BlockHelper.createSolidBlockTypeA("striped_blue");
-        blockStripedYellow = BlockHelper.createSolidBlockTypeA("striped_yellow");
-        blockStripedGreen = BlockHelper.createSolidBlockTypeA("striped_green");
-        blockStripedGray= BlockHelper.createSolidBlockTypeA("striped_gray");
-        blockStripedCyan= BlockHelper.createSolidBlockTypeB("striped_cyan");
-        blockStripedBrown= BlockHelper.createSolidBlockTypeA("striped_brown");
-        blockStripedPurple = BlockHelper.createSolidBlockTypeA("striped_purple");
+        blockStripedRed =  BlockFactory.createSolidBlockTypeA("striped_red");
+        blockStripedBlue = BlockFactory.createSolidBlockTypeA("striped_blue");
+        blockStripedYellow = BlockFactory.createSolidBlockTypeA("striped_yellow");
+        blockStripedGreen = BlockFactory.createSolidBlockTypeA("striped_green");
+        blockStripedGray= BlockFactory.createSolidBlockTypeA("striped_gray");
+        blockStripedCyan= BlockFactory.createSolidBlockTypeB("striped_cyan");
+        blockStripedBrown= BlockFactory.createSolidBlockTypeA("striped_brown");
+        blockStripedPurple = BlockFactory.createSolidBlockTypeA("striped_purple");
     }
 }

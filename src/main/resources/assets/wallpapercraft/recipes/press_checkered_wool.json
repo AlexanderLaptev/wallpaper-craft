@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:hay_block"
+    },
+    {
+      "item": "wallpapercraft:press_blank"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "blockWool"
+    }
+  ],
+  "result": {
+    "item": "wallpapercraft:press_checkered",
+    "count": 1
+  }
+}

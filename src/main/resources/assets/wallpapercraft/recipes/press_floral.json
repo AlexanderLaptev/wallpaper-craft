@@ -1,26 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "presses",
-  "pattern":
-  [
-    "FBF"
-  ],
-  "key":
-  {
-    "F":
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
     {
-      "item": "minecraft:red_flower",
+      "item": "minecraft:yellow_flower",
       "data": 32767
     },
-    "B":
     {
       "item": "wallpapercraft:press_blank"
     }
-  },
-  "result":
-  {
+  ],
+  "result": {
     "item": "wallpapercraft:press_floral",
-    "count": 1,
-    "data": 0
+    "count": 1
   }
 }

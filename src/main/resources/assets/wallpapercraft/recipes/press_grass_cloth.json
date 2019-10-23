@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "wallpapercraft:press_blank"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "blockWool"
+    }
+  ],
+  "result": {
+    "item": "wallpapercraft:press_grass_cloth",
+    "count": 1
+  }
+}

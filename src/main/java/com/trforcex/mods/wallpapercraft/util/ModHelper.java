@@ -1,6 +1,5 @@
 package com.trforcex.mods.wallpapercraft.util;
 
-import com.trforcex.mods.wallpapercraft.ModClass;
 import com.trforcex.mods.wallpapercraft.ModReference;
 import com.trforcex.mods.wallpapercraft.items.MetaItemBlock;
 import net.minecraft.block.Block;
@@ -26,10 +25,9 @@ public class ModHelper
         throw new IllegalArgumentException("Cannot get maxMeta for non-MetaItemBlock item " + item.getUnlocalizedName());
     }
 
-    // =====  LOGGING =====
-    public static void logDebug(String msg)
+    // *** DEBUG METHOD ***
+    public static int stubMethod()
     {
-        if(ModReference.debugMode)
-            ModClass.logger.debug(msg);
+        return 2+2; // Debugging purposes only
     }
 }

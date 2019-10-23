@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.blocks;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class RippledBlocks
 {
@@ -17,13 +17,13 @@ public class RippledBlocks
 
     public static void instantiate()
     {
-        blockRippledRed =  BlockHelper.createSolidBlockTypeA("rippled_red");
-        blockRippledBlue = BlockHelper.createSolidBlockTypeA("rippled_blue");
-        blockRippledYellow = BlockHelper.createSolidBlockTypeA("rippled_yellow");
-        blockRippledGreen = BlockHelper.createSolidBlockTypeA("rippled_green");
-        blockRippledGray= BlockHelper.createSolidBlockTypeA("rippled_gray");
-        blockRippledCyan= BlockHelper.createSolidBlockTypeB("rippled_cyan");
-        blockRippledBrown= BlockHelper.createSolidBlockTypeA("rippled_brown");
-        blockRippledPurple = BlockHelper.createSolidBlockTypeA("rippled_purple");
+        blockRippledRed =  BlockFactory.createSolidBlockTypeA("rippled_red");
+        blockRippledBlue = BlockFactory.createSolidBlockTypeA("rippled_blue");
+        blockRippledYellow = BlockFactory.createSolidBlockTypeA("rippled_yellow");
+        blockRippledGreen = BlockFactory.createSolidBlockTypeA("rippled_green");
+        blockRippledGray= BlockFactory.createSolidBlockTypeA("rippled_gray");
+        blockRippledCyan= BlockFactory.createSolidBlockTypeB("rippled_cyan");
+        blockRippledBrown= BlockFactory.createSolidBlockTypeA("rippled_brown");
+        blockRippledPurple = BlockFactory.createSolidBlockTypeA("rippled_purple");
     }
 }

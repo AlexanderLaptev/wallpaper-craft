@@ -1,27 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "presses",
-  "pattern":
-  [
-    " C ",
-    "CBC",
-    " C "
-  ],
-  "key":
-  {
-    "C":
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
     {
-      "item": "minecraft:clay_ball"
+      "item": "minecraft:clay"
     },
-    "B":
     {
       "item": "wallpapercraft:press_blank"
     }
-  },
-  "result":
-  {
+  ],
+  "result": {
     "item": "wallpapercraft:press_clay",
-    "count": 1,
-    "data": 0
+    "count": 1
   }
 }

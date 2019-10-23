@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.blocks;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class ColoredBricksBlocks
 {
@@ -17,13 +17,13 @@ public class ColoredBricksBlocks
 
     public static void instantiate()
     {
-        blockColoredBricksRed =  BlockHelper.createSolidBlockTypeA("colored_bricks_red");
-        blockColoredBricksBlue = BlockHelper.createSolidBlockTypeA("colored_bricks_blue");
-        blockColoredBricksYellow = BlockHelper.createSolidBlockTypeA("colored_bricks_yellow");
-        blockColoredBricksGreen = BlockHelper.createSolidBlockTypeA("colored_bricks_green");
-        blockColoredBricksGray= BlockHelper.createSolidBlockTypeA("colored_bricks_gray");
-        blockColoredBricksCyan= BlockHelper.createSolidBlockTypeB("colored_bricks_cyan");
-        blockColoredBricksBrown= BlockHelper.createSolidBlockTypeA("colored_bricks_brown");
-        blockColoredBricksPurple = BlockHelper.createSolidBlockTypeA("colored_bricks_purple");
+        blockColoredBricksRed =  BlockFactory.createSolidBlockTypeA("colored_bricks_red");
+        blockColoredBricksBlue = BlockFactory.createSolidBlockTypeA("colored_bricks_blue");
+        blockColoredBricksYellow = BlockFactory.createSolidBlockTypeA("colored_bricks_yellow");
+        blockColoredBricksGreen = BlockFactory.createSolidBlockTypeA("colored_bricks_green");
+        blockColoredBricksGray= BlockFactory.createSolidBlockTypeA("colored_bricks_gray");
+        blockColoredBricksCyan= BlockFactory.createSolidBlockTypeB("colored_bricks_cyan");
+        blockColoredBricksBrown= BlockFactory.createSolidBlockTypeA("colored_bricks_brown");
+        blockColoredBricksPurple = BlockFactory.createSolidBlockTypeA("colored_bricks_purple");
     }
 }

@@ -1,23 +1,22 @@
 package com.trforcex.mods.wallpapercraft.recipes;
 
 import com.trforcex.mods.wallpapercraft.ModReference;
-import com.trforcex.mods.wallpapercraft.blocks.base.BaseMetaBlock;
 import com.trforcex.mods.wallpapercraft.items.PressItems;
-import com.trforcex.mods.wallpapercraft.util.ModHelper;
-import com.trforcex.mods.wallpapercraft.util.RecipeHelper;
+import com.trforcex.mods.wallpapercraft.util.Logger;
+import com.trforcex.mods.wallpapercraft.util.ModDataManager;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import static com.trforcex.mods.wallpapercraft.util.ModUtils.composeString;
+import static com.trforcex.mods.wallpapercraft.util.RecipeHelper.*;
 
 public class PatternedRecipes
 {
-    public static int count = 0;
-
     private static final ResourceLocation woolGroup = new ResourceLocation(ModReference.MODID, "wool");
     private static final ResourceLocation checkeredWoolGroup = new ResourceLocation(ModReference.MODID, "checkered_wool");
 
@@ -41,42 +40,54 @@ public class PatternedRecipes
         initGlassRecipes();
         initPlanksRecipes();
         initLampsRecipes();
+
+        Logger.logDebug("Done registering patterned recipes");
     }
 
     private static void initSolidRecipes() // PATTERNS_SOLID
     {
-        for(String pattern : ModReference.SOLID_PATTERNS)
+        for(final String pattern : ModDataManager.SOLID_PATTERNS) // General blocks
         {
-            for(String color : ModReference.COLORS)
+            for(final String color : ModDataManager.COLORS)
             {
-                ModHelper.logDebug("Registering recipe for: [" + pattern + "_" + color + "]");
+                final ResourceLocation recipeResLoc = getModResLoc(pattern, color);
 
-                // ===== PRESS =====
-                ResourceLocation pressResourceLocation = new ResourceLocation(ModReference.MODID, "press_"+ pattern);
-                Item pressItem = ForgeRegistries.ITEMS.getValue(pressResourceLocation);
+                final Item pressItem = getModItem("press", pattern);
 
-                // ===== SOLID BLOCK =====
-                ResourceLocation solidResourceLocation = new ResourceLocation(ModReference.MODID, "solid_" + color);
-                Block solidBlock = ForgeRegistries.BLOCKS.getValue(solidResourceLocation);
+                final Ingredient baseBlock = getBaseBlockIngredient(pattern);
+                final ItemStack pasteStack = getColoredPasteStack(color);
 
-                // ===== OUTPUT =====
-                ResourceLocation outputResourceLocation = new ResourceLocation(ModReference.MODID, pattern + "_" + color);
-                Block outputBlock = ForgeRegistries.BLOCKS.getValue(outputResourceLocation);
-                ItemStack outputStack = new ItemStack(((BaseMetaBlock) outputBlock).getItemBlock(), 8, 0);
+                final ItemStack outputStack = getStack(composeString(pattern, color), 1, 0);
 
-                // Validate that outputStack is not empty
-                if(outputStack.isEmpty())
-                    throw new IllegalArgumentException("outputStack [" + outputStack.toString() + "] is null! Recipe:" + outputResourceLocation);
+                addRecipe(recipeResLoc, getModResLoc(pattern), outputStack, pressItem, baseBlock, pasteStack);
 
-                //Register recipe
-                GameRegistry.addShapedRecipe(outputResourceLocation, new ResourceLocation(ModReference.MODID, pattern), outputStack, "SSS", "SPS", "SSS", 'S', solidBlock, 'P', pressItem);
-                count++;
-
-                ModHelper.logDebug("Successfully registered " + outputStack.getUnlocalizedName() + " [" + pattern + "_" + color + "]");
+                Logger.logVerbose("Registered recipe for [" + recipeResLoc + "]");
             }
+
+            Logger.logDebug("Done registering solid recipes");
         }
 
-        ModHelper.logDebug("Completed registering: PATTERNS_SOLID");
+        // Jewel and stamp
+        for(int i = 0; i < ModDataManager.COLORS.size(); i++)
+        {
+            final String color = ModDataManager.COLORS.get(i);
+            final int blockMeta = ModDataManager.JEWEL_STAMP_LOOKUP[i]; // 'color' to 'meta' lookup
+
+            final ResourceLocation jewelResLoc = getModResLoc("jewel" + i);
+            final ResourceLocation stampResLoc = getModResLoc("stamp" + i);
+
+            final ItemStack jewelStack = getStack("jewel", 1, blockMeta);
+            final ItemStack stampStack = getStack("stamp", 1, blockMeta);
+            final ItemStack pasteStack = getColoredPasteStack(color);
+
+            // No group because each one will have only one recipe
+            addRecipe(jewelResLoc, null, jewelStack, Blocks.CLAY, PressItems.itemPressJewel, pasteStack);
+            addRecipe(stampResLoc, null, stampStack, Blocks.CLAY, PressItems.itemPressStamp, pasteStack);
+
+            Logger.logVerbose("Registered recipe for [" + jewelResLoc + "]; [" + stampResLoc + "]");
+        }
+
+        Logger.logDebug("Done registering solid recipes");
     }
 
     private static void initWoolAndCarpetRecipes()
@@ -85,179 +96,111 @@ public class PatternedRecipes
         initCarpetRecipes();
     }
 
-    private static void initWoolRecipes() // WOOL_AND_CHECKERED
+    private static void initWoolRecipes()
     {
-        for(int i = 0; i < ModReference.COLORS.length; i++)
+        for(String color : ModDataManager.COLORS)
         {
-            final String color = ModReference.COLORS[i];
-            final int blockMeta = ModReference.BLOCK_META_LOOKUP[i];
+            final ResourceLocation woolResLoc = getModResLoc("wool", color);
+            final ResourceLocation checkeredWoolResLoc = getModResLoc("checkered_wool", color);
 
-            ModHelper.logDebug("Registering recipe for: [wool_" + color + "] and [" + "checkered_wool_" + color + "]");
+            final ItemStack pasteStack = getColoredPasteStack(color);
 
-            ResourceLocation woolResourceLocation = new ResourceLocation(ModReference.MODID, "wool_" + color);
-            ResourceLocation checkeredResourceLocation = new ResourceLocation(ModReference.MODID, "checkered_wool_" + color);
+            final ItemStack outWoolStack = getStack(woolResLoc, 1, 0);
+            final ItemStack outCheckeredWoolStack = getStack(checkeredWoolResLoc, 1, 0);
 
-            Item woolPress = PressItems.itemPressWool;
-            Item checkeredPress = PressItems.itemPressCheckered;
+            addRecipe(woolResLoc, woolGroup, outWoolStack, "blockWool", PressItems.itemPressWool, pasteStack);
 
-            ItemStack vanillaWoolStack = new ItemStack(Blocks.WOOL, 1, blockMeta); // Vanilla wool of corresponding color
+            addRecipe(checkeredWoolResLoc, checkeredWoolGroup, outCheckeredWoolStack, "blockWool", PressItems.itemPressCheckeredWool, pasteStack);
 
-            // === OUTPUT ===
-            Block woolBlock = ForgeRegistries.BLOCKS.getValue(woolResourceLocation); // Output wool pattern block
-            Block checkeredWoolBlock = ForgeRegistries.BLOCKS.getValue(checkeredResourceLocation); // Output checkered wool pattern block
-
-            // Output stacks
-            ItemStack outWoolStack = new ItemStack(woolBlock, 8);
-            ItemStack outCheckeredStack = new ItemStack(checkeredWoolBlock, 8);
-
-            // Validate item stacks
-            if(outWoolStack.isEmpty() || outCheckeredStack.isEmpty())
-                throw new IllegalArgumentException("ItemStack(s) is/are empty: [" + outWoolStack + "] and/or [" + outCheckeredStack + "]!");
-
-            // Register recipes
-            GameRegistry.addShapedRecipe(woolResourceLocation, woolGroup, outWoolStack, "WWW", "WPW", "WWW", 'W', vanillaWoolStack, 'P', woolPress);
-            GameRegistry.addShapedRecipe(checkeredResourceLocation, checkeredWoolGroup, outCheckeredStack, "WWW", "WPW", "WWW", 'W', vanillaWoolStack, 'P', checkeredPress);
-            count +=2 ;
+            Logger.logVerbose("Registered recipe for [" + woolResLoc + "]; [" + checkeredWoolResLoc + "]");
         }
 
-        ModHelper.logDebug("Completed registration for: WOOL_AND_CHECKERED");
+        Logger.logDebug("Done registering wool recipes");
     }
 
     private static void initCarpetRecipes() // CARPETS
     {
-        for(String color : ModReference.COLORS)
+        for(String color : ModDataManager.COLORS)
         {
-            ModHelper.logDebug("Registering recipe for: [" + "wool_carpet_" + color + "] and [checkered_carpet_" + color + "]");
+            final ResourceLocation woolCarpetResLoc = getModResLoc("wool_carpet", color);
+            final ResourceLocation checkeredWoolCarpetResLoc = getModResLoc("checkered_carpet", color);
 
-            // Wool blocks RLs
-            ResourceLocation woolResourceLocation = new ResourceLocation(ModReference.MODID, "wool_" + color);
-            ResourceLocation checkeredResourceLocation = new ResourceLocation(ModReference.MODID, "checkered_wool_" + color);
+            final Block woolBlock = getModBlock("wool", color);
+            final Block checkeredWoolBlock = getModBlock("checkered_wool", color);
 
-            // Carpet blocks RLs
-            ResourceLocation carpetRL = new ResourceLocation(ModReference.MODID, "wool_carpet_" + color);
-            ResourceLocation checkeredCarpetRL = new ResourceLocation(ModReference.MODID, "checkered_carpet_" + color);
+            final ItemStack outWoolCarpet = getStack(woolCarpetResLoc, 3, 0);
+            final ItemStack outCheckeredWoolCarpet = getStack(checkeredWoolCarpetResLoc, 3, 0);
 
-            // Wool blocks
-            Block woolBlock = ForgeRegistries.BLOCKS.getValue(woolResourceLocation);
-            Block checkeredWoolBlock = ForgeRegistries.BLOCKS.getValue(checkeredResourceLocation);
+            GameRegistry.addShapedRecipe(woolCarpetResLoc, woolCarpetsGroup, outWoolCarpet, "WW", 'W', woolBlock);
+            GameRegistry.addShapedRecipe(checkeredWoolCarpetResLoc, checkeredCarpets, outCheckeredWoolCarpet, "WW", 'W', checkeredWoolBlock);
 
-            // Carpet blocks
-            Block carpetBlock = ForgeRegistries.BLOCKS.getValue(carpetRL);
-            Block checkeredCarpetBlock = ForgeRegistries.BLOCKS.getValue(checkeredCarpetRL);
-
-            // Recipe output stacks
-            ItemStack outCarpet = new ItemStack(carpetBlock, 3);
-            ItemStack outCheckeredCarpet = new ItemStack(checkeredCarpetBlock, 3);
-
-            // Validate item stacks
-            if(outCarpet.isEmpty() || outCheckeredCarpet.isEmpty())
-                throw new IllegalArgumentException("ItemStack(s) is/are empty: [" + outCarpet + "] and/ore [" + outCheckeredCarpet + "]!");
-
-            // Register recipes
-            GameRegistry.addShapedRecipe(carpetRL, woolCarpetsGroup, outCarpet, "WW", 'W', woolBlock);
-            GameRegistry.addShapedRecipe(checkeredCarpetRL, checkeredCarpets, outCheckeredCarpet, "WW", 'W', checkeredWoolBlock);
-            count += 2;
+            Logger.logVerbose("Registered recipe for [" + woolCarpetResLoc + "]; [" + checkeredWoolCarpetResLoc + "]");
         }
 
-        ModHelper.logDebug("Completed registration for: CARPETS");
+        Logger.logDebug("Done registering carpets recipes");
     }
 
     private static void initGlassRecipes() // GLASS
     {
-        for(int i = 0; i < ModReference.COLORS.length; i++)
+        for(String color : ModDataManager.COLORS)
         {
-            final String color = ModReference.COLORS[i];
-            final int blockMeta = ModReference.BLOCK_META_LOOKUP[i];
+            final ResourceLocation texturedGlassResLoc = new ResourceLocation(ModReference.MODID, "textured_glass_" + color);
+            final ResourceLocation tintedGlassResLoc = new ResourceLocation(ModReference.MODID, "tinted_glass_" + color);
+            final ResourceLocation frostedGlassResLoc = new ResourceLocation(ModReference.MODID, "frosted_glass_" + color);
 
-            ModHelper.logDebug("Registering recipe for: GLASS-" + color);
+            final ItemStack pasteStack = getColoredPasteStack(color);
 
-            // Recipe resource locations
-            ResourceLocation texturedRL = new ResourceLocation(ModReference.MODID, "textured_glass_" + color);
-            ResourceLocation tintedRL = new ResourceLocation(ModReference.MODID, "tinted_glass_" + color);
-            ResourceLocation frostedRL = new ResourceLocation(ModReference.MODID, "frosted_glass_" + color);
+            final ItemStack outTexturedStack = getStack(getModBlock("textured_glass_" + color), 1, 0);
+            final ItemStack outTintedStack = getStack(getModBlock("tinted_glass_" + color), 1, 0);
+            final ItemStack outFrostedStack = getStack(getModBlock("frosted_glass_" + color), 1, 0);
 
-            // Vanilla glass stack
-            Block vanillaGlass = Blocks.STAINED_GLASS;
-            ItemStack vanillaGlassStack = new ItemStack(vanillaGlass, 1, blockMeta);
+            addRecipe(texturedGlassResLoc, texturedGroup, outTexturedStack, "blockGlass", PressItems.itemPressTexturedGlass, pasteStack);
+            addRecipe(tintedGlassResLoc, tintedGroup, outTintedStack, "blockGlass", PressItems.itemPressTintedGlass, pasteStack);
+           addRecipe(frostedGlassResLoc, frostedGroup, outFrostedStack, "blockGlass", PressItems.itemPressFrostedGlass, pasteStack);
 
-            // Pattern presses
-            Item texturedPress = PressItems.itemPressTexturedGlass;
-            Item tintedPress = PressItems.itemPressTintedGlass;
-            Item frostedPress = PressItems.itemPressFrostedGlass;
-
-            // Output stacks
-            ItemStack outTexturedStack = RecipeHelper.validStack(RecipeHelper.getModBlockFromRegistry("textured_glass_" + color), 8);
-            ItemStack outTintedStack = RecipeHelper.validStack(RecipeHelper.getModBlockFromRegistry("tinted_glass_" + color), 8);
-            ItemStack outFrostedStack = RecipeHelper.validStack(RecipeHelper.getModBlockFromRegistry("frosted_glass_" + color), 8);
-
-            // Register recipes
-            GameRegistry.addShapedRecipe(texturedRL, texturedGroup, outTexturedStack, "GGG", "GPG", "GGG", 'G', vanillaGlassStack, 'P', texturedPress);
-            GameRegistry.addShapedRecipe(tintedRL, tintedGroup, outTintedStack, "GGG", "GPG", "GGG", 'G', vanillaGlassStack, 'P', tintedPress);
-            GameRegistry.addShapedRecipe(frostedRL, frostedGroup, outFrostedStack, "GGG", "GPG", "GGG", 'G', vanillaGlassStack, 'P', frostedPress);
-            count += 3;
+            Logger.logVerbose("Registered recipe for [" + texturedGlassResLoc + "]; [" + tintedGlassResLoc + "]" + "; [" + frostedGlassResLoc + "]");
         }
 
-        ModHelper.logDebug("Completed registration for: GLASS");
+        Logger.logDebug("Done registering glass recipes");
     }
 
     private static void initPlanksRecipes() // PLANKS
     {
-        for(int i = 0; i < ModReference.COLORS.length; i++)
+        for(String color : ModDataManager.COLORS)
         {
-            final String color = ModReference.COLORS[i];
-            final int dyeMeta = ModReference.DYE_META_LOOKUP[i];
+            final ResourceLocation recipeResLoc = getModResLoc("wood_planks", color);
 
-            ModHelper.logDebug("Registering recipe for: [wood_planks_" + color + "]");
+            final ItemStack pasteStack = getColoredPasteStack(color);
 
-            // Recipe resource location
-            ResourceLocation recipeResLoc = new ResourceLocation(ModReference.MODID, RecipeHelper.getPatternPath("wood_planks", color));
+            final ItemStack outputStack = getStack(composeString("wood_planks", color), 1, 0);
 
-            // Vanilla stuff
-            Block vanillaPlanks = Blocks.PLANKS;
-            ItemStack vanillaPlanksStack = new ItemStack(vanillaPlanks, 1, Short.MAX_VALUE); // Any meta accepted
-            ItemStack dyeStack = new ItemStack(Items.DYE, 1, dyeMeta);
+            addRecipe(recipeResLoc, woodPlanksGroup, outputStack, "plankWood", pasteStack, PressItems.itemPressWoodPlanks);
 
-            // Output stack
-            ItemStack outStack = RecipeHelper.validStack(RecipeHelper.getModBlockFromRegistry("wood_planks_" + color), 8);
-
-            // Register recipe
-            GameRegistry.addShapedRecipe(recipeResLoc, woodPlanksGroup, outStack, "PPP", "PDP", "PPP", 'P', vanillaPlanksStack, 'D', dyeStack);
-            count++;
+            Logger.logVerbose("Registered recipe for [" + recipeResLoc + "]");
         }
 
-        ModHelper.logDebug("Completed registration for: PLANKS");
+        Logger.logDebug("Done registering planks recipes");
     }
 
     private static void initLampsRecipes() // LAMPS
     {
-        for(int i = 0; i < ModReference.COLORS.length; i++)
+        for(String color : ModDataManager.COLORS)
         {
-            final String color = ModReference.COLORS[i];
-            final int dyeMeta = ModReference.DYE_META_LOOKUP[i];
+            final ResourceLocation stoneLampResLoc = getModResLoc("stone_lamp", color);
+            final ResourceLocation auraLampResLoc = getModResLoc("aura_lamp", color);
 
-            // Recipes resource locations
-            ResourceLocation stoneLampResLoc = new ResourceLocation(ModReference.MODID, "stone_lamp_" + color);
-            ResourceLocation auraLampResLoc = new ResourceLocation(ModReference.MODID, "aura_lamp_" + color);
+            final ItemStack outStoneLamp = getStack(stoneLampResLoc, 1, 0);
+            final ItemStack outAuraLamp = getStack(auraLampResLoc, 1, 0);
 
-            // Vanilla
-            Block glowstoneBlock = Blocks.GLOWSTONE;
-            ItemStack dyeStack = new ItemStack(Items.DYE, 1, dyeMeta);
+            final ItemStack pasteStack = getColoredPasteStack(color);
 
-            // Pattern presses
-            Item stoneLampPress = PressItems.itemPressStoneLamp;
-            Item auraLampPress = PressItems.itemPressAuraLamp;
+            addRecipe(stoneLampResLoc, stoneLampsGroup, outStoneLamp, new ItemStack(Blocks.STONE, 1, 0), PressItems.itemPressStoneLamp, pasteStack);
+            addRecipe(auraLampResLoc, auraLampsGroup, outAuraLamp, Blocks.CLAY, PressItems.itemPressAuraLamp, pasteStack);
 
-            // Output stacks
-            ItemStack outStoneLamp = RecipeHelper.validStack(RecipeHelper.getModBlockFromRegistry("stone_lamp_" + color), 8);
-            ItemStack outAuraLamp = RecipeHelper.validStack(RecipeHelper.getModBlockFromRegistry("aura_lamp_" + color), 8);
-
-            GameRegistry.addShapedRecipe(stoneLampResLoc, stoneLampsGroup, outStoneLamp, "P", "G", "D", 'P', stoneLampPress, 'G', glowstoneBlock, 'D', dyeStack);
-            GameRegistry.addShapedRecipe(auraLampResLoc, auraLampsGroup, outAuraLamp, "P", "G", "D", 'P', auraLampPress, 'G', glowstoneBlock, 'D', dyeStack);
-            count += 2;
-
-            ModHelper.logDebug("Registering recipe for: LAMPS-" + color);
+            Logger.logVerbose("Registered recipe for [" + stoneLampResLoc + "]; [" + auraLampResLoc + "]");
         }
 
-        ModHelper.logDebug("Completed registration for: LAMPS");
+        Logger.logDebug("Done registering lamps recipes");
     }
+
 }

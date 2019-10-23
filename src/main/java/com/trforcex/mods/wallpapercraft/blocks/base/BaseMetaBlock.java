@@ -1,6 +1,5 @@
 package com.trforcex.mods.wallpapercraft.blocks.base;
 
-import com.trforcex.mods.wallpapercraft.blockStates.IHasMetaItemBlock;
 import com.trforcex.mods.wallpapercraft.init.ModBlocks;
 import com.trforcex.mods.wallpapercraft.init.ModCreativeTab;
 import com.trforcex.mods.wallpapercraft.items.MetaItemBlock;
@@ -31,6 +30,7 @@ public abstract class BaseMetaBlock extends Block implements IHasMetaItemBlock
     }
 
     // Getter for itemBlock (since it's private)
+    @Override
     public MetaItemBlock getItemBlock()
     {
         return itemBlock;

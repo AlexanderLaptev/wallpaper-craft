@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "plankWood"
+    },
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  ],
+  "result": {
+    "item": "wallpapercraft:press_wood_planks",
+    "count": 1
+  }
+}

@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.blocks.carpets;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class WoolCarpetsBlocks
 {
@@ -17,13 +17,13 @@ public class WoolCarpetsBlocks
 
     public static void instantiate()
     {
-        blockWoolCarpetRed =  BlockHelper.createCarpetBlockTypeA("wool_carpet_red");
-        blockWoolCarpetBlue = BlockHelper.createCarpetBlockTypeA("wool_carpet_blue");
-        blockWoolCarpetYellow = BlockHelper.createCarpetBlockTypeA("wool_carpet_yellow");
-        blockWoolCarpetGreen = BlockHelper.createCarpetBlockTypeA("wool_carpet_green");
-        blockWoolCarpetGray= BlockHelper.createCarpetBlockTypeA("wool_carpet_gray");
-        blockWoolCarpetCyan= BlockHelper.createCarpetBlockTypeB("wool_carpet_cyan");
-        blockWoolCarpetBrown= BlockHelper.createCarpetBlockTypeA("wool_carpet_brown");
-        blockWoolCarpetPurple = BlockHelper.createCarpetBlockTypeA("wool_carpet_purple");
+        blockWoolCarpetRed =  BlockFactory.createCarpetBlockTypeA("wool_carpet_red");
+        blockWoolCarpetBlue = BlockFactory.createCarpetBlockTypeA("wool_carpet_blue");
+        blockWoolCarpetYellow = BlockFactory.createCarpetBlockTypeA("wool_carpet_yellow");
+        blockWoolCarpetGreen = BlockFactory.createCarpetBlockTypeA("wool_carpet_green");
+        blockWoolCarpetGray= BlockFactory.createCarpetBlockTypeA("wool_carpet_gray");
+        blockWoolCarpetCyan= BlockFactory.createCarpetBlockTypeB("wool_carpet_cyan");
+        blockWoolCarpetBrown= BlockFactory.createCarpetBlockTypeA("wool_carpet_brown");
+        blockWoolCarpetPurple = BlockFactory.createCarpetBlockTypeA("wool_carpet_purple");
     }
 }

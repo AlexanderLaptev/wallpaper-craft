@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stonebrick",
+      "data": 0
+    },
+    {
+      "item": "wallpapercraft:press_blank"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "blockGlass"
+    }
+  ],
+  "result": {
+    "item": "wallpapercraft:press_stone_bricks_glass",
+    "count": 1
+  }
+}

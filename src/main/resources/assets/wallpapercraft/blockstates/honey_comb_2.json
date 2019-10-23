@@ -5,18 +5,18 @@
     "transform": "forge:default-block"
   },
   "variants": {
-    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-maple-honeycomb" }}],
-    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-padauk-honeycomb"}}],
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-mahoe-honeycomb" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-poplar-honeycomb"}}],
     "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-palm-honeycomb"}}],
     "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-papaya-honeycomb"}}],
     "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-pine-honeycomb"}}],
     "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-plum-honeycomb"}}],
-    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-poplar-honeycomb"}}],
-    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-sequoia-honeycomb"}}],
-    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-teak-honeycomb"}}],
-    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-walnut-honeycomb"}}],
-    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-wenge-honeycomb"}}],
-    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-willow-honeycomb"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-maple-honeycomb"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-citrus-honeycomb"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-giganteum-honeycomb"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-ipe-honeycomb"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-padauk-honeycomb"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-cocobolo-honeycomb"}}],
     "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/honeycomb/02-zebrawood-honeycomb"}}]
   }
 }

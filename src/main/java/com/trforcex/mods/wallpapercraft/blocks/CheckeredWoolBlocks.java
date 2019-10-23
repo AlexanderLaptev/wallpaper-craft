@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.blocks;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class CheckeredWoolBlocks
 {
@@ -17,13 +17,13 @@ public class CheckeredWoolBlocks
 
     public static void instantiate()
     {
-        blockCheckeredRed =  BlockHelper.createWoolBlockTypeA("checkered_wool_red");
-        blockCheckeredBlue = BlockHelper.createWoolBlockTypeA("checkered_wool_blue");
-        blockCheckeredYellow = BlockHelper.createWoolBlockTypeA("checkered_wool_yellow");
-        blockCheckeredGreen = BlockHelper.createWoolBlockTypeA("checkered_wool_green");
-        blockCheckeredGray= BlockHelper.createWoolBlockTypeA("checkered_wool_gray");
-        blockCheckeredCyan= BlockHelper.createWoolBlockTypeB("checkered_wool_cyan");
-        blockCheckeredBrown= BlockHelper.createWoolBlockTypeA("checkered_wool_brown");
-        blockCheckeredPurple = BlockHelper.createWoolBlockTypeA("checkered_wool_purple");
+        blockCheckeredRed =  BlockFactory.createWoolBlockTypeA("checkered_wool_red");
+        blockCheckeredBlue = BlockFactory.createWoolBlockTypeA("checkered_wool_blue");
+        blockCheckeredYellow = BlockFactory.createWoolBlockTypeA("checkered_wool_yellow");
+        blockCheckeredGreen = BlockFactory.createWoolBlockTypeA("checkered_wool_green");
+        blockCheckeredGray= BlockFactory.createWoolBlockTypeA("checkered_wool_gray");
+        blockCheckeredCyan= BlockFactory.createWoolBlockTypeB("checkered_wool_cyan");
+        blockCheckeredBrown= BlockFactory.createWoolBlockTypeA("checkered_wool_brown");
+        blockCheckeredPurple = BlockFactory.createWoolBlockTypeA("checkered_wool_purple");
     }
 }

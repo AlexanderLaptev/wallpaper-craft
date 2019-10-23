@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.blocks;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class FancyTilesBlocks
 {
@@ -17,13 +17,13 @@ public class FancyTilesBlocks
 
     public static void instantiate()
     {
-        blockFancyTilesRed =  BlockHelper.createSolidBlockTypeA("fancy_tiles_red");
-        blockFancyTilesBlue = BlockHelper.createSolidBlockTypeA("fancy_tiles_blue");
-        blockFancyTilesYellow = BlockHelper.createSolidBlockTypeA("fancy_tiles_yellow");
-        blockFancyTilesGreen = BlockHelper.createSolidBlockTypeA("fancy_tiles_green");
-        blockFancyTilesGray= BlockHelper.createSolidBlockTypeA("fancy_tiles_gray");
-        blockFancyTilesCyan= BlockHelper.createSolidBlockTypeB("fancy_tiles_cyan");
-        blockFancyTilesBrown= BlockHelper.createSolidBlockTypeA("fancy_tiles_brown");
-        blockFancyTilesPurple = BlockHelper.createSolidBlockTypeA("fancy_tiles_purple");
+        blockFancyTilesRed =  BlockFactory.createSolidBlockTypeA("fancy_tiles_red");
+        blockFancyTilesBlue = BlockFactory.createSolidBlockTypeA("fancy_tiles_blue");
+        blockFancyTilesYellow = BlockFactory.createSolidBlockTypeA("fancy_tiles_yellow");
+        blockFancyTilesGreen = BlockFactory.createSolidBlockTypeA("fancy_tiles_green");
+        blockFancyTilesGray= BlockFactory.createSolidBlockTypeA("fancy_tiles_gray");
+        blockFancyTilesCyan= BlockFactory.createSolidBlockTypeB("fancy_tiles_cyan");
+        blockFancyTilesBrown= BlockFactory.createSolidBlockTypeA("fancy_tiles_brown");
+        blockFancyTilesPurple = BlockFactory.createSolidBlockTypeA("fancy_tiles_purple");
     }
 }

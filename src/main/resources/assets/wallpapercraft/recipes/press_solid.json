@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:hardened_clay",
+      "data": 32767
+    },
+    {
+      "item": "wallpapercraft:press_blank"
+    }
+  ],
+  "result": {
+    "item": "wallpapercraft:press_solid",
+    "count": 1
+  }
+}

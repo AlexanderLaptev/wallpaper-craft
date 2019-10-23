@@ -5,21 +5,21 @@
     "transform": "forge:default-block"
   },
   "variants": {
-    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-acacia-stone-brick" }}],
-    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-balsa-stone-brick"}}],
-    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-baobab-stone-brick"}}],
-    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-cherry-stone-brick"}}],
+    "variant=0": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-larch-stone-brick" }}],
+    "variant=1": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-teak-stone-brick"}}],
+    "variant=2": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-acacia-stone-brick"}}],
+    "variant=3": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-lime-stone-brick"}}],
     "variant=4": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-chestnut-stone-brick"}}],
-    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-citrus-stone-brick"}}],
-    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-cocobolo-stone-brick"}}],
-    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-ebony-stone-brick"}}],
-    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-giganteum-stone-brick"}}],
-    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-greenheart-stone-brick"}}],
-    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-ipe-stone-brick"}}],
-    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-kapok-stone-brick"}}],
-    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-larch-stone-brick"}}],
-    "variant=13": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-lime-stone-brick"}}],
-    "variant=14": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-mahoe-stone-brick"}}],
-    "variant=15": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-mahogany-stone-brick"}}]
+    "variant=5": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-wenge-stone-brick"}}],
+    "variant=6": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-baobab-stone-brick"}}],
+    "variant=7": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-sequoia-stone-brick"}}],
+    "variant=8": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-kapok-stone-brick"}}],
+    "variant=9": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-ebony-stone-brick"}}],
+    "variant=10": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-mahogany-stone-brick"}}],
+    "variant=11": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-balsa-stone-brick"}}],
+    "variant=12": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-willow-stone-brick"}}],
+    "variant=13": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-walnut-stone-brick"}}],
+    "variant=14": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-greenheart-stone-brick"}}],
+    "variant=15": [{ "textures": { "all":  "wallpapercraft:blocks/forestry_stone_bricks/05-cherry-stone-brick"}}]
   }
 }

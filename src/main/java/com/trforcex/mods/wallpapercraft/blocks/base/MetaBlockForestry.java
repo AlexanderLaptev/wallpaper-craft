@@ -28,6 +28,7 @@ public class MetaBlockForestry extends BaseMetaBlock // Used for wood 17-29
         return new BlockStateContainer(this, variantProperty);
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public IBlockState getStateFromMeta(int meta)
     {

@@ -1,4 +1,4 @@
-package com.trforcex.mods.wallpapercraft.blockStates;
+package com.trforcex.mods.wallpapercraft.blocks.base;
 
 import com.trforcex.mods.wallpapercraft.items.MetaItemBlock;
 

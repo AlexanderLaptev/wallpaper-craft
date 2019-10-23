@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.blocks;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
 import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.util.BlockHelper;
+import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class TintedGlassBlocks
 {
@@ -17,13 +17,13 @@ public class TintedGlassBlocks
 
     public static void instantiate()
     {
-        blockTintedGlassRed =  BlockHelper.createGlassBlockTypeA("tinted_glass_red");
-        blockTintedGlassBlue = BlockHelper.createGlassBlockTypeA("tinted_glass_blue");
-        blockTintedGlassYellow = BlockHelper.createGlassBlockTypeA("tinted_glass_yellow");
-        blockTintedGlassGreen = BlockHelper.createGlassBlockTypeA("tinted_glass_green");
-        blockTintedGlassGray= BlockHelper.createGlassBlockTypeA("tinted_glass_gray");
-        blockTintedGlassCyan= BlockHelper.createGlassBlockTypeB("tinted_glass_cyan");
-        blockTintedGlassBrown= BlockHelper.createGlassBlockTypeA("tinted_glass_brown");
-        blockTintedGlassPurple = BlockHelper.createGlassBlockTypeA("tinted_glass_purple");
+        blockTintedGlassRed =  BlockFactory.createGlassBlockTypeA("tinted_glass_red");
+        blockTintedGlassBlue = BlockFactory.createGlassBlockTypeA("tinted_glass_blue");
+        blockTintedGlassYellow = BlockFactory.createGlassBlockTypeA("tinted_glass_yellow");
+        blockTintedGlassGreen = BlockFactory.createGlassBlockTypeA("tinted_glass_green");
+        blockTintedGlassGray= BlockFactory.createGlassBlockTypeA("tinted_glass_gray");
+        blockTintedGlassCyan= BlockFactory.createGlassBlockTypeB("tinted_glass_cyan");
+        blockTintedGlassBrown= BlockFactory.createGlassBlockTypeA("tinted_glass_brown");
+        blockTintedGlassPurple = BlockFactory.createGlassBlockTypeA("tinted_glass_purple");
     }
 }
