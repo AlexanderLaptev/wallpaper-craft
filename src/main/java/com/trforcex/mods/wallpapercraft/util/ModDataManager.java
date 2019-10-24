@@ -1,16 +1,14 @@
 package com.trforcex.mods.wallpapercraft.util;
 
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
 public class ModDataManager
 {
-    public enum BaseBlock
-    {
-        Clay, Stone, Glass, Wood, Wool
-    }
-
     public static final List<String> COLORS = Arrays.asList("red", "yellow", "green", "cyan", "blue", "purple", "brown", "gray");
 
     // From colors to metas
@@ -23,52 +21,51 @@ public class ModDataManager
 
     public static final String[] SOLID_PATTERNS = {"solid", "bricks", "stone_bricks", "colored_bricks", "dotted", "diagonally_dotted", "rippled", "striped", "damask", "floral", "fancy_tiles", "clay"};
 
-    public static final HashMap<String, BaseBlock> BASE_BLOCK = new HashMap<>();
+    public static final HashMap<String, Block> BASE_BLOCK = new HashMap<>();
 
     static
     {
         // Base blocks for solid blocks
-        BASE_BLOCK.put("bricks", BaseBlock.Clay);
-        BASE_BLOCK.put("stone_bricks", BaseBlock.Stone);
-        BASE_BLOCK.put("colored_bricks", BaseBlock.Clay);
-        BASE_BLOCK.put("dotted", BaseBlock.Clay);
-        BASE_BLOCK.put("diagonally_dotted", BaseBlock.Clay);
-        BASE_BLOCK.put("rippled", BaseBlock.Clay);
-        BASE_BLOCK.put("striped", BaseBlock.Clay);
-        BASE_BLOCK.put("damask", BaseBlock.Clay);
-        BASE_BLOCK.put("floral", BaseBlock.Clay);
-        BASE_BLOCK.put("fancy_tiles", BaseBlock.Clay);
-        BASE_BLOCK.put("clay", BaseBlock.Clay);
-        BASE_BLOCK.put("solid", BaseBlock.Clay);
-        BASE_BLOCK.put("jewel", BaseBlock.Clay);
-        BASE_BLOCK.put("stamp", BaseBlock.Clay);
+        BASE_BLOCK.put("bricks", Blocks.CLAY);
+        BASE_BLOCK.put("stone_bricks", Blocks.STONE);
+        BASE_BLOCK.put("colored_bricks", Blocks.CLAY);
+        BASE_BLOCK.put("dotted", Blocks.CLAY);
+        BASE_BLOCK.put("diagonally_dotted", Blocks.CLAY);
+        BASE_BLOCK.put("rippled", Blocks.CLAY);
+        BASE_BLOCK.put("striped", Blocks.CLAY);
+        BASE_BLOCK.put("damask", Blocks.CLAY);
+        BASE_BLOCK.put("floral", Blocks.CLAY);
+        BASE_BLOCK.put("fancy_tiles", Blocks.CLAY);
+        BASE_BLOCK.put("clay", Blocks.CLAY);
+        BASE_BLOCK.put("solid", Blocks.CLAY);
+        BASE_BLOCK.put("jewel", Blocks.CLAY);
+        BASE_BLOCK.put("stamp", Blocks.CLAY);
 
-        BASE_BLOCK.put("leafy", BaseBlock.Stone);
-        BASE_BLOCK.put("beehive_lantern", BaseBlock.Clay);
+        BASE_BLOCK.put("leafy", Blocks.STONE);
+        BASE_BLOCK.put("beehive_lantern", Blocks.CLAY);
 
         // Lamps
-        BASE_BLOCK.put("stone_lamp", BaseBlock.Stone);
-        BASE_BLOCK.put("aura_lamp", BaseBlock.Clay);
+        BASE_BLOCK.put("stone_lamp", Blocks.STONE);
+        BASE_BLOCK.put("aura_lamp", Blocks.CLAY);
 
         // Wool
-        BASE_BLOCK.put("wool", BaseBlock.Wool);
-        BASE_BLOCK.put("checkered_wool", BaseBlock.Wool);
-        //BASE_BLOCK.put("honeycomb", BaseBlock.Wool); // TODO: check me!
-        BASE_BLOCK.put("honey_comb", BaseBlock.Wool);
-        BASE_BLOCK.put("grass_cloth", BaseBlock.Wool);
+        BASE_BLOCK.put("wool", Blocks.WOOL);
+        BASE_BLOCK.put("checkered_wool", Blocks.WOOL);
+        BASE_BLOCK.put("honey_comb", Blocks.WOOL);
+        BASE_BLOCK.put("grass_cloth", Blocks.WOOL);
 
         // Stone
-        BASE_BLOCK.put("forestry_stone_bricks", BaseBlock.Stone);
-        BASE_BLOCK.put("beehive_tile", BaseBlock.Stone);
+        BASE_BLOCK.put("forestry_stone_bricks", Blocks.STONE);
+        BASE_BLOCK.put("beehive_tile", Blocks.STONE);
 
         // Wood
-        BASE_BLOCK.put("wood", BaseBlock.Wood);
-        BASE_BLOCK.put("wood_planks", BaseBlock.Wood);
+        BASE_BLOCK.put("wood", Blocks.PLANKS);
+        BASE_BLOCK.put("wood_planks", Blocks.PLANKS);
 
         // Glass
-        BASE_BLOCK.put("tinted_glass", BaseBlock.Glass);
-        BASE_BLOCK.put("textured_glass", BaseBlock.Glass);
-        BASE_BLOCK.put("frosted_glass", BaseBlock.Glass);
-        BASE_BLOCK.put("glass_bricks", BaseBlock.Glass);
+        BASE_BLOCK.put("tinted_glass", Blocks.GLASS);
+        BASE_BLOCK.put("textured_glass", Blocks.GLASS);
+        BASE_BLOCK.put("frosted_glass", Blocks.GLASS);
+        BASE_BLOCK.put("glass_bricks", Blocks.GLASS);
     }
 }

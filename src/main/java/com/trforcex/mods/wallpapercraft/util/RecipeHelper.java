@@ -4,7 +4,6 @@ import com.trforcex.mods.wallpapercraft.ModReference;
 import com.trforcex.mods.wallpapercraft.blocks.base.BaseMetaBlock;
 import com.trforcex.mods.wallpapercraft.init.ModItems;
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
@@ -20,44 +19,6 @@ import javax.annotation.Nullable;
 
 public class RecipeHelper
 {
-    public static Ingredient getBaseBlockIngredient(String pattern)
-    {
-        switch(ModDataManager.BASE_BLOCK.get(pattern))
-        {
-        case Clay:
-            return getIngredientFrom(Blocks.HARDENED_CLAY);
-        case Wood:
-            return getIngredientFrom("plankWool");
-        case Wool:
-            return getIngredientFrom(Blocks.WOOL);
-        case Glass:
-            return getIngredientFrom("blockGlass");
-        case Stone:
-            return getIngredientFrom(new ItemStack(Blocks.STONE, 1, 0));
-        }
-
-        throw new IllegalArgumentException("Cannot find base block for [" + pattern + "]");
-    }
-
-    public static Block getBaseBlock(String pattern)
-    {
-        switch(ModDataManager.BASE_BLOCK.get(pattern))
-        {
-        case Clay:
-            return Blocks.HARDENED_CLAY;
-        case Wood:
-            return Blocks.PLANKS;
-        case Wool:
-            return Blocks.WOOL;
-        case Glass:
-            return Blocks.GLASS;
-        case Stone:
-            return Blocks.STONE;
-        default:
-            return null;
-        }
-    }
-
     public static class WrongIngredientsException extends RuntimeException {}
 
     /**
