@@ -1,4 +1,4 @@
-package com.trforcex.mods.wallpapercraft.blockStates;
+package com.trforcex.mods.wallpapercraft.blockstates;
 
 import net.minecraft.util.IStringSerializable;
 

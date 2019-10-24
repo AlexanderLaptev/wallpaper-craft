@@ -1,6 +1,6 @@
 package com.trforcex.mods.wallpapercraft.blocks.base;
 
-import com.trforcex.mods.wallpapercraft.blockStates.EnumTypeA;
+import com.trforcex.mods.wallpapercraft.blockstates.EnumTypeA;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
