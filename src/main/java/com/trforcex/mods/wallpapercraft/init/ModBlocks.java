@@ -2,7 +2,7 @@ package com.trforcex.mods.wallpapercraft.init;
 
 import com.trforcex.mods.wallpapercraft.blocks.*;
 import com.trforcex.mods.wallpapercraft.blocks.base.IHasMetaItemBlock;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeC;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeC;
 import com.trforcex.mods.wallpapercraft.blocks.carpets.CheckeredWoolCarpetsBlocks;
 import com.trforcex.mods.wallpapercraft.blocks.carpets.WoolCarpetsBlocks;
 import com.trforcex.mods.wallpapercraft.util.BlockFactory;
@@ -21,8 +21,8 @@ import java.util.HashMap;
 @Mod.EventBusSubscriber
 public class ModBlocks
 {
-    public static MetaBlockTypeC blockJewel;
-    public static MetaBlockTypeC blockStamp;
+    public static ModBlockTypeC blockJewel;
+    public static ModBlockTypeC blockStamp;
 
     public static final HashMap<ItemStack, String> OREDICT_INIT; // Is used for registration of oredict entries
 

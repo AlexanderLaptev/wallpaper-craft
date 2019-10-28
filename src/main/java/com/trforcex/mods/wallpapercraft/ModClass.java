@@ -2,9 +2,11 @@ package com.trforcex.mods.wallpapercraft;
 
 import com.trforcex.mods.wallpapercraft.compatibility.ChiselCompatibility;
 import com.trforcex.mods.wallpapercraft.compatibility.OreDictCompatibility;
+import com.trforcex.mods.wallpapercraft.crafting.DynamicRecipes;
+import com.trforcex.mods.wallpapercraft.crafting.ModRecipes;
 import com.trforcex.mods.wallpapercraft.proxy.IProxy;
-import com.trforcex.mods.wallpapercraft.recipes.*;
 import com.trforcex.mods.wallpapercraft.util.ExecCommand;
+import com.trforcex.mods.wallpapercraft.util.Logger;
 import com.trforcex.mods.wallpapercraft.util.ModDataManager;
 import com.trforcex.mods.wallpapercraft.util.RecipeHelper;
 import net.minecraft.init.Items;
@@ -20,20 +22,23 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import org.apache.logging.log4j.Logger;
 import team.chisel.api.ChiselAPIProps;
 
-@Mod(modid = ModReference.MODID, name = ModReference.NAME, version = ModReference.VERSION, useMetadata = true)
+@Mod(modid = ModReference.MODID, name = ModReference.NAME, version = ModReference.VERSION, useMetadata = true, updateJSON = "https://dl.dropboxusercontent.com/s/edouros9o00gyui/wpcraft_update.json?dl=0")
 @Mod.EventBusSubscriber
 public class ModClass
 {
-	public static Logger logger;
+//	public static final ScrollingRecipe SCROLLING_RECIPE  = new ScrollingRecipe();
+//	public static final PatternRemovalRecipe PATTERN_REMOVAL_RECIPE = new PatternRemovalRecipe();
+//	public static final RecolorRecipe RECOLOR_RECIPE  = new RecolorRecipe();
+
+	public static org.apache.logging.log4j.Logger logger; // Mod logger
 
 	@Mod.Instance
-	public static ModClass instance;
+	public static ModClass instance; // Instance of this mod, used by Forge
 
 	@SidedProxy(clientSide = ModReference.CLIENT_PROXY, serverSide = ModReference.SERVER_PROXY)
-	public static IProxy proxy;
+	public static IProxy proxy; // Mod proxy
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
@@ -41,10 +46,11 @@ public class ModClass
 		// Setup logger
 		logger = event.getModLog();
 
+		// Pre-init proxy
 		proxy.preInit(event);
 
-		ModConfig.update();
-		com.trforcex.mods.wallpapercraft.util.Logger.logDebug("preInit() – done");
+		ModConfig.update(); // Update config
+		Logger.logDebug("preInit() – done");
 	}
 
 	@Mod.EventHandler
@@ -55,11 +61,11 @@ public class ModClass
 		{
 			OreDictCompatibility.registerVanillaToOredict();
 			OreDictCompatibility.registerModBlocksToOredict();
-			com.trforcex.mods.wallpapercraft.util.Logger.logDebug("OreDict – done");
+			Logger.logDebug("OreDict – done");
 		}
 
 		proxy.init(event);
-		com.trforcex.mods.wallpapercraft.util.Logger.logDebug("init() – done");
+		Logger.logDebug("init() – done");
 	}
 
 	@Mod.EventHandler
@@ -69,38 +75,39 @@ public class ModClass
 			ChiselCompatibility.init();
 
 		proxy.postInit(event);
-		com.trforcex.mods.wallpapercraft.util.Logger.logDebug("postInit() – done");
+		Logger.logDebug("postInit() – done");
 	}
 
 	@Mod.EventHandler
 	public void serverStarting(FMLServerStartingEvent event)
     {
-		if(ModConfig.debug.loggingLevel != 0 || ModReference.DEBUG)
-		{
-			event.registerServerCommand(new ExecCommand());
-		}
+    	// Register exec command anyway
+    	event.registerServerCommand(new ExecCommand());
+		Logger.logDebug("Registered \"/exec\" command");
 	}
 
 	@SubscribeEvent
 	public static void registerRecipes(RegistryEvent.Register<IRecipe> event)
 	{
-		initRecipes(event);
+		initRecipes(event); // Init mod recipes
 	}
 
 	private static void initRecipes(final RegistryEvent.Register<IRecipe> event)
 	{
-		event.getRegistry().register(new ScrollingRecipe());
-		event.getRegistry().register(new RecolorRecipe());
-		event.getRegistry().register(new PatternRemovalRecipe());
-		com.trforcex.mods.wallpapercraft.util.Logger.logDebug("Registered dynamic recipes");
-
+//		registerDynamicRecipes(event);
         registerColoredPasteRecipes(); // Init colored paste recipes
-
-		PatternedRecipes.init();
-		ForestryRecipes.init();
-
-		com.trforcex.mods.wallpapercraft.util.Logger.logDebug("Done registering mod recipes");
+		ModRecipes.init();
+		DynamicRecipes.init();
+		Logger.logDebug("Done registering mod recipes");
 	}
+
+//	private static void registerDynamicRecipes(final RegistryEvent.Register<IRecipe> event)
+//	{
+//		event.getRegistry().register(SCROLLING_RECIPE);
+//		event.getRegistry().register(PATTERN_REMOVAL_RECIPE);
+//		event.getRegistry().register(RECOLOR_RECIPE);
+//		com.trforcex.mods.wallpapercraft.util.Logger.logDebug("Done registering dynamic recipes!");
+//	}
 
 	private static void registerColoredPasteRecipes()
 	{
@@ -119,7 +126,7 @@ public class ModClass
 			RecipeHelper.addRecipe(recipeResLoc, coloredPasteGroup, pasteStack, Items.CLAY_BALL, dyeOreDict);
 		}
 
-		com.trforcex.mods.wallpapercraft.util.Logger.logDebug("Done registering recipes for colored paste");
+		Logger.logDebug("Done registering recipes for colored paste");
 	}
 
 

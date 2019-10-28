@@ -1,19 +1,19 @@
 package com.trforcex.mods.wallpapercraft.blocks;
 
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeA;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeB;
 import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class RippledBlocks
 {
-    public static MetaBlockTypeA blockRippledRed;
-    public static MetaBlockTypeA blockRippledBlue;
-    public static MetaBlockTypeA blockRippledYellow;
-    public static MetaBlockTypeA blockRippledGreen;
-    public static MetaBlockTypeA blockRippledGray;
-    public static MetaBlockTypeB blockRippledCyan;
-    public static MetaBlockTypeA blockRippledBrown;
-    public static MetaBlockTypeA blockRippledPurple;
+    public static ModBlockTypeA blockRippledRed;
+    public static ModBlockTypeA blockRippledBlue;
+    public static ModBlockTypeA blockRippledYellow;
+    public static ModBlockTypeA blockRippledGreen;
+    public static ModBlockTypeA blockRippledGray;
+    public static ModBlockTypeB blockRippledCyan;
+    public static ModBlockTypeA blockRippledBrown;
+    public static ModBlockTypeA blockRippledPurple;
 
     public static void instantiate()
     {

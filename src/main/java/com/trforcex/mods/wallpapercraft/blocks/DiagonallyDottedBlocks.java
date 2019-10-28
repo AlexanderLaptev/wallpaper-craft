@@ -1,19 +1,19 @@
 package com.trforcex.mods.wallpapercraft.blocks;
 
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeA;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeB;
 import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class DiagonallyDottedBlocks
 {
-    public static MetaBlockTypeA blockDiagonallyDottedRed;
-    public static MetaBlockTypeA blockDiagonallyDottedBlue;
-    public static MetaBlockTypeA blockDiagonallyDottedYellow;
-    public static MetaBlockTypeA blockDiagonallyDottedGreen;
-    public static MetaBlockTypeA blockDiagonallyDottedGray;
-    public static MetaBlockTypeB blockDiagonallyDottedCyan;
-    public static MetaBlockTypeA blockDiagonallyDottedBrown;
-    public static MetaBlockTypeA blockDiagonallyDottedPurple;
+    public static ModBlockTypeA blockDiagonallyDottedRed;
+    public static ModBlockTypeA blockDiagonallyDottedBlue;
+    public static ModBlockTypeA blockDiagonallyDottedYellow;
+    public static ModBlockTypeA blockDiagonallyDottedGreen;
+    public static ModBlockTypeA blockDiagonallyDottedGray;
+    public static ModBlockTypeB blockDiagonallyDottedCyan;
+    public static ModBlockTypeA blockDiagonallyDottedBrown;
+    public static ModBlockTypeA blockDiagonallyDottedPurple;
 
     public static void instantiate()
     {

@@ -1,32 +1,32 @@
 package com.trforcex.mods.wallpapercraft.blocks;
 
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockForestry;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeC;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockForestry;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeC;
 import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class ForestryBlocks
 {
-    public static MetaBlockTypeC grassCloth1;
-    public static MetaBlockTypeC honeyComb1;
-    public static MetaBlockTypeC leafy1;
-    public static MetaBlockTypeC beehiveLantern1;
-    public static MetaBlockTypeC stoneBrick1;
-    public static MetaBlockTypeC glassBrick1;
+    public static ModBlockTypeC grassCloth1;
+    public static ModBlockTypeC honeyComb1;
+    public static ModBlockTypeC leafy1;
+    public static ModBlockTypeC beehiveLantern1;
+    public static ModBlockTypeC stoneBrick1;
+    public static ModBlockTypeC glassBrick1;
     ////////////
-    public static MetaBlockForestry grassCloth2;
-    public static MetaBlockForestry honeyComb2;
-    public static MetaBlockForestry leafy2;
-    public static MetaBlockForestry beehiveLantern2;
-    public static MetaBlockForestry stoneBrick2;
-    public static MetaBlockForestry glassBrick2;
+    public static ModBlockForestry grassCloth2;
+    public static ModBlockForestry honeyComb2;
+    public static ModBlockForestry leafy2;
+    public static ModBlockForestry beehiveLantern2;
+    public static ModBlockForestry stoneBrick2;
+    public static ModBlockForestry glassBrick2;
 
     public static void instantiate()
     {
         grassCloth1 = BlockFactory.createForestryWoolBlock("grass_cloth_1");
         grassCloth2 = BlockFactory.createForestryWoolBlock2("grass_cloth_2");
 
-        honeyComb1 = BlockFactory.createForestryWoolBlock("honey_comb_1");
-        honeyComb2 = BlockFactory.createForestryWoolBlock2("honey_comb_2");
+        honeyComb1 = BlockFactory.createForestryWoolBlock("honeycomb_1");
+        honeyComb2 = BlockFactory.createForestryWoolBlock2("honeycomb_2");
 
         leafy1 = BlockFactory.createForestryWoolBlock("leafy_1");
         leafy2 = BlockFactory.createForestryWoolBlock2("leafy_2");
@@ -37,7 +37,7 @@ public class ForestryBlocks
         stoneBrick1 = BlockFactory.createSolidBlockTypeC("forestry_stone_bricks_1");
         stoneBrick2 = BlockFactory.createForestrySolidBlock2("forestry_stone_bricks_2");
 
-        glassBrick1 = BlockFactory.createForestryGlassBlock("glass_bricks_1");
-        glassBrick2 = BlockFactory.createForestryGlassBlock2("glass_bricks_2");
+        glassBrick1 = BlockFactory.createForestryGlassBlock("stone_bricks_glass_1");
+        glassBrick2 = BlockFactory.createForestryGlassBlock2("stone_bricks_glass_2");
     }
 }

@@ -1,19 +1,19 @@
 package com.trforcex.mods.wallpapercraft.blocks;
 
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeA;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeB;
 import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class FloralBlocks
 {
-    public static MetaBlockTypeA blockFloralRed;
-    public static MetaBlockTypeA blockFloralBlue;
-    public static MetaBlockTypeA blockFloralYellow;
-    public static MetaBlockTypeA blockFloralGreen;
-    public static MetaBlockTypeA blockFloralGray;
-    public static MetaBlockTypeB blockFloralCyan;
-    public static MetaBlockTypeA blockFloralBrown;
-    public static MetaBlockTypeA blockFloralPurple;
+    public static ModBlockTypeA blockFloralRed;
+    public static ModBlockTypeA blockFloralBlue;
+    public static ModBlockTypeA blockFloralYellow;
+    public static ModBlockTypeA blockFloralGreen;
+    public static ModBlockTypeA blockFloralGray;
+    public static ModBlockTypeB blockFloralCyan;
+    public static ModBlockTypeA blockFloralBrown;
+    public static ModBlockTypeA blockFloralPurple;
 
     public static void instantiate()
     {

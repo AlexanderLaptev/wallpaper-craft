@@ -12,11 +12,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class MetaBlockForestry extends BaseMetaBlock // Used for wood 17-29
+public class ModBlockForestry extends BaseModBlock // Used for wood 17-29
 {
     protected static final PropertyInteger variantProperty = PropertyInteger.create("variant", 0, 12); // 13 wood types
 
-    public MetaBlockForestry(Material materialIn, float hardness, float resistance, String registryName)
+    public ModBlockForestry(Material materialIn, float hardness, float resistance, String registryName)
     {
         super(materialIn, hardness, resistance, registryName);
         setDefaultState(getDefaultState().withProperty(variantProperty, 0));

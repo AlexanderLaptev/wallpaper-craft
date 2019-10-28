@@ -1,19 +1,19 @@
 package com.trforcex.mods.wallpapercraft.blocks;
 
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeA;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeB;
 import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class DamaskBlocks
 {
-    public static MetaBlockTypeA blockDamaskRed;
-    public static MetaBlockTypeA blockDamaskBlue;
-    public static MetaBlockTypeA blockDamaskYellow;
-    public static MetaBlockTypeA blockDamaskGreen;
-    public static MetaBlockTypeA blockDamaskGray;
-    public static MetaBlockTypeB blockDamaskCyan;
-    public static MetaBlockTypeA blockDamaskBrown;
-    public static MetaBlockTypeA blockDamaskPurple;
+    public static ModBlockTypeA blockDamaskRed;
+    public static ModBlockTypeA blockDamaskBlue;
+    public static ModBlockTypeA blockDamaskYellow;
+    public static ModBlockTypeA blockDamaskGreen;
+    public static ModBlockTypeA blockDamaskGray;
+    public static ModBlockTypeB blockDamaskCyan;
+    public static ModBlockTypeA blockDamaskBrown;
+    public static ModBlockTypeA blockDamaskPurple;
 
     public static void instantiate()
     {

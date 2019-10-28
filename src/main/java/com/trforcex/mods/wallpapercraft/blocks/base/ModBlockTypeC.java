@@ -14,11 +14,11 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
 @SuppressWarnings("deprecation")
-public class MetaBlockTypeC extends BaseMetaBlock
+public class ModBlockTypeC extends BaseModBlock
 {
     protected static final PropertyEnum<EnumTypeC> variantProperty = PropertyEnum.create("variant", EnumTypeC.class);
 
-    public MetaBlockTypeC(Material materialIn, float hardness, float resistance, String registryName)
+    public ModBlockTypeC(Material materialIn, float hardness, float resistance, String registryName)
     {
         super(materialIn, hardness, resistance, registryName); // Construct base
 

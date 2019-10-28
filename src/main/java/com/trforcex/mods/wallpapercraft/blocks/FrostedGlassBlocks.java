@@ -1,19 +1,19 @@
 package com.trforcex.mods.wallpapercraft.blocks;
 
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeA;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeB;
 import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class FrostedGlassBlocks
 {
-    public static MetaBlockTypeA blockFrostedGlassRed;
-    public static MetaBlockTypeA blockFrostedGlassBlue;
-    public static MetaBlockTypeA blockFrostedGlassYellow;
-    public static MetaBlockTypeA blockFrostedGlassGreen;
-    public static MetaBlockTypeA blockFrostedGlassGray;
-    public static MetaBlockTypeB blockFrostedGlassCyan;
-    public static MetaBlockTypeA blockFrostedGlassBrown;
-    public static MetaBlockTypeA blockFrostedGlassPurple;
+    public static ModBlockTypeA blockFrostedGlassRed;
+    public static ModBlockTypeA blockFrostedGlassBlue;
+    public static ModBlockTypeA blockFrostedGlassYellow;
+    public static ModBlockTypeA blockFrostedGlassGreen;
+    public static ModBlockTypeA blockFrostedGlassGray;
+    public static ModBlockTypeB blockFrostedGlassCyan;
+    public static ModBlockTypeA blockFrostedGlassBrown;
+    public static ModBlockTypeA blockFrostedGlassPurple;
 
     public static void instantiate()
     {

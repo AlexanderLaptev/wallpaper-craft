@@ -8,8 +8,10 @@
   "url": "",
   "updateUrl": "",
   "authorList": ["TheRealForceX", "oliviaoliviasson"],
-  "logoFile": "",
+  "logoFile": "assets/wallpapercraft/textures/wpcraft_logo.png",
   "screenshots": [],
+  "updateJSON": "https://dl.dropboxusercontent.com/s/edouros9o00gyui/wpcraft_update.json?dl=0",
+  "useDependencyInformation": true,
   "dependencies": ["after:chisel@MC1.10.2-0.0.14.32"]
 }
 ]

@@ -1,19 +1,19 @@
 package com.trforcex.mods.wallpapercraft.blocks;
 
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeA;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeB;
 import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class SolidBlocks
 {
-    public static MetaBlockTypeA blockSolidRed;
-    public static MetaBlockTypeA blockSolidBlue;
-    public static MetaBlockTypeA blockSolidYellow;
-    public static MetaBlockTypeA blockSolidGreen;
-    public static MetaBlockTypeA blockSolidGray;
-    public static MetaBlockTypeB blockSolidCyan;
-    public static MetaBlockTypeA blockSolidBrown;
-    public static MetaBlockTypeA blockSolidPurple;
+    public static ModBlockTypeA blockSolidRed;
+    public static ModBlockTypeA blockSolidBlue;
+    public static ModBlockTypeA blockSolidYellow;
+    public static ModBlockTypeA blockSolidGreen;
+    public static ModBlockTypeA blockSolidGray;
+    public static ModBlockTypeB blockSolidCyan;
+    public static ModBlockTypeA blockSolidBrown;
+    public static ModBlockTypeA blockSolidPurple;
 
     public static void instantiate()
     {

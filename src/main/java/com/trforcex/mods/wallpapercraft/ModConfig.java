@@ -76,7 +76,7 @@ public class ModConfig
         @Config.RangeInt(min = 0, max = 2)
         public int loggingLevel = 0;
 
-        @Config.Name("Redirect debug to info log file")
+        @Config.Name("Redirect debug to latest.log file")
         @Config.LangKey("config.wallpapercraft.redirect_logs")
         @Config.Comment("")
         public boolean redirectDebugToInfoLogFile = false;
@@ -93,6 +93,7 @@ public class ModConfig
     {
         ConfigManager.sync(ModReference.MODID, Config.Type.INSTANCE);
 
+        // Update logger settings
         Logger.setMaxLogLevel(debug.loggingLevel);
         Logger.setUseInfoInsteadOfDebug(debug.redirectDebugToInfoLogFile);
     }

@@ -1,5 +1,6 @@
 package com.trforcex.mods.wallpapercraft.network;
 
+import com.trforcex.mods.wallpapercraft.blocks.base.ScrollingType;
 import com.trforcex.mods.wallpapercraft.items.IScrollable;
 import com.trforcex.mods.wallpapercraft.util.RecipeHelper;
 import net.minecraft.entity.player.EntityPlayer;
@@ -33,7 +34,7 @@ public class ForestryCompatibleBlockScrollingMessage extends BaseMetaScrollingMe
             {
                 String resourcePath = heldStack.getItem().getRegistryName().getResourcePath();
 
-                if(((IScrollable) heldStack.getItem()).getScrollingType() == IScrollable.ScrollingType.ForestryCompatible)
+                if(((IScrollable) heldStack.getItem()).getScrollingType() == ScrollingType.ForestryCompatible)
                     if(resourcePath.endsWith("_1"))
                     {
                         int stackMeta = heldStack.getMetadata();

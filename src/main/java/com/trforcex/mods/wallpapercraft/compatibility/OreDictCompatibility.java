@@ -44,7 +44,7 @@ public class OreDictCompatibility
         if(!Arrays.asList(OreDictionary.getOreIDs(woolStack)).contains(WOOL_ID))
             OreDictionary.registerOre("blockWool", woolStack);
         if(!Arrays.asList(OreDictionary.getOreIDs(woodStack)).contains(WOOD_ID))
-            OreDictionary.registerOre("plankWood", woolStack);
+            OreDictionary.registerOre("plankWood", woodStack);
 
         Logger.logDebug("Registered vanilla to OreDict");
     }

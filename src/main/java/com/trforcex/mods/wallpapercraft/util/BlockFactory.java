@@ -1,9 +1,9 @@
 package com.trforcex.mods.wallpapercraft.util;
 
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockForestry;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeA;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeB;
-import com.trforcex.mods.wallpapercraft.blocks.base.MetaBlockTypeC;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockForestry;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeA;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeB;
+import com.trforcex.mods.wallpapercraft.blocks.base.ModBlockTypeC;
 import com.trforcex.mods.wallpapercraft.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -28,48 +28,60 @@ import java.util.Random;
 public class BlockFactory
 {
     //region ===== SOLID =====
-    public static MetaBlockTypeA createSolidBlockTypeA(String registryName)
+    public static ModBlockTypeA createSolidBlockTypeA(String registryName)
     {
-        return new MetaBlockTypeA(Material.ROCK, 2f, 6f, registryName);
+        return new ModBlockTypeA(Material.ROCK, 2f, 6f, registryName);
     }
 
-    public static MetaBlockTypeB createSolidBlockTypeB(String registryName)
+    public static ModBlockTypeB createSolidBlockTypeB(String registryName)
     {
-        return new MetaBlockTypeB(Material.ROCK, 2f, 6f, registryName);
+        return new ModBlockTypeB(Material.ROCK, 2f, 6f, registryName);
     }
 
-    public static MetaBlockTypeC createSolidBlockTypeC(String registryName)
+    public static ModBlockTypeC createSolidBlockTypeC(String registryName)
     {
-        return new MetaBlockTypeC(Material.ROCK, 2f, 6f, registryName);
+        return new ModBlockTypeC(Material.ROCK, 2f, 6f, registryName);
     }
     //endregion
 
     //region ===== LAMPS =====
-    public static MetaBlockTypeA createLampTypeA(String registryName)
+    public static ModBlockTypeA createLampTypeA(String registryName)
     {
-        return new MetaBlockTypeA(Material.ROCK, 1f, 1.5f, registryName)
+        return new ModBlockTypeA(Material.GLASS, 1f, 1.5f, registryName)
         {
             {
                 setLightLevel(1f);
             }
+
+            @Override
+            public boolean isFullBlock(IBlockState state)
+            {
+                return false;
+            }
         };
     }
 
-    public static MetaBlockTypeB createLampTypeB(String registryName)
+    public static ModBlockTypeB createLampTypeB(String registryName)
     {
-        return new MetaBlockTypeB(Material.ROCK, 1f, 1.5f, registryName)
+        return new ModBlockTypeB(Material.GLASS, 1f, 1.5f, registryName)
         {
             {
                 setLightLevel(1f);
+            }
+
+            @Override
+            public boolean isFullBlock(IBlockState state)
+            {
+                return false;
             }
         };
     }
     //endregion
 
     //region ===== GLASS =====
-    public static MetaBlockTypeA createGlassBlockTypeA(String registryName)
+    public static ModBlockTypeA createGlassBlockTypeA(String registryName)
     {
-        return new MetaBlockTypeA(Material.GLASS, 0.3f, 1.5f, registryName)
+        return new ModBlockTypeA(Material.GLASS, 0.3f, 1.5f, registryName)
         {
             {
                 setSoundType(SoundType.GLASS);
@@ -132,9 +144,9 @@ public class BlockFactory
         };
     }
 
-    public static MetaBlockTypeB createGlassBlockTypeB(String registryName)
+    public static ModBlockTypeB createGlassBlockTypeB(String registryName)
     {
-        return new MetaBlockTypeB(Material.GLASS, 0.3f, 1.5f, registryName)
+        return new ModBlockTypeB(Material.GLASS, 0.3f, 1.5f, registryName)
         {
             {
                 setSoundType(SoundType.GLASS);
@@ -199,9 +211,9 @@ public class BlockFactory
     //endregion
 
     //region ===== WOOL =====
-    public static MetaBlockTypeA createWoolBlockTypeA(String registryName)
+    public static ModBlockTypeA createWoolBlockTypeA(String registryName)
     {
-        return new MetaBlockTypeA(Material.CLOTH, 0.8f, 4f, registryName)
+        return new ModBlockTypeA(Material.CLOTH, 0.8f, 4f, registryName)
         {
             {
                 setSoundType(SoundType.CLOTH);
@@ -210,9 +222,9 @@ public class BlockFactory
         };
     }
 
-    public static MetaBlockTypeB createWoolBlockTypeB(String registryName)
+    public static ModBlockTypeB createWoolBlockTypeB(String registryName)
     {
-        return new MetaBlockTypeB(Material.CLOTH, 0.8f, 4f, registryName)
+        return new ModBlockTypeB(Material.CLOTH, 0.8f, 4f, registryName)
         {
             {
                 setSoundType(SoundType.CLOTH);
@@ -223,9 +235,9 @@ public class BlockFactory
     //endregion
 
     //region ===== PLANKS =====
-    public static MetaBlockTypeA createPlanksBlockTypeA(String registryName)
+    public static ModBlockTypeA createPlanksBlockTypeA(String registryName)
     {
-        return new MetaBlockTypeA(Material.WOOD, 2f, 15f, registryName)
+        return new ModBlockTypeA(Material.WOOD, 2f, 15f, registryName)
         {
             {
                 setSoundType(SoundType.WOOD);
@@ -234,9 +246,9 @@ public class BlockFactory
         };
     }
 
-    public static MetaBlockTypeB createPlanksBlockTypeB(String registryName)
+    public static ModBlockTypeB createPlanksBlockTypeB(String registryName)
     {
-        return new MetaBlockTypeB(Material.WOOD, 2f, 15f, registryName)
+        return new ModBlockTypeB(Material.WOOD, 2f, 15f, registryName)
         {
             {
                 setSoundType(SoundType.WOOD);
@@ -247,9 +259,9 @@ public class BlockFactory
     //endregion
 
     //region ===== CARPETS =====
-    public static MetaBlockTypeA createCarpetBlockTypeA(String registryName)
+    public static ModBlockTypeA createCarpetBlockTypeA(String registryName)
     {
-    return new MetaBlockTypeA(Material.CARPET, 0.1f, 0.5f, registryName)
+    return new ModBlockTypeA(Material.CARPET, 0.1f, 0.5f, registryName)
     {
         {
             setSoundType(SoundType.CLOTH);
@@ -328,9 +340,9 @@ public class BlockFactory
     };
     }
 
-    public static MetaBlockTypeB createCarpetBlockTypeB(String registryName)
+    public static ModBlockTypeB createCarpetBlockTypeB(String registryName)
     {
-        return new MetaBlockTypeB(Material.CARPET, 0.1f, 0.5f, registryName)
+        return new ModBlockTypeB(Material.CARPET, 0.1f, 0.5f, registryName)
         {
             {
                 setSoundType(SoundType.CLOTH);
@@ -411,9 +423,9 @@ public class BlockFactory
     //endregion
 
     //region ===== FORESTRY =====
-    public static MetaBlockTypeC createForestryWoolBlock(String registryName)
+    public static ModBlockTypeC createForestryWoolBlock(String registryName)
     {
-        return new MetaBlockTypeC(Material.CLOTH, 0.8f, 4f, registryName)
+        return new ModBlockTypeC(Material.CLOTH, 0.8f, 4f, registryName)
         {
             {
                 setSoundType(SoundType.CLOTH);
@@ -423,9 +435,9 @@ public class BlockFactory
         };
     }
 
-    public static MetaBlockForestry createForestryWoolBlock2(String registryName) // 2 because these blocks are used for the other half of meta values
+    public static ModBlockForestry createForestryWoolBlock2(String registryName) // 2 because these blocks are used for the other half of meta values
     {
-        return new MetaBlockForestry(Material.CLOTH, 0.8f, 4f, registryName)
+        return new ModBlockForestry(Material.CLOTH, 0.8f, 4f, registryName)
         {
             {
                 setSoundType(SoundType.CLOTH);
@@ -435,14 +447,14 @@ public class BlockFactory
         };
     }
 
-    public static MetaBlockForestry createForestrySolidBlock2(String registryName)
+    public static ModBlockForestry createForestrySolidBlock2(String registryName)
     {
-        return new MetaBlockForestry(Material.ROCK, 2f, 6f, registryName);
+        return new ModBlockForestry(Material.ROCK, 2f, 6f, registryName);
     }
 
-    public static MetaBlockTypeC createForestryGlassBlock(String registryName)
+    public static ModBlockTypeC createForestryGlassBlock(String registryName)
     {
-        return new MetaBlockTypeC(Material.GLASS, 0.3f, 1.5f, registryName)
+        return new ModBlockTypeC(Material.GLASS, 0.3f, 1.5f, registryName)
         {
             {
                 setSoundType(SoundType.GLASS);
@@ -505,9 +517,9 @@ public class BlockFactory
         };
     }
 
-    public static MetaBlockForestry createForestryGlassBlock2(String registryName)
+    public static ModBlockForestry createForestryGlassBlock2(String registryName)
     {
-        return new MetaBlockForestry(Material.GLASS, 0.3f, 1.5f, registryName)
+        return new ModBlockForestry(Material.GLASS, 0.3f, 1.5f, registryName)
         {
             {
                 setSoundType(SoundType.GLASS);
@@ -570,9 +582,9 @@ public class BlockFactory
         };
     }
 
-    public static MetaBlockTypeC createBeehiveLantern(String registryName)
+    public static ModBlockTypeC createBeehiveLantern(String registryName)
     {
-        return new MetaBlockTypeC(Material.ROCK, 2f, 6f, registryName)
+        return new ModBlockTypeC(Material.ROCK, 2f, 6f, registryName)
         {
             {
                 setLightLevel(0.53f);
@@ -580,9 +592,9 @@ public class BlockFactory
         };
     }
 
-    public static MetaBlockForestry createBeehiveLantern2(String registryName)
+    public static ModBlockForestry createBeehiveLantern2(String registryName)
     {
-        return new MetaBlockForestry(Material.ROCK, 2f, 6f, registryName)
+        return new ModBlockForestry(Material.ROCK, 2f, 6f, registryName)
         {
             {
                 setLightLevel(0.53f);

@@ -1,5 +1,6 @@
 package com.trforcex.mods.wallpapercraft.network;
 
+import com.trforcex.mods.wallpapercraft.blocks.base.ScrollingType;
 import com.trforcex.mods.wallpapercraft.items.IScrollable;
 import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.entity.player.EntityPlayer;
@@ -82,7 +83,7 @@ public class MetaScrollingMessage extends BaseMetaScrollingMessage
             EntityPlayer serverPlayer = ctx.getServerHandler().player;
             ItemStack heldStack = serverPlayer.getHeldItemMainhand();
 
-            if(heldStack.getItem() instanceof IScrollable && ((IScrollable)heldStack.getItem()).getScrollingType() == IScrollable.ScrollingType.Scrollable)
+            if(heldStack.getItem() instanceof IScrollable && ((IScrollable)heldStack.getItem()).getScrollingType() == ScrollingType.Scrollable)
             {
                 int stackMeta = heldStack.getMetadata(); // Get current meta
                 heldStack.setItemDamage(MathHelper.clamp(stackMeta + (message.shouldIncreaseMeta ? 1 : -1), 0, ModHelper.getMetaItemBlockMaxMeta(heldStack.getItem())));

@@ -59,7 +59,7 @@ public class PressItems
         itemPressBricks = new BasePressItem("press_bricks");
         itemPressColoredBricks = new BasePressItem("press_colored_bricks");
         itemPressStoneLamp = new BasePressItem("press_stone_lamp");
-        itemPressCheckeredWool = new BasePressItem("press_checkered");
+        itemPressCheckeredWool = new BasePressItem("press_checkered_wool");
         itemPressDotted = new BasePressItem("press_dotted");
         itemPressDiagonallyDotted = new BasePressItem("press_diagonally_dotted");
         itemPressClay = new BasePressItem("press_clay");

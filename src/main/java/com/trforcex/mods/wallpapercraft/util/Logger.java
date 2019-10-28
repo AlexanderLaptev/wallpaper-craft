@@ -6,6 +6,9 @@ import net.minecraft.item.ItemStack;
 
 public class Logger
 {
+//    private static int recipesCount = 0;
+//    private static ArrayList<String> patterns = new ArrayList<>();
+
     private static int maxLogLevel = 0;
 
     private static boolean useInfoInsteadOfDebug = false;
@@ -92,6 +95,12 @@ public class Logger
 
     public static String getStackInfo(ItemStack stack)
     {
-        return "x" + stack.getCount() + " of" + stack.getDisplayName() +"[" + stack.getItem().getRegistryName() + "]" + ", meta: " + stack.getMetadata() + " (damage: " + stack.getItemDamage() + ");";
+        return "x" + stack.getCount() + " of " + stack.getDisplayName() +"[" + stack.getItem().getRegistryName() + "]" + ", meta: " + stack.getMetadata() + " (damage: " + stack.getItemDamage() + ");";
+    }
+
+    // A method to call when breakpoint needed
+    public static void stubMethod()
+    {
+
     }
 }

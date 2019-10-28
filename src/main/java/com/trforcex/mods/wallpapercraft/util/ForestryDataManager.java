@@ -15,7 +15,7 @@ public class ForestryDataManager
     public static final ArrayList<String> WOOD_TYPES_1;
     public static final ArrayList<String> WOOD_TYPES_2;
 
-    public static final String[] PATTERNS = {"grass_cloth", "honey_comb", "leafy", "beehive_tile", "forestry_stone_bricks", "glass_bricks"};
+    public static final String[] PATTERNS = {"grass_cloth", "honeycomb", "leafy", "beehive_tile", "forestry_stone_bricks", "stone_bricks_glass"};
 
     static
     {

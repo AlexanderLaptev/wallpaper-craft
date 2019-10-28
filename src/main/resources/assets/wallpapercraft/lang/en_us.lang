@@ -44,7 +44,7 @@ config.wallpapercraft.presses.tooltip=Determines how many times a pattern press 
 config.wallpapercraft.logging_level=Logging level
 config.wallpapercraft.logging_level.tooltip=0 - disable logging; 1 - 'debug' level; 2 - 'verbose' level
 
-config.wallpapercraft.redirect_logs=Redirect debug to info log file
+config.wallpapercraft.redirect_logs=Redirect debug to latest.log file
 config.wallpapercraft.redirect_logs.tooltip=Enable this to make all mod logs go to 'latest.log' file instead of 'debug.log'
 
 
@@ -79,7 +79,7 @@ item.wallpapercraft.press_blank.name=Blank Pattern Press
 item.wallpapercraft.press_solid.name=Solid Pattern Press
 item.wallpapercraft.press_bricks.name=Bricks Pattern Press
 item.wallpapercraft.press_wool.name=Wool Pattern Press
-item.wallpapercraft.press_checkered.name=Checkered Pattern Press
+item.wallpapercraft.press_checkered_wool.name=Checkered Pattern Press
 item.wallpapercraft.press_clay.name=Clay Pattern Press
 item.wallpapercraft.press_diagonally_dotted.name=Diagonally Dotted Pattern Press
 item.wallpapercraft.press_dotted.name=Dotted Pattern Press
@@ -103,7 +103,7 @@ item.wallpapercraft.press_grass_cloth.name=Grass Cloth Pattern Press
 item.wallpapercraft.press_honeycomb.name=Honeycomb Pattern Press
 item.wallpapercraft.press_leafy.name=Leafy Pattern Press
 item.wallpapercraft.press_beehive_tile.name=Beehive Lantern Pattern Press
-item.wallpapercraft.press_stone_bricks_glass.name=Glass Stone Bricks Pattern Press
+item.wallpapercraft.press_glasss.name=Glass Stone Bricks Pattern Press
 
 item.wallpapercraft.press_removal.name=Pattern removal press
 
@@ -153,37 +153,37 @@ tile.wallpapercraft.grass_cloth_2_11.name=Cocobolo Grass Cloth
 tile.wallpapercraft.grass_cloth_2_12.name=Zebrawood Grass Cloth
 
 # Honeycomb 1
-tile.wallpapercraft.honey_comb_1_0.name=Larch Honeycomb
-tile.wallpapercraft.honey_comb_1_1.name=Teak Honeycomb
-tile.wallpapercraft.honey_comb_1_2.name=Desert Acacia Honeycomb
-tile.wallpapercraft.honey_comb_1_3.name=Lime Honeycomb
-tile.wallpapercraft.honey_comb_1_4.name=Chestnut Honeycomb
-tile.wallpapercraft.honey_comb_1_5.name=Wenge Honeycomb
-tile.wallpapercraft.honey_comb_1_6.name=Baobab Honeycomb
-tile.wallpapercraft.honey_comb_1_7.name=Sequoia Honeycomb
-tile.wallpapercraft.honey_comb_1_8.name=Kapok Honeycomb
-tile.wallpapercraft.honey_comb_1_9.name=Ebony Honeycomb
-tile.wallpapercraft.honey_comb_1_10.name=Mahogany Honeycomb
-tile.wallpapercraft.honey_comb_1_11.name=Balsa Honeycomb
-tile.wallpapercraft.honey_comb_1_12.name=Willow Honeycomb
-tile.wallpapercraft.honey_comb_1_13.name=Walnut Honeycomb
-tile.wallpapercraft.honey_comb_1_14.name=Greenheart Honeycomb
-tile.wallpapercraft.honey_comb_1_15.name=Cherry Honeycomb
+tile.wallpapercraft.honeycomb_1_0.name=Larch Honeycomb
+tile.wallpapercraft.honeycomb_1_1.name=Teak Honeycomb
+tile.wallpapercraft.honeycomb_1_2.name=Desert Acacia Honeycomb
+tile.wallpapercraft.honeycomb_1_3.name=Lime Honeycomb
+tile.wallpapercraft.honeycomb_1_4.name=Chestnut Honeycomb
+tile.wallpapercraft.honeycomb_1_5.name=Wenge Honeycomb
+tile.wallpapercraft.honeycomb_1_6.name=Baobab Honeycomb
+tile.wallpapercraft.honeycomb_1_7.name=Sequoia Honeycomb
+tile.wallpapercraft.honeycomb_1_8.name=Kapok Honeycomb
+tile.wallpapercraft.honeycomb_1_9.name=Ebony Honeycomb
+tile.wallpapercraft.honeycomb_1_10.name=Mahogany Honeycomb
+tile.wallpapercraft.honeycomb_1_11.name=Balsa Honeycomb
+tile.wallpapercraft.honeycomb_1_12.name=Willow Honeycomb
+tile.wallpapercraft.honeycomb_1_13.name=Walnut Honeycomb
+tile.wallpapercraft.honeycomb_1_14.name=Greenheart Honeycomb
+tile.wallpapercraft.honeycomb_1_15.name=Cherry Honeycomb
 
 # Honeycomb 2
-tile.wallpapercraft.honey_comb_2_0.name=Mahoe Honeycomb
-tile.wallpapercraft.honey_comb_2_1.name=Poplar Honeycomb
-tile.wallpapercraft.honey_comb_2_2.name=Palm Honeycomb
-tile.wallpapercraft.honey_comb_2_3.name=Papaya Honeycomb
-tile.wallpapercraft.honey_comb_2_4.name=Pine Honeycomb
-tile.wallpapercraft.honey_comb_2_5.name=Plum Honeycomb
-tile.wallpapercraft.honey_comb_2_6.name=Maple Honeycomb
-tile.wallpapercraft.honey_comb_2_7.name=Citrus Honeycomb
-tile.wallpapercraft.honey_comb_2_8.name=Sequoia Honeycomb
-tile.wallpapercraft.honey_comb_2_9.name=Ipe Honeycomb
-tile.wallpapercraft.honey_comb_2_10.name=Padauk Honeycomb
-tile.wallpapercraft.honey_comb_2_11.name=Cocobolo Honeycomb
-tile.wallpapercraft.honey_comb_2_12.name=Zebrawood Honeycomb
+tile.wallpapercraft.honeycomb_2_0.name=Mahoe Honeycomb
+tile.wallpapercraft.honeycomb_2_1.name=Poplar Honeycomb
+tile.wallpapercraft.honeycomb_2_2.name=Palm Honeycomb
+tile.wallpapercraft.honeycomb_2_3.name=Papaya Honeycomb
+tile.wallpapercraft.honeycomb_2_4.name=Pine Honeycomb
+tile.wallpapercraft.honeycomb_2_5.name=Plum Honeycomb
+tile.wallpapercraft.honeycomb_2_6.name=Maple Honeycomb
+tile.wallpapercraft.honeycomb_2_7.name=Citrus Honeycomb
+tile.wallpapercraft.honeycomb_2_8.name=Sequoia Honeycomb
+tile.wallpapercraft.honeycomb_2_9.name=Ipe Honeycomb
+tile.wallpapercraft.honeycomb_2_10.name=Padauk Honeycomb
+tile.wallpapercraft.honeycomb_2_11.name=Cocobolo Honeycomb
+tile.wallpapercraft.honeycomb_2_12.name=Zebrawood Honeycomb
 
 # Leafy 1
 tile.wallpapercraft.leafy_1_0.name=Larch Leafy
@@ -285,37 +285,37 @@ tile.wallpapercraft.forestry_stone_bricks_2_11.name=Cocobolo Stone Bricks
 tile.wallpapercraft.forestry_stone_bricks_2_12.name=Zebrawood Stone Bricks
 
 # Glass Stone Bricks 1
-tile.wallpapercraft.glass_bricks_1_0.name=Larch Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_1.name=Teak Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_2.name=Desert Acacia Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_3.name=Lime Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_4.name=Chestnut Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_5.name=Wenge Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_6.name=Baobab Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_7.name=Sequoia Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_8.name=Kapok Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_9.name=Ebony Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_10.name=Mahogany Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_11.name=Balsa Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_12.name=Willow Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_13.name=Walnut Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_14.name=Greenheart Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_1_15.name=Cherry Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_0.name=Larch Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_1.name=Teak Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_2.name=Desert Acacia Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_3.name=Lime Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_4.name=Chestnut Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_5.name=Wenge Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_6.name=Baobab Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_7.name=Sequoia Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_8.name=Kapok Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_9.name=Ebony Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_10.name=Mahogany Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_11.name=Balsa Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_12.name=Willow Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_13.name=Walnut Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_14.name=Greenheart Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_1_15.name=Cherry Glass Stone Bricks
 
 # Glass Stone Bricks 2
-tile.wallpapercraft.glass_bricks_2_0.name=Mahoe Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_1.name=Poplar Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_2.name=Palm Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_3.name=Papaya Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_4.name=Pine Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_5.name=Plum Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_6.name=Maple Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_7.name=Citrus Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_8.name=Sequoia Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_9.name=Ipe Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_10.name=Padauk Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_11.name=Cocobolo Glass Stone Bricks
-tile.wallpapercraft.glass_bricks_2_12.name=Zebrawood Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_0.name=Mahoe Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_1.name=Poplar Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_2.name=Palm Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_3.name=Papaya Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_4.name=Pine Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_5.name=Plum Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_6.name=Maple Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_7.name=Citrus Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_8.name=Sequoia Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_9.name=Ipe Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_10.name=Padauk Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_11.name=Cocobolo Glass Stone Bricks
+tile.wallpapercraft.stone_bricks_glass_2_12.name=Zebrawood Glass Stone Bricks
 
 
 

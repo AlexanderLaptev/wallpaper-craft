@@ -1,10 +1,11 @@
 package com.trforcex.mods.wallpapercraft.items;
 
 import com.trforcex.mods.wallpapercraft.ModConfig;
+import com.trforcex.mods.wallpapercraft.blocks.base.BaseModBlock;
 import com.trforcex.mods.wallpapercraft.blocks.base.IHasMetaItemBlock;
+import com.trforcex.mods.wallpapercraft.blocks.base.ScrollingType;
 import com.trforcex.mods.wallpapercraft.init.ModCreativeTab;
 import com.trforcex.mods.wallpapercraft.init.ModKeybinds;
-import com.trforcex.mods.wallpapercraft.util.ForestryDataManager;
 import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -18,7 +19,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
 
 import javax.annotation.Nullable;
-import java.util.Arrays;
 import java.util.List;
 
 enum HintType
@@ -96,14 +96,7 @@ public class MetaItemBlock extends ItemBlock implements IScrollable
     @Override
     public ScrollingType getScrollingType()
     {
-        String name = block.getRegistryName().getResourcePath();
-        name = name.substring(0, name.length() - 2); // Get rid of last two characters ("_1" or "_2")
-
-        final List<String> patterns = Arrays.asList(ForestryDataManager.PATTERNS); // Convert patterns to List
-        if(patterns.contains(name)) // Check if name is in patterns
-            return ScrollingType.ForestryCompatible;
-        else
-            return ScrollingType.Scrollable;
+        return ((BaseModBlock)block).getScrollingType();
     }
 
     private static HintType getHintType(ItemStack stack)

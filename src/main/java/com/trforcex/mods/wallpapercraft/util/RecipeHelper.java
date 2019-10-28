@@ -1,8 +1,9 @@
 package com.trforcex.mods.wallpapercraft.util;
 
 import com.trforcex.mods.wallpapercraft.ModReference;
-import com.trforcex.mods.wallpapercraft.blocks.base.BaseMetaBlock;
+import com.trforcex.mods.wallpapercraft.blocks.base.BaseModBlock;
 import com.trforcex.mods.wallpapercraft.init.ModItems;
+import com.trforcex.mods.wallpapercraft.items.BasePressItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -21,9 +22,18 @@ public class RecipeHelper
 {
     public static class WrongIngredientsException extends RuntimeException {}
 
-    /**
-     * @return Resource location of domain 'wallpapercraft' and path of params delimited by '_' letter
-     */
+    public static BasePressItem getPressFor(BaseModBlock modBlock)
+    {
+        BasePressItem item;
+        if(modBlock.getPattern().equals("forestry_stone_bricks"))
+            item = (BasePressItem) ForgeRegistries.ITEMS.getValue(getModResLoc("press_stone_bricks"));
+        else
+            item = (BasePressItem) ForgeRegistries.ITEMS.getValue(getModResLoc("press", modBlock.getPattern()));
+
+        Validate.notNull(item, "Press for [" + getModResLoc("press", modBlock.getPattern()) + "] is null!");
+        return item;
+    }
+
     public static ResourceLocation getModResLoc(String ... params)
     {
         return new ResourceLocation(ModReference.MODID, ModUtils.composeString((Object[]) params));
@@ -155,25 +165,7 @@ public class RecipeHelper
     }
     //endregion
 
-//    public static String getColor(ItemStack pasteStack)
-//    {
-//        if(pasteStack.getItem() instanceof ColoredPaste)
-//            return ModDataManager.COLORS.get(pasteStack.getMetadata());
-//
-//        throw new IllegalArgumentException("Cannot get color of " + Logger.getStackInfo(pasteStack));
-//    }
-//    public static String getColor(BaseMetaBlock metaBlock)
-//    {
-//        String[] parts = (metaBlock.getRegistryName().getResourcePath().split("_"));
-//        return parts[parts.length - 1];
-//    }
-//
-//    public static  getNextColor(ItemStack pasteStack)
-//    {
-//        if(pasteStack.getItem() instanceof ColoredPaste)
-//            return ModDataManager
-//    }
-    public static Block recolorBlock(BaseMetaBlock block, ItemStack pasteStack)
+    public static Block recolorBlock(BaseModBlock block, ItemStack pasteStack)
     {
         // Get paste color
         String pasteColor = ModDataManager.COLORS.get(pasteStack.getMetadata());

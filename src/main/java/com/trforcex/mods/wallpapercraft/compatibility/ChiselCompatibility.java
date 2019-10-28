@@ -32,7 +32,7 @@ public class ChiselCompatibility
 //                ICarvingGroup group = CarvingUtils.getDefaultGroupFor(pattern + "_" + color);
 //                chisel.addGroup(group);
 //
-//                BaseMetaBlock patternedBlock = (BaseMetaBlock) RecipeHelper.getModBlock(pattern, color);
+//                BaseModBlock patternedBlock = (BaseModBlock) RecipeHelper.getModBlock(pattern, color);
 //                Validate.notNull(patternedBlock, "Registries are not initialized: patternedBlock is null");
 //
 //                for(int meta = 0; meta <= patternedBlock.getMaxMeta(); meta++)
