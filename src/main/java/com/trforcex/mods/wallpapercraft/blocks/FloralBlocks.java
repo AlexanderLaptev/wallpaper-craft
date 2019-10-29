@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class FloralBlocks
 {
-    public static ModBlockTypeA blockFloralRed;
-    public static ModBlockTypeA blockFloralBlue;
-    public static ModBlockTypeA blockFloralYellow;
-    public static ModBlockTypeA blockFloralGreen;
-    public static ModBlockTypeA blockFloralGray;
-    public static ModBlockTypeB blockFloralCyan;
-    public static ModBlockTypeA blockFloralBrown;
-    public static ModBlockTypeA blockFloralPurple;
+    private static ModBlockTypeA blockFloralRed;
+    private static ModBlockTypeA blockFloralBlue;
+    private static ModBlockTypeA blockFloralYellow;
+    private static ModBlockTypeA blockFloralGreen;
+    private static ModBlockTypeA blockFloralGray;
+    private static ModBlockTypeB blockFloralCyan;
+    private static ModBlockTypeA blockFloralBrown;
+    private static ModBlockTypeA blockFloralPurple;
 
     public static void instantiate()
     {

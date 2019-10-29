@@ -6,19 +6,19 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class ForestryBlocks
 {
-    public static ModBlockTypeC grassCloth1;
-    public static ModBlockTypeC honeyComb1;
-    public static ModBlockTypeC leafy1;
-    public static ModBlockTypeC beehiveLantern1;
-    public static ModBlockTypeC stoneBrick1;
-    public static ModBlockTypeC glassBrick1;
+    private static ModBlockTypeC grassCloth1;
+    private static ModBlockTypeC honeyComb1;
+    private static ModBlockTypeC leafy1;
+    private static ModBlockTypeC beehiveLantern1;
+    private static ModBlockTypeC stoneBrick1;
+    private static ModBlockTypeC glassBrick1;
     ////////////
-    public static ModBlockForestry grassCloth2;
-    public static ModBlockForestry honeyComb2;
-    public static ModBlockForestry leafy2;
-    public static ModBlockForestry beehiveLantern2;
-    public static ModBlockForestry stoneBrick2;
-    public static ModBlockForestry glassBrick2;
+    private static ModBlockForestry grassCloth2;
+    private static ModBlockForestry honeyComb2;
+    private static ModBlockForestry leafy2;
+    private static ModBlockForestry beehiveLantern2;
+    private static ModBlockForestry stoneBrick2;
+    private static ModBlockForestry glassBrick2;
 
     public static void instantiate()
     {

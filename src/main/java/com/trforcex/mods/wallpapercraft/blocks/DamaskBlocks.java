@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class DamaskBlocks
 {
-    public static ModBlockTypeA blockDamaskRed;
-    public static ModBlockTypeA blockDamaskBlue;
-    public static ModBlockTypeA blockDamaskYellow;
-    public static ModBlockTypeA blockDamaskGreen;
-    public static ModBlockTypeA blockDamaskGray;
-    public static ModBlockTypeB blockDamaskCyan;
-    public static ModBlockTypeA blockDamaskBrown;
-    public static ModBlockTypeA blockDamaskPurple;
+    private static ModBlockTypeA blockDamaskRed;
+    private static ModBlockTypeA blockDamaskBlue;
+    private static ModBlockTypeA blockDamaskYellow;
+    private static ModBlockTypeA blockDamaskGreen;
+    private static ModBlockTypeA blockDamaskGray;
+    private static ModBlockTypeB blockDamaskCyan;
+    private static ModBlockTypeA blockDamaskBrown;
+    private static ModBlockTypeA blockDamaskPurple;
 
     public static void instantiate()
     {

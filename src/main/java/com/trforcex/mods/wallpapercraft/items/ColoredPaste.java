@@ -28,7 +28,8 @@ import static com.trforcex.mods.wallpapercraft.init.ModCreativeTab.WPC_TAB;
  */
 public class ColoredPaste extends Item
 {
-    public static final int MAX_USES = ModConfig.crafting.maxColoredPasteUsages - 1;
+    private static final int MAX_USES = ModConfig.crafting.maxColoredPasteUsages - 1;
+    public static final String KEY = "durability";
 
     public ColoredPaste()
     {
@@ -70,11 +71,11 @@ public class ColoredPaste extends Item
         {
             NBTTagCompound nbt = itemStack.getTagCompound();
             if(nbt != null)
-                nbt.setInteger("usesLeft", usesLeft - 1);
+                nbt.setInteger(ColoredPaste.KEY, usesLeft - 1);
             else
             {
                 nbt = new NBTTagCompound();
-                nbt.setInteger("usesLeft", usesLeft - 1);
+                nbt.setInteger(ColoredPaste.KEY, usesLeft - 1);
             }
             final ItemStack stack = new ItemStack(itemStack.getItem(), itemStack.getCount(), itemStack.getMetadata());
             stack.setTagCompound(nbt);
@@ -92,8 +93,8 @@ public class ColoredPaste extends Item
     @Override
     public int getDamage(ItemStack stack)
     {
-        if(stack.getTagCompound() != null && stack.getTagCompound().hasKey("usesLeft"))
-            return MAX_USES - stack.getTagCompound().getInteger("usesLeft");
+        if(stack.getTagCompound() != null && stack.getTagCompound().hasKey(ColoredPaste.KEY))
+            return MAX_USES - stack.getTagCompound().getInteger(ColoredPaste.KEY);
 
         return 0;
     }
@@ -133,7 +134,10 @@ public class ColoredPaste extends Item
     {
         tooltip.add("Uses left: " + (getUsesLeft(stack) + 1));
         if(ModConfig.enableTooltipHints)
+        {
             tooltip.add(I18n.format("tooltip.wallpapercraft.paste_hint"));
+            tooltip.add(I18n.format("tooltip.wallpapercraft.paste_hint_2"));
+        }
     }
 
     @Override
@@ -152,9 +156,19 @@ public class ColoredPaste extends Item
     private int getUsesLeft(ItemStack stack)
     {
         NBTTagCompound nbt = stack.getTagCompound();
-        if(nbt != null && nbt.hasKey("usesLeft"))
-            return nbt.getInteger("usesLeft");
+        if(nbt != null && nbt.hasKey(ColoredPaste.KEY))
+            return nbt.getInteger(ColoredPaste.KEY);
 
         return MAX_USES;
+    }
+
+    public static String getColor(ItemStack pasteStack)
+    {
+        if(pasteStack.getItem() instanceof ColoredPaste)
+        {
+            return ModDataManager.COLORS.get(pasteStack.getMetadata());
+        }
+
+        return "";
     }
 }

@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 public class ModBlockForestry extends BaseModBlock // Used for wood 17-29
 {
-    protected static final PropertyInteger variantProperty = PropertyInteger.create("variant", 0, 12); // 13 wood types
+    private static final PropertyInteger variantProperty = PropertyInteger.create("variant", 0, 12); // 13 wood types
 
     public ModBlockForestry(Material materialIn, float hardness, float resistance, String registryName)
     {

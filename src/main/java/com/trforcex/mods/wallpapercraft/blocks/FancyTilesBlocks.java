@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class FancyTilesBlocks
 {
-    public static ModBlockTypeA blockFancyTilesRed;
-    public static ModBlockTypeA blockFancyTilesBlue;
-    public static ModBlockTypeA blockFancyTilesYellow;
-    public static ModBlockTypeA blockFancyTilesGreen;
-    public static ModBlockTypeA blockFancyTilesGray;
-    public static ModBlockTypeB blockFancyTilesCyan;
-    public static ModBlockTypeA blockFancyTilesBrown;
-    public static ModBlockTypeA blockFancyTilesPurple;
+    private static ModBlockTypeA blockFancyTilesRed;
+    private static ModBlockTypeA blockFancyTilesBlue;
+    private static ModBlockTypeA blockFancyTilesYellow;
+    private static ModBlockTypeA blockFancyTilesGreen;
+    private static ModBlockTypeA blockFancyTilesGray;
+    private static ModBlockTypeB blockFancyTilesCyan;
+    private static ModBlockTypeA blockFancyTilesBrown;
+    private static ModBlockTypeA blockFancyTilesPurple;
 
     public static void instantiate()
     {

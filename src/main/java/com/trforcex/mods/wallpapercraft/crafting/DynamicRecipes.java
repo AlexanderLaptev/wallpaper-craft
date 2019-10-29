@@ -33,7 +33,6 @@ public class DynamicRecipes
         Logger.logDebug("Done initializing \"dynamic\" recipes");
     }
 
-    // TODO: handle cyan metas
     private static void registerScrollingRecipeFor(BaseModBlock block)
     {
         Logger.logVerbose("Registering scrolling recipe for: [" + block.getRegistryName() + "]");
@@ -132,7 +131,6 @@ public class DynamicRecipes
                         ItemStack outputStack = new ItemStack(outputBlock, 1, newMeta);
 
                         addRecipe(resLoc, null, outputStack, inputStack, pasteStack);
-                        Logger.logVerbose("Recolor recipe: [" + Logger.getStackInfo(inputStack) + "] -> [" + Logger.getStackInfo(outputStack) + "]");
                     }
                 else
                     Logger.logVerbose("Recoloring for jewel or stamp, skipping");

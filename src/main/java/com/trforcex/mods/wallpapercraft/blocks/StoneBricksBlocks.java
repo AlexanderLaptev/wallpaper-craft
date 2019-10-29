@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class StoneBricksBlocks
 {
-    public static ModBlockTypeA blockStoneBricksRed;
-    public static ModBlockTypeA blockStoneBricksBlue;
-    public static ModBlockTypeA blockStoneBricksYellow;
-    public static ModBlockTypeA blockStoneBricksGreen;
-    public static ModBlockTypeA blockStoneBricksGray;
-    public static ModBlockTypeB blockStoneBricksCyan;
-    public static ModBlockTypeA blockStoneBricksBrown;
-    public static ModBlockTypeA blockStoneBricksPurple;
+    private static ModBlockTypeA blockStoneBricksRed;
+    private static ModBlockTypeA blockStoneBricksBlue;
+    private static ModBlockTypeA blockStoneBricksYellow;
+    private static ModBlockTypeA blockStoneBricksGreen;
+    private static ModBlockTypeA blockStoneBricksGray;
+    private static ModBlockTypeB blockStoneBricksCyan;
+    private static ModBlockTypeA blockStoneBricksBrown;
+    private static ModBlockTypeA blockStoneBricksPurple;
 
     public static void instantiate()
     {

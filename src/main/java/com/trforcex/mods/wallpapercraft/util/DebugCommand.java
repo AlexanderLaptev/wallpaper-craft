@@ -10,7 +10,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.oredict.OreDictionary;
 
-public class ExecCommand extends CommandBase
+public class DebugCommand extends CommandBase
 {
     private static final String NAME = "wpc";
     private static final String USAGE = "wpc <exec>";
@@ -35,7 +35,7 @@ public class ExecCommand extends CommandBase
         {
             if(args[0].equals("exec"))
             {
-                execCode(server, sender, args);
+                execCode();
                 Logger.logVerbose("Exec command executed!");
             }
             else if(args[0].equals("od"))
@@ -53,7 +53,7 @@ public class ExecCommand extends CommandBase
                         sOres[id] = OreDictionary.getOreName(ores[id]); // Add name of ID to 'sOres' array
 
                     for(String ore : sOres)
-                        message.append("\n   -" + ore); // Append list of ores
+                        message.append("\n   -").append(ore); // Append list of ores
                 }
                 else
                     message.append("\n   N/A");
@@ -70,7 +70,7 @@ public class ExecCommand extends CommandBase
     }
 
     // Function to exec custom code or evaluate expressions (place a breakpoint)
-    private void execCode(MinecraftServer server, ICommandSender sender, String[] args)
+    private void execCode() throws CommandException
     {
 
     }

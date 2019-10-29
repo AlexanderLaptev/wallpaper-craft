@@ -36,7 +36,7 @@ public class Logger
 
     public static void logDebug(String message){ log(1, message); }
     public static void logVerbose(String message){ log(2, message); }
-    public static void log(int level, String message)
+    private static void log(int level, String message)
     {
         if(maxLogLevel != 0)
             if(level == 1 && maxLogLevel > 0)

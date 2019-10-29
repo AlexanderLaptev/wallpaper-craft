@@ -4,8 +4,9 @@ import com.trforcex.mods.wallpapercraft.compatibility.ChiselCompatibility;
 import com.trforcex.mods.wallpapercraft.compatibility.OreDictCompatibility;
 import com.trforcex.mods.wallpapercraft.crafting.DynamicRecipes;
 import com.trforcex.mods.wallpapercraft.crafting.ModRecipes;
+import com.trforcex.mods.wallpapercraft.crafting.PasteCombinationRecipe;
 import com.trforcex.mods.wallpapercraft.proxy.IProxy;
-import com.trforcex.mods.wallpapercraft.util.ExecCommand;
+import com.trforcex.mods.wallpapercraft.util.DebugCommand;
 import com.trforcex.mods.wallpapercraft.util.Logger;
 import com.trforcex.mods.wallpapercraft.util.ModDataManager;
 import com.trforcex.mods.wallpapercraft.util.RecipeHelper;
@@ -28,17 +29,13 @@ import team.chisel.api.ChiselAPIProps;
 @Mod.EventBusSubscriber
 public class ModClass
 {
-//	public static final ScrollingRecipe SCROLLING_RECIPE  = new ScrollingRecipe();
-//	public static final PatternRemovalRecipe PATTERN_REMOVAL_RECIPE = new PatternRemovalRecipe();
-//	public static final RecolorRecipe RECOLOR_RECIPE  = new RecolorRecipe();
-
 	public static org.apache.logging.log4j.Logger logger; // Mod logger
 
 	@Mod.Instance
 	public static ModClass instance; // Instance of this mod, used by Forge
 
 	@SidedProxy(clientSide = ModReference.CLIENT_PROXY, serverSide = ModReference.SERVER_PROXY)
-	public static IProxy proxy; // Mod proxy
+	private static IProxy proxy; // Mod proxy
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
@@ -47,7 +44,7 @@ public class ModClass
 		logger = event.getModLog();
 
 		// Pre-init proxy
-		proxy.preInit(event);
+		proxy.preInit();
 
 		ModConfig.update(); // Update config
 		Logger.logDebug("preInit() – done");
@@ -58,23 +55,23 @@ public class ModClass
 	{
 		// OreDict
 		if(ModConfig.compatibility.registerVanillaWoolAndPlanksToOredict)
-		{
 			OreDictCompatibility.registerVanillaToOredict();
-			OreDictCompatibility.registerModBlocksToOredict();
-			Logger.logDebug("OreDict – done");
-		}
 
-		proxy.init(event);
+		OreDictCompatibility.registerModBlocksToOredict();
+		Logger.logDebug("OreDict – done");
+
+		proxy.init();
 		Logger.logDebug("init() – done");
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
+		// Init chisel support
 		if(ModConfig.compatibility.enableChiselCompatibility && Loader.isModLoaded(ChiselAPIProps.MOD_ID))
 			ChiselCompatibility.init();
 
-		proxy.postInit(event);
+		proxy.postInit();
 		Logger.logDebug("postInit() – done");
 	}
 
@@ -82,8 +79,8 @@ public class ModClass
 	public void serverStarting(FMLServerStartingEvent event)
     {
     	// Register exec command anyway
-    	event.registerServerCommand(new ExecCommand());
-		Logger.logDebug("Registered \"/exec\" command");
+    	event.registerServerCommand(new DebugCommand());
+		Logger.logDebug("Registered debug command");
 	}
 
 	@SubscribeEvent
@@ -94,20 +91,17 @@ public class ModClass
 
 	private static void initRecipes(final RegistryEvent.Register<IRecipe> event)
 	{
-//		registerDynamicRecipes(event);
+		// Register paste combination recipe
+		event.getRegistry().register(PasteCombinationRecipe.INSTANCE);
+		Logger.logDebug("Paste combination recipe registered");
         registerColoredPasteRecipes(); // Init colored paste recipes
+		Logger.logDebug("Colored paste recipes registered");
+
 		ModRecipes.init();
 		DynamicRecipes.init();
+
 		Logger.logDebug("Done registering mod recipes");
 	}
-
-//	private static void registerDynamicRecipes(final RegistryEvent.Register<IRecipe> event)
-//	{
-//		event.getRegistry().register(SCROLLING_RECIPE);
-//		event.getRegistry().register(PATTERN_REMOVAL_RECIPE);
-//		event.getRegistry().register(RECOLOR_RECIPE);
-//		com.trforcex.mods.wallpapercraft.util.Logger.logDebug("Done registering dynamic recipes!");
-//	}
 
 	private static void registerColoredPasteRecipes()
 	{
@@ -122,7 +116,7 @@ public class ModClass
 			// Output stack
 			final ItemStack pasteStack = RecipeHelper.getColoredPasteStack(color);
 
-			// [Clay ball] + [Dye (oredict] = [Colored paste]
+			// [Clay ball] + [Dye (oredict)] = [Colored paste]
 			RecipeHelper.addRecipe(recipeResLoc, coloredPasteGroup, pasteStack, Items.CLAY_BALL, dyeOreDict);
 		}
 

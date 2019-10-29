@@ -17,14 +17,15 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 @Mod.EventBusSubscriber
 public class ModBlocks
 {
-    public static ModBlockTypeC blockJewel;
-    public static ModBlockTypeC blockStamp;
+    public static final ModBlockTypeC blockJewel;
+    public static final ModBlockTypeC blockStamp;
 
-    public static final HashMap<ItemStack, String> OREDICT_INIT; // Is used for registration of oredict entries
+    public static final Map<ItemStack, String> OREDICT_INIT; // Is used for registration of oredict entries
 
     static // Initialization
     {

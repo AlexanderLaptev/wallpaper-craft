@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class SolidBlocks
 {
-    public static ModBlockTypeA blockSolidRed;
-    public static ModBlockTypeA blockSolidBlue;
-    public static ModBlockTypeA blockSolidYellow;
-    public static ModBlockTypeA blockSolidGreen;
-    public static ModBlockTypeA blockSolidGray;
-    public static ModBlockTypeB blockSolidCyan;
-    public static ModBlockTypeA blockSolidBrown;
-    public static ModBlockTypeA blockSolidPurple;
+    private static ModBlockTypeA blockSolidRed;
+    private static ModBlockTypeA blockSolidBlue;
+    private static ModBlockTypeA blockSolidYellow;
+    private static ModBlockTypeA blockSolidGreen;
+    private static ModBlockTypeA blockSolidGray;
+    private static ModBlockTypeB blockSolidCyan;
+    private static ModBlockTypeA blockSolidBrown;
+    private static ModBlockTypeA blockSolidPurple;
 
     public static void instantiate()
     {

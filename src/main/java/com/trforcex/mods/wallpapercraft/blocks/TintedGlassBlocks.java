@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class TintedGlassBlocks
 {
-    public static ModBlockTypeA blockTintedGlassRed;
-    public static ModBlockTypeA blockTintedGlassBlue;
-    public static ModBlockTypeA blockTintedGlassYellow;
-    public static ModBlockTypeA blockTintedGlassGreen;
-    public static ModBlockTypeA blockTintedGlassGray;
-    public static ModBlockTypeB blockTintedGlassCyan;
-    public static ModBlockTypeA blockTintedGlassBrown;
-    public static ModBlockTypeA blockTintedGlassPurple;
+    private static ModBlockTypeA blockTintedGlassRed;
+    private static ModBlockTypeA blockTintedGlassBlue;
+    private static ModBlockTypeA blockTintedGlassYellow;
+    private static ModBlockTypeA blockTintedGlassGreen;
+    private static ModBlockTypeA blockTintedGlassGray;
+    private static ModBlockTypeB blockTintedGlassCyan;
+    private static ModBlockTypeA blockTintedGlassBrown;
+    private static ModBlockTypeA blockTintedGlassPurple;
 
     public static void instantiate()
     {

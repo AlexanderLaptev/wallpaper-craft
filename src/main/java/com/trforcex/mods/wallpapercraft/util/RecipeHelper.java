@@ -5,6 +5,7 @@ import com.trforcex.mods.wallpapercraft.blocks.base.BaseModBlock;
 import com.trforcex.mods.wallpapercraft.init.ModItems;
 import com.trforcex.mods.wallpapercraft.items.BasePressItem;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
@@ -20,7 +21,7 @@ import javax.annotation.Nullable;
 
 public class RecipeHelper
 {
-    public static class WrongIngredientsException extends RuntimeException {}
+    private static class WrongIngredientsException extends RuntimeException {}
 
     public static BasePressItem getPressFor(BaseModBlock modBlock)
     {
@@ -60,7 +61,7 @@ public class RecipeHelper
     }
 
     //region Ingredients
-    public static Ingredient getIngredientFrom(Object obj)
+    private static Ingredient getIngredientFrom(Object obj)
     {
         if(obj instanceof Item)
             return Ingredient.fromItem((Item) obj);
@@ -78,11 +79,11 @@ public class RecipeHelper
     //endregion
 
     //region Items and blocks
-    public static Item getModItem(String ... params)
+    private static Item getModItem(String... params)
     {
         return getModItem(getModResLoc(params));
     }
-    public static Item getModItem(ResourceLocation registryName)
+    private static Item getModItem(ResourceLocation registryName)
     {
         Item item = ForgeRegistries.ITEMS.getValue(registryName);
         Validate.notNull(item, "Item [" + registryName + "] is null, but is not supposed to be");
@@ -93,7 +94,7 @@ public class RecipeHelper
     {
         return getModBlock(getModResLoc(params));
     }
-    public static Block getModBlock(ResourceLocation registryName)
+    private static Block getModBlock(ResourceLocation registryName)
     {
         Block block = ForgeRegistries.BLOCKS.getValue(registryName);
         Validate.notNull(block, "Block [" + registryName + "] is null, but is not supposed to be");
@@ -151,15 +152,35 @@ public class RecipeHelper
         throw new IllegalArgumentException("Unknown type of object: [" + obj.getClass().getName() + "]");
     }
 
-    public static void validate(ItemStack stack)
+    private static void validate(ItemStack stack)
     {
         if(stack == null || stack.isEmpty())
             throw new IllegalArgumentException("ItemStack : x" + stack.getCount() + " of " + stack.getDisplayName() + ", meta:" + stack.getMetadata() + "is empty, but is not supposed to be");
     }
 
+    public static String getOreName(Block baseBlock)
+    {
+        if(baseBlock == Blocks.HARDENED_CLAY)
+            return "hardenedClay";
+        else if(baseBlock == Blocks.GLASS)
+            return "blockGlass";
+        else if(baseBlock == Blocks.STONE)
+            return "stone";
+        else if(baseBlock == Blocks.WOOL)
+            return "blockWool";
+        else if(baseBlock == Blocks.PLANKS)
+            return "plankWood";
+
+        return "";
+    }
+
     public static ItemStack getColoredPasteStack(String color)
     {
-        final ItemStack stack = new ItemStack(ModItems.itemColoredPaste, 1, ModDataManager.COLORS.indexOf(color));
+        return getColoredPasteStack(color, 1);
+    }
+    private static ItemStack getColoredPasteStack(String color, int count)
+    {
+        final ItemStack stack = new ItemStack(ModItems.itemColoredPaste, count, ModDataManager.COLORS.indexOf(color));
         validate(stack);
         return stack;
     }

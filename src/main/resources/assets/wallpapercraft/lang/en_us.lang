@@ -3888,3 +3888,4 @@ tile.wallpapercraft.aura_lamp_gray_12.name=Aura Lamp Dark Cool Gray
 tile.wallpapercraft.aura_lamp_gray_13.name=Aura Lamp Cool Blue Gray
 tile.wallpapercraft.aura_lamp_gray_14.name=Aura Lamp Cool Dark Blue Gray
 command.wpcraft.error=Failed to reload Wallpapercraft config
+tooltip.wallpapercraft.paste_hint_2=Combine with other piece of paste to increase number of uses left

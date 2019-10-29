@@ -1,11 +1,16 @@
 package com.trforcex.mods.wallpapercraft.compatibility;
 
-import com.trforcex.mods.wallpapercraft.util.ModDataManager;
+import com.trforcex.mods.wallpapercraft.blocks.base.BaseModBlock;
+import com.trforcex.mods.wallpapercraft.init.ModBlocks;
 import com.trforcex.mods.wallpapercraft.util.ModUtils;
+import com.trforcex.mods.wallpapercraft.util.RecipeHelper;
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemStack;
 import org.apache.commons.lang3.Validate;
 import team.chisel.api.carving.CarvingUtils;
 import team.chisel.api.carving.ICarvingGroup;
 import team.chisel.api.carving.ICarvingRegistry;
+import team.chisel.api.carving.ICarvingVariation;
 
 public class ChiselCompatibility
 {
@@ -13,8 +18,8 @@ public class ChiselCompatibility
                                                 "rippled", "striped", "damask", "floral", "fancy_tiles", "clay", "wool", "checkered_wool",
                                                 "wool_carpet", "checkered_carpet", "wood_planks", "stone_lamp", "aura_lamp",
                                                 "tinted_glass", "textured_glass", "frosted_glass", "solid"};
-    private static ICarvingRegistry chisel;
 
+    private static ICarvingRegistry chisel;
     public static void init()
     {
         chisel = CarvingUtils.getChiselRegistry();
@@ -73,10 +78,24 @@ public class ChiselCompatibility
 
     private static void registerPatterns()
     {
-        for(String color : ModDataManager.COLORS)
-            for(String pattern : ModDataManager.COLORS)
+        for(Block modBlock: ModBlocks.BLOCKS)
+        {
+            if(modBlock instanceof BaseModBlock)
             {
-                ICarvingGroup carvingGroup = CarvingUtils.getDefaultGroupFor(ModUtils.composeString(pattern, color));
+                BaseModBlock block = (BaseModBlock) modBlock;
+                ICarvingGroup group;
+                if(chisel.getGroup(ModUtils.composeString(block.getPattern(), block.getColor())) == null)
+                    group = CarvingUtils.getDefaultGroupFor(ModUtils.composeString(block.getPattern(), block.getColor()));
+                else
+                    group = chisel.getGroup(ModUtils.composeString(block.getPattern(), block.getColor()));
+
+                for(int meta = 0; meta <= block.getMaxMeta(); meta++)
+                {
+                    ItemStack stack = RecipeHelper.getStack(block, 1, meta);
+                    ICarvingVariation variation = CarvingUtils.variationFor(stack, meta);
+                    chisel.addVariation(group.getName(), variation);
+                }
             }
+        }
     }
 }

@@ -1,26 +1,23 @@
 package com.trforcex.mods.wallpapercraft.proxy;
 
 import com.trforcex.mods.wallpapercraft.init.ModKeybinds;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class ClientProxy implements IProxy
 {
 	@Override
-	public void preInit(FMLPreInitializationEvent event)
+	public void preInit()
 	{
 		ModKeybinds.register();
 	}
 
 	@Override
-	public void init(FMLInitializationEvent event)
+	public void init()
 	{
 
 	}
 
 	@Override
-	public void postInit(FMLPostInitializationEvent event)
+	public void postInit()
 	{
 
 	}

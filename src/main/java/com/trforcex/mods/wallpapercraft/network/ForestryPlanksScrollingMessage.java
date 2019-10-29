@@ -1,5 +1,6 @@
 package com.trforcex.mods.wallpapercraft.network;
 
+import com.trforcex.mods.wallpapercraft.util.ModHelper;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -30,38 +31,48 @@ public class ForestryPlanksScrollingMessage extends BaseMetaScrollingMessage
             EntityPlayer serverPlayer = ctx.getServerHandler().player;
             ItemStack heldStack = serverPlayer.getHeldItemMainhand();
 
-            if(!heldStack.isEmpty())
+            ModHelper.ForestryCheckResult checkResult = ModHelper.checkIfForestryBlock(heldStack.getItem());
+            if(!heldStack.isEmpty() && checkResult != ModHelper.ForestryCheckResult.NonForestry)
+                serverPlayer.setHeldItem(EnumHand.MAIN_HAND, getOutputStack(message, heldStack, checkResult));
+
+            return null; // No response packet
+        }
+
+        private static ItemStack getOutputStack(ForestryPlanksScrollingMessage message, ItemStack heldStack, ModHelper.ForestryCheckResult result)
+        {
+            final int stackMeta = heldStack.getMetadata();
+            final int maxMeta = result == ModHelper.ForestryCheckResult.ForestryPlanks0 || result == ModHelper.ForestryCheckResult.ForestryFireproofPlanks0 ? 15 : 12;
+            final int newMeta = MathHelper.clamp(stackMeta + (message.shouldIncreaseMeta ? 1 : -1), 0, maxMeta);
+
+            Block outBlock = null;
+            if(stackMeta == newMeta && (stackMeta == maxMeta || stackMeta == 0))
             {
-                ResourceLocation registryName = Block.getBlockFromItem(heldStack.getItem()).getRegistryName();
-                if(registryName.getResourceDomain().equals("forestry") && registryName.getResourcePath().equals("planks.0"))
+                switch(result)
                 {
-                    int stackMeta = heldStack.getMetadata();
-                    heldStack.setItemDamage(MathHelper.clamp(heldStack.getItemDamage() + (message.shouldIncreaseMeta ? 1 : -1), 0, 15));
-
-                    if(stackMeta == heldStack.getItemDamage())
-                    {
-                        if(stackMeta == 15) // Not changed because of limit
-                            serverPlayer.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ForgeRegistries.BLOCKS.getValue(new ResourceLocation("forestry", "planks.1")), heldStack.getCount(), 0));
-                        else if(stackMeta == 0)
-                            serverPlayer.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ForgeRegistries.BLOCKS.getValue(new ResourceLocation("forestry", "planks.1")), heldStack.getCount(), 12));
-                    }
-                }
-                else if(registryName.getResourceDomain().equals("forestry") && registryName.getResourcePath().equals("planks.1"))
-                {
-                    int stackMeta = heldStack.getMetadata();
-                    heldStack.setItemDamage(MathHelper.clamp(heldStack.getItemDamage() + (message.shouldIncreaseMeta ? 1 : -1), 0, 12));
-
-                    if(stackMeta == heldStack.getItemDamage())
-                    {
-                        if(stackMeta == 12) // Not changed because of limit
-                            serverPlayer.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ForgeRegistries.BLOCKS.getValue(new ResourceLocation("forestry", "planks.0")), heldStack.getCount(), 0));
-                        else if(stackMeta == 0)
-                            serverPlayer.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ForgeRegistries.BLOCKS.getValue(new ResourceLocation("forestry", "planks.0")), heldStack.getCount(), 15));
-                    }
+                case ForestryPlanks0:
+                    outBlock = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("forestry", "planks.1"));
+                    break;
+                case ForestryPlanks1:
+                    outBlock = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("forestry", "planks.0"));
+                    break;
+                case ForestryFireproofPlanks0:
+                    outBlock = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("forestry", "planks.fireproof.1"));
+                    break;
+                case ForestryFireproofPlanks1:
+                    outBlock = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("forestry", "planks.fireproof.0"));
+                    break;
                 }
             }
 
-            return null; // No response packet
+            if(stackMeta == newMeta)
+            {
+                if(newMeta == maxMeta)
+                    return new ItemStack(outBlock, heldStack.getCount(), 0);
+                else if(newMeta == 0)
+                    return new ItemStack(outBlock, heldStack.getCount(), maxMeta);
+            }
+
+            return new ItemStack(heldStack.getItem(), heldStack.getCount(), newMeta);
         }
     }
 }

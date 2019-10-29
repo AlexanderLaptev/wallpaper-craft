@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class DiagonallyDottedBlocks
 {
-    public static ModBlockTypeA blockDiagonallyDottedRed;
-    public static ModBlockTypeA blockDiagonallyDottedBlue;
-    public static ModBlockTypeA blockDiagonallyDottedYellow;
-    public static ModBlockTypeA blockDiagonallyDottedGreen;
-    public static ModBlockTypeA blockDiagonallyDottedGray;
-    public static ModBlockTypeB blockDiagonallyDottedCyan;
-    public static ModBlockTypeA blockDiagonallyDottedBrown;
-    public static ModBlockTypeA blockDiagonallyDottedPurple;
+    private static ModBlockTypeA blockDiagonallyDottedRed;
+    private static ModBlockTypeA blockDiagonallyDottedBlue;
+    private static ModBlockTypeA blockDiagonallyDottedYellow;
+    private static ModBlockTypeA blockDiagonallyDottedGreen;
+    private static ModBlockTypeA blockDiagonallyDottedGray;
+    private static ModBlockTypeB blockDiagonallyDottedCyan;
+    private static ModBlockTypeA blockDiagonallyDottedBrown;
+    private static ModBlockTypeA blockDiagonallyDottedPurple;
 
     public static void instantiate()
     {

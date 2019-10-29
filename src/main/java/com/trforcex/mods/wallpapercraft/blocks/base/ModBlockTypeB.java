@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 @SuppressWarnings("deprecation")
 public class ModBlockTypeB extends BaseModBlock
 {
-    protected static final PropertyEnum<EnumTypeB> variantProperty = PropertyEnum.create("variant", EnumTypeB.class);
+    private static final PropertyEnum<EnumTypeB> variantProperty = PropertyEnum.create("variant", EnumTypeB.class);
 
     public ModBlockTypeB(Material materialIn, float hardness, float resistance, String registryName)
     {

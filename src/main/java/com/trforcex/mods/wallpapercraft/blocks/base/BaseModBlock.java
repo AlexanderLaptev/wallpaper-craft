@@ -17,9 +17,9 @@ public abstract class BaseModBlock extends Block implements IHasMetaItemBlock
 {
     private final MetaItemBlock itemBlock; // Every MetaBlock has corresponding MetaItemBlock
 
-    private String pattern;
-    private Block baseBlock;
-    private String color;
+    private final String pattern;
+    private final Block baseBlock;
+    private final String color;
 
     public String getPattern()
     {
@@ -37,7 +37,7 @@ public abstract class BaseModBlock extends Block implements IHasMetaItemBlock
     }
 
     // Constructor with common logic without setting default state (done in derived classes)
-    public BaseModBlock(Material materialIn, float hardness, float resistance, String registryName)
+    BaseModBlock(Material materialIn, float hardness, float resistance, String registryName)
     {
         super(materialIn);
 
@@ -96,6 +96,7 @@ public abstract class BaseModBlock extends Block implements IHasMetaItemBlock
     }
 
     // Getter for itemBlock (since it's private)
+    @Override
     public MetaItemBlock getItemBlock()
     {
         return itemBlock;

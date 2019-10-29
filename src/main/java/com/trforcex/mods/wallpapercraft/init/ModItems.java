@@ -11,13 +11,14 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Mod.EventBusSubscriber
 public class ModItems
 {
-    public static final ArrayList<Item> ITEMS = new ArrayList<>();
+    public static final List<Item> ITEMS = new ArrayList<>();
 
-    public static ColoredPaste itemColoredPaste = new ColoredPaste();
+    public static final ColoredPaste itemColoredPaste = new ColoredPaste();
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event)

@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class AuraLampBlocks
 {
-    public static ModBlockTypeA blockAuraLampRed;
-    public static ModBlockTypeA blockAuraLampBlue;
-    public static ModBlockTypeA blockAuraLampYellow;
-    public static ModBlockTypeA blockAuraLampGreen;
-    public static ModBlockTypeA blockAuraLampGray;
-    public static ModBlockTypeB blockAuraLampCyan;
-    public static ModBlockTypeA blockAuraLampBrown;
-    public static ModBlockTypeA blockAuraLampPurple;
+    private static ModBlockTypeA blockAuraLampRed;
+    private static ModBlockTypeA blockAuraLampBlue;
+    private static ModBlockTypeA blockAuraLampYellow;
+    private static ModBlockTypeA blockAuraLampGreen;
+    private static ModBlockTypeA blockAuraLampGray;
+    private static ModBlockTypeB blockAuraLampCyan;
+    private static ModBlockTypeA blockAuraLampBrown;
+    private static ModBlockTypeA blockAuraLampPurple;
 
     public static void instantiate()
     {

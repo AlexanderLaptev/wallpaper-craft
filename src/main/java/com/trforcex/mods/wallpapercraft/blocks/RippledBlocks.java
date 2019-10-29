@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class RippledBlocks
 {
-    public static ModBlockTypeA blockRippledRed;
-    public static ModBlockTypeA blockRippledBlue;
-    public static ModBlockTypeA blockRippledYellow;
-    public static ModBlockTypeA blockRippledGreen;
-    public static ModBlockTypeA blockRippledGray;
-    public static ModBlockTypeB blockRippledCyan;
-    public static ModBlockTypeA blockRippledBrown;
-    public static ModBlockTypeA blockRippledPurple;
+    private static ModBlockTypeA blockRippledRed;
+    private static ModBlockTypeA blockRippledBlue;
+    private static ModBlockTypeA blockRippledYellow;
+    private static ModBlockTypeA blockRippledGreen;
+    private static ModBlockTypeA blockRippledGray;
+    private static ModBlockTypeB blockRippledCyan;
+    private static ModBlockTypeA blockRippledBrown;
+    private static ModBlockTypeA blockRippledPurple;
 
     public static void instantiate()
     {

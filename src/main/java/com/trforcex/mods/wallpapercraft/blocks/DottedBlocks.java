@@ -6,14 +6,14 @@ import com.trforcex.mods.wallpapercraft.util.BlockFactory;
 
 public class DottedBlocks
 {
-    public static ModBlockTypeA blockDottedRed;
-    public static ModBlockTypeA blockDottedBlue;
-    public static ModBlockTypeA blockDottedYellow;
+    private static ModBlockTypeA blockDottedRed;
+    private static ModBlockTypeA blockDottedBlue;
+    private static ModBlockTypeA blockDottedYellow;
     public static ModBlockTypeA blockDottedGreen;
-    public static ModBlockTypeA blockDottedGray;
-    public static ModBlockTypeB blockDottedCyan;
-    public static ModBlockTypeA blockDottedBrown;
-    public static ModBlockTypeA blockDottedPurple;
+    private static ModBlockTypeA blockDottedGray;
+    private static ModBlockTypeB blockDottedCyan;
+    private static ModBlockTypeA blockDottedBrown;
+    private static ModBlockTypeA blockDottedPurple;
 
     public static void instantiate()
     {

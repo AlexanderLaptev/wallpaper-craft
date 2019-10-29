@@ -3,13 +3,13 @@ package com.trforcex.mods.wallpapercraft.network;
 import io.netty.buffer.ByteBuf;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 
-public abstract class BaseMetaScrollingMessage implements IMessage
+abstract class BaseMetaScrollingMessage implements IMessage
 {
     boolean shouldIncreaseMeta;
 
-    public BaseMetaScrollingMessage(){}
+    BaseMetaScrollingMessage(){}
 
-    public BaseMetaScrollingMessage(boolean shouldIncreaseMeta)
+    BaseMetaScrollingMessage(boolean shouldIncreaseMeta)
     {
         this.shouldIncreaseMeta = shouldIncreaseMeta;
     }

@@ -7,36 +7,36 @@ import net.minecraft.item.Item;
 
 public class PressItems
 {
-    public static Item itemPressBlank;
+    private static Item itemPressBlank;
 
-    public static BasePressItem itemPressGrassCloth;
-    public static BasePressItem itemPressHoneycomb;
-    public static BasePressItem itemPressLeafy;
-    public static BasePressItem itemPressBeehiveTile;
-    public static BasePressItem itemPressGlassStoneBricks;
+    private static BasePressItem itemPressGrassCloth;
+    private static BasePressItem itemPressHoneycomb;
+    private static BasePressItem itemPressLeafy;
+    private static BasePressItem itemPressBeehiveTile;
+    private static BasePressItem itemPressGlassStoneBricks;
 
-    public static BasePressItem itemPressSolid;
-    public static BasePressItem itemPressBricks;
-    public static BasePressItem itemPressColoredBricks;
-    public static BasePressItem itemPressStoneLamp;
-    public static BasePressItem itemPressCheckeredWool;
-    public static BasePressItem itemPressDotted;
-    public static BasePressItem itemPressDiagonallyDotted;
-    public static BasePressItem itemPressClay;
-    public static BasePressItem itemPressAuraLamp;
-    public static BasePressItem itemPressFancyTiles;
-    public static BasePressItem itemPressFloral;
-    public static BasePressItem itemPressDamask;
-    public static BasePressItem itemPressJewel;
-    public static BasePressItem itemPressRippled;
-    public static BasePressItem itemPressStamp;
-    public static BasePressItem itemPressFrostedGlass;
-    public static BasePressItem itemPressTintedGlass;
-    public static BasePressItem itemPressTexturedGlass;
-    public static BasePressItem itemPressStriped;
-    public static BasePressItem itemPressStoneBricks;
-    public static BasePressItem itemPressWool;
-    public static BasePressItem itemPressWoodPlanks;
+    private static BasePressItem itemPressSolid;
+    private static BasePressItem itemPressBricks;
+    private static BasePressItem itemPressColoredBricks;
+    private static BasePressItem itemPressStoneLamp;
+    private static BasePressItem itemPressCheckeredWool;
+    private static BasePressItem itemPressDotted;
+    private static BasePressItem itemPressDiagonallyDotted;
+    private static BasePressItem itemPressClay;
+    private static BasePressItem itemPressAuraLamp;
+    private static BasePressItem itemPressFancyTiles;
+    private static BasePressItem itemPressFloral;
+    private static BasePressItem itemPressDamask;
+    private static BasePressItem itemPressJewel;
+    private static BasePressItem itemPressRippled;
+    private static BasePressItem itemPressStamp;
+    private static BasePressItem itemPressFrostedGlass;
+    private static BasePressItem itemPressTintedGlass;
+    private static BasePressItem itemPressTexturedGlass;
+    private static BasePressItem itemPressStriped;
+    private static BasePressItem itemPressStoneBricks;
+    private static BasePressItem itemPressWool;
+    private static BasePressItem itemPressWoodPlanks;
 
     public static BasePressItem itemPressRemoval;
 
