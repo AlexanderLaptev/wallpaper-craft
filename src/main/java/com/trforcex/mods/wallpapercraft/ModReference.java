@@ -5,7 +5,7 @@ public class ModReference
     // ===== MOD INFO =====
     public static final String MODID = "wallpapercraft";
     static final String NAME = "WallpaperCraft";
-    static final String VERSION = "1.0.0-alpha";
+    static final String VERSION = "1.0.1-alpha";
     // ===== END OF MOD INFO =====
 
     // ===== PROXIES =====

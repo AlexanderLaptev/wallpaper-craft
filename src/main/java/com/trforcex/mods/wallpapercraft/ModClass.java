@@ -23,7 +23,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import team.chisel.api.ChiselAPIProps;
 
 @Mod(modid = ModReference.MODID, name = ModReference.NAME, version = ModReference.VERSION, useMetadata = true, updateJSON = "https://dl.dropboxusercontent.com/s/edouros9o00gyui/wpcraft_update.json?dl=0")
 @Mod.EventBusSubscriber
@@ -68,7 +67,7 @@ public class ModClass
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		// Init chisel support
-		if(ModConfig.compatibility.enableChiselCompatibility && Loader.isModLoaded(ChiselAPIProps.MOD_ID))
+		if(ModConfig.compatibility.enableChiselCompatibility && Loader.isModLoaded("chisel"))
 			ChiselCompatibility.init();
 
 		proxy.postInit();
