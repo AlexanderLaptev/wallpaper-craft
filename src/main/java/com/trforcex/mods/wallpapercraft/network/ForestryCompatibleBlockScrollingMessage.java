@@ -1,6 +1,7 @@
 package com.trforcex.mods.wallpapercraft.network;
 
 import com.trforcex.mods.wallpapercraft.blocks.base.BaseModBlock;
+import com.trforcex.mods.wallpapercraft.blocks.base.IHasMetaItemBlock;
 import com.trforcex.mods.wallpapercraft.blocks.base.ScrollingType;
 import com.trforcex.mods.wallpapercraft.items.MetaItemBlock;
 import com.trforcex.mods.wallpapercraft.util.ModHelper;
@@ -106,7 +107,7 @@ public class ForestryCompatibleBlockScrollingMessage extends BaseMetaScrollingMe
                 if(newMeta == maxMeta)
                     return new ItemStack(outBlock, heldStack.getCount(), 0);
                 else if(newMeta == 0)
-                    return new ItemStack(outBlock, heldStack.getCount(), maxMeta);
+                    return new ItemStack(outBlock, heldStack.getCount(), ((IHasMetaItemBlock) outBlock).getMaxMeta());
             }
 
             return new ItemStack(heldStack.getItem(), heldStack.getCount(), newMeta);
