@@ -4,6 +4,7 @@ import com.trforcex.mods.wallpapercraft.ModConfig;
 import com.trforcex.mods.wallpapercraft.init.ModItems;
 import com.trforcex.mods.wallpapercraft.util.ModDataManager;
 import com.trforcex.mods.wallpapercraft.util.RecipeHelper;
+import net.minecraft.client.renderer.ItemMeshDefinition;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
@@ -28,7 +29,7 @@ import static com.trforcex.mods.wallpapercraft.init.ModCreativeTab.WPC_TAB;
  */
 public class ColoredPaste extends Item
 {
-    private static final int MAX_USES = ModConfig.crafting.maxColoredPasteUsages - 1;
+    private static final int MAX_DURABILITY = ModConfig.crafting.maxColoredPasteUsages - 1;
     public static final String KEY = "durability";
 
     public ColoredPaste()
@@ -58,7 +59,18 @@ public class ColoredPaste extends Item
         final ModelResourceLocation[] names = modelsResLocs.toArray(new ModelResourceLocation[0]); // Convert list to array
         ModelLoader.registerItemVariants(this, names); // Register MRLs as item variants
 
-        ModelLoader.setCustomMeshDefinition(this, stack -> names[stack.getMetadata()]);
+        ModelLoader.setCustomMeshDefinition(this, new ItemMeshDefinition()
+        {
+            @Override
+            public ModelResourceLocation getModelLocation(ItemStack stack)
+            {
+                int meta = stack.getMetadata();
+                if(meta <= 7) // Check if meta is valid to ensure that rendering exception doesn't occur with incorrect meta
+                    return names[meta];
+
+                return null;
+            }
+        });
     }
 
     @Override
@@ -93,10 +105,20 @@ public class ColoredPaste extends Item
     @Override
     public int getDamage(ItemStack stack)
     {
-        if(stack.getTagCompound() != null && stack.getTagCompound().hasKey(ColoredPaste.KEY))
-            return MAX_USES - stack.getTagCompound().getInteger(ColoredPaste.KEY);
+//        if(stack.getTagCompound() != null && stack.getTagCompound().hasKey(ColoredPaste.KEY))
+//            return MathHelper.clamp(MAX_USES - stack.getTagCompound().getInteger(ColoredPaste.KEY), 0, MAX_USES);
+//
+//        return 0;
 
-        return 0;
+        if(!stack.hasTagCompound())
+            return 0; // No damage if no NBT
+
+        int durability = stack.getTagCompound().getInteger(KEY);
+
+        if(durability >= MAX_DURABILITY) // Durability greater than allowed can appear with NBT specified manually
+            return 0;
+
+        else return MAX_DURABILITY - durability;
     }
 
     @Override
@@ -108,19 +130,19 @@ public class ColoredPaste extends Item
     @Override
     public boolean isDamaged(ItemStack stack)
     {
-        return getUsesLeft(stack) == MAX_USES;
+        return getUsesLeft(stack) < MAX_DURABILITY;
     }
 
     @Override
     public double getDurabilityForDisplay(ItemStack stack)
     {
-        return 1.0 - ((double) getUsesLeft(stack) / MAX_USES);
+        return 1.0 - ((double) getUsesLeft(stack) / MAX_DURABILITY);
     }
 
     @Override
     public boolean showDurabilityBar(ItemStack stack)
     {
-        return getUsesLeft(stack) != MAX_USES;
+        return getUsesLeft(stack) < MAX_DURABILITY;
     }
 
     @Override
@@ -159,7 +181,7 @@ public class ColoredPaste extends Item
         if(nbt != null && nbt.hasKey(ColoredPaste.KEY))
             return nbt.getInteger(ColoredPaste.KEY);
 
-        return MAX_USES;
+        return MAX_DURABILITY;
     }
 
     public static String getColor(ItemStack pasteStack)
